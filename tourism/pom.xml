@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>es.ull.taro</groupId>
+	<artifactId>tourism</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>tourism</name>
+
+	<modules>
+		<module>tourism-core</module>
+		<module>tourism-rest</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<tourism-core.version>0.0.1-SNAPSHOT</tourism-core.version>
+		<apache-jena-libs.version>2.11.1</apache-jena-libs.version>
+		<jena-spatial.version>1.0.1</jena-spatial.version>
+		<jsonld-java-jena.version>0.3</jsonld-java-jena.version>
+		<json.version>20140107</json.version>
+		<jersey-client.version>1.18.1</jersey-client.version>
+		<jersey-server.version>1.8</jersey-server.version>
+		<jersey-json.version>1.8</jersey-json.version>
+		<jersey-spring.version>1.8</jersey-spring.version>
+		<servlet-api.version>2.3</servlet-api.version>
+		<spring.version>4.0.1.RELEASE</spring.version>
+
+		<junit.version>4.11</junit.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-tdb</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vividsolutions</groupId>
+			<artifactId>jts</artifactId>
+			<version>1.11</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+         xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+         xmlns:rs="urn:schemas-microsoft-com:rowset"
+         xmlns:z="#RowsetSchema"
+         xmlns:tdt="http://turismo-de-tenerife.org/def/turismo#"
+         xmlns:places="http://purl.org/ontology/places#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaMesadelMar-Tacoronte">
+      <tdt:ows_LinkTitle>Playa Mesa del Mar-Tacoronte</tdt:ows_LinkTitle>
+      <tdt:ows_Zona>Norte</tdt:ows_Zona>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaMesadelMar-Tacoronte">
+            <geo:lat>28.505165965471978</geo:lat>
+            <geo:long>-16.422886848449707</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38350</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Mesa del Mar</tdt:ows_Direccion>
+      <tdt:ows_Telefono>Oficina de Turismo 922 57 00 15</tdt:ows_Telefono>
+      <tdt:ows_Fax>Oficina de Turismo 922 57 00 15</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.tacoronte.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-03 10:24:13</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_ObservacionesSituacion>costa del municipio de Tacoronte</tdt:ows_ObservacionesSituacion>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Email>of_turismotacoronte@hotmail.com</tdt:ows_Email>
+      <tdt:ows_Municipio>Tacoronte</tdt:ows_Municipio>
+      <tdt:ows_Image>../PublishingImages/Playa Mesa del Mar.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Accesibilidad</tdt:ows_Recomendado>
+      <tdt:ows_BanderaAzul>Si</tdt:ows_BanderaAzul>
+      <tdt:ows_Nudista>No</tdt:ows_Nudista>
+      <tdt:ows_HamacasSombrillas>No</tdt:ows_HamacasSombrillas>
+      <tdt:ows_Socorrismo>Si</tdt:ows_Socorrismo>
+      <tdt:ows_ColorArena>Gris</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Gratis>Si</tdt:ows_Gratis>
+      <tdt:ows_MaterialInf>Si</tdt:ows_MaterialInf>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_ComoLlegarEspanol>Linea TITSA 021. Salida desde la estación de guaguas de Tacoronte.</tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/BarriopesqueroElPris-Tacoronte">
+      <tdt:ows_LinkTitle>Barrio pesquero El Pris - Tacoronte</tdt:ows_LinkTitle>
+      <tdt:ows_Zona>Norte</tdt:ows_Zona>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/BarriopesqueroElPris-Tacoronte">
+            <geo:lat>28.51012509426835</geo:lat>
+            <geo:long>-16.421384811401367</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38350</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>El Pris</tdt:ows_Direccion>
+      <tdt:ows_Telefono>Oficina de Información y Turismo 922 57 00 15. Centro de Información Patrimonial de Agua García 922 58 45 60</tdt:ows_Telefono>
+      <tdt:ows_Fax>Oficina de Información y Turismo 922 57 00 15. Centro de Información Patrimonial de Agua García 922 58 45 60</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.tacoronte.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-03 10:19:26</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Barrio pesquero con playa indicada para el baño y piscina natural.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Email>of_turismotacoronte@hotmail.com</tdt:ows_Email>
+      <tdt:ows_Municipio>Tacoronte</tdt:ows_Municipio>
+      <tdt:ows_Image>../PublishingImages/El Pris.jpg</tdt:ows_Image>
+      <tdt:ows_BanderaAzul>No</tdt:ows_BanderaAzul>
+      <tdt:ows_Nudista>No</tdt:ows_Nudista>
+      <tdt:ows_HamacasSombrillas>No</tdt:ows_HamacasSombrillas>
+      <tdt:ows_Socorrismo>No</tdt:ows_Socorrismo>
+      <tdt:ows_ColorArena>Gris</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Gratis>Si</tdt:ows_Gratis>
+      <tdt:ows_MaterialInf>Si</tdt:ows_MaterialInf>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_ComoLlegarEspanol>Línea TITSA 023. Salida desde Estación de guaguas de Tacoronte.</tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeLaArena">
+      <tdt:ows_LinkTitle>Playa de La Arena</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeLaArena">
+            <geo:lat>28.35394230526438</geo:lat>
+            <geo:long>-16.369667172257323</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38530</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avenida de la Constitución</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 50 08 00</tdt:ows_Telefono>
+      <tdt:ows_Fax>922 50 00 08</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.candelaria.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-25 12:52:00</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Playa que se extiende de forma longitudinal 800 metros aproximadamente. Tiene arena negra fina que alterna en algunas zonas con grava o callaos de granulometría pequeña. Presenta un pequeño charco artificial realizado con piedras de la zona en su parte septentrional.  Otros: La zona más septentrional a diferencia del resto, tiene papeleras, cartel de prohibido perros, bandera de señalización y flotadores de salvamento. Está próxima a aparcamientos y zonas comerciales de ocio y restauración. </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Candelaria</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Adaptada (discapacitados),Arena,Callaos,Parking,Policia,Socorrismo,Teléfono,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/2º PREMIO 2008 (Carlos Doval).jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Niños</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>800 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_ComoLlegarEspanol>En guagua desde Santa Cruz las líneas 122, 123,124, 131, 120, 121</tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeElAlcalde">
+      <tdt:ows_LinkTitle>Playa de El Alcalde</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeElAlcalde">
+            <geo:lat>28.355906161591705</geo:lat>
+            <geo:long>-16.36947637787671</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38530</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avda. de la Constitución</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 50 08 00</tdt:ows_Telefono>
+      <tdt:ows_Fax>922 50 00 08</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.candelaria.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-25 15:48:24</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Descripción: Pequeña playa en forma de herradura, con escolleras en ambos extremos. La parte superior es de tierra, en la zona media presenta callaos de granulometría pequeña y, en la parte inferior, arena. Su longitud está en torno a los 30 metros. Cuenta con jardines en la parte superior. Dispone de papeleras. Está próxima a aparcamientos y a zonas comerciales, de ocio y restauración.  </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Candelaria</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Bar,Callaos,Parking,Policia,Restaurante,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Playa El Alcalde.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Niños</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>30 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_ComoLlegarEspanol>En Bus desde Santa Cruz líneas 122, 120, 121, 123, 124, 131. Desde el sur las guaguas paran en la autopista (111, 115, 116)</tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaElPozo">
+      <tdt:ows_LinkTitle>Playa El Pozo</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaElPozo">
+            <geo:lat>28.357643388829587</geo:lat>
+            <geo:long>-16.368768274696777</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38530</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avda. la Constitución</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 50 08 00</tdt:ows_Telefono>
+      <tdt:ows_Fax>922 50 00 08</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.candelaria.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-25 16:04:55</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Descripción: Playa de callaos de granulometría pequeña. De unos 12 metros de longitud, se encuentra inserta en el refugio pesquero.  Otros: Próxima a un puesto de salvamento marítimo de la Cruz Roja. Hay contenedores, un cartel de prohibidos perros y barcos varados. Existe una hornacina para la Virgen del Carmen. Se encuentra próxima a zonas de ocio y restauración. </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Candelaria</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Callaos,Restaurante,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Playa El Pozo.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Niños</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>12 metros</tdt:ows_LongitudPlaya>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaLaHornilla">
+      <tdt:ows_LinkTitle>Playa La Hornilla</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaLaHornilla">
+            <geo:lat>28.360117000291282</geo:lat>
+            <geo:long>-16.36694437256665</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38530</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>C/ La PIscina, Candelaria</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 50 08 00 </tdt:ows_Telefono>
+      <tdt:ows_Fax>922 50 00 08</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.candelaria.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-25 16:13:39</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>Descripción: Pequeño paseo marítimo con zonas aptas para el baño. Cuando hay bajamar aparece una pequeña playa de fina arena negra en la parte superior. Cuenta con varios puntos de acceso al agua.  Otros: Dispone de papeleras y contenedores de basura, así como de zonas ajardinadas </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Candelaria</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Arena,Callaos,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Playa La Hornilla.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Niños</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadePuntaLarga">
+      <tdt:ows_LinkTitle>Playa de Punta Larga</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadePuntaLarga">
+            <geo:lat>28.368387129941308</geo:lat>
+            <geo:long>-16.362084209831664</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38530</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avda. Marítima, Punta Larga</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 50 08 00</tdt:ows_Telefono>
+      <tdt:ows_Fax>922 50 00 08</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.candelaria.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-05-25 16:51:13</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>La nueva zona de baño de Punta Larga tiene rampas de entrada y una pasarela de madera que discurre en paralelo al paseo marítimo.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Candelaria</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Adaptada (discapacitados),Arena,Aseos,Bar,Callaos,Duchas,Restaurante,Socorrismo,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Nueva Playa de Punta Larga.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Niños</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayalaArena">
+      <tdt:ows_LinkTitle>Playa la Arena</tdt:ows_LinkTitle>
+      <tdt:ows_Zona>Sur</tdt:ows_Zona>
+      <tdt:ows_CodigoPostal>38683</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Av marítima, playa la arena</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922860348</tdt:ows_Telefono>
+      <tdt:ows_Fax>922860348</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.santiagodelteide.es</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-06-08 13:45:55</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Playa natural de arena negra volcánica, situada en la costa de Puerto Santiago, ha sido galardonada consecutivamente con la bandera azul de los mares limpios de Europa desde 1988 hasta hoy, por la calidad de sus aguas, , accessibilidad y servicios que ofrece al bañista.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_DescripcionIngles>A black sand beach situated on the coast of Puerto Santiago, awarded an european blue flag for 24 consecutive years(1988)</tdt:ows_DescripcionIngles>
+      <tdt:ows_DescripcionAleman>Es handelt sich um einen Strand mit schwarzem Sand, der an der Küste von Puerto Santiago liegt. 24 aufeinander folgende Jahre lang ist ihm die von Europa vergebene blaue Flagge für reine Gewässer verliehen worden (1988)</tdt:ows_DescripcionAleman>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Email>turismo@santiagodelteide.es</tdt:ows_Email>
+      <tdt:ows_Municipio>Santiago del Teide</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Adaptada (discapacitados),Arena fina,Aseos,Bandera Azul,Duchas,Hamacas,Parking,Policia,Restaurante,Sillas anfibias,Socorrismo,Sombrillas,Teléfono,Vestuarios,Vigilante,</tdt:ows_Categorias>
+      <tdt:ows_Recomendado>Accesibilidad</tdt:ows_Recomendado>
+      <tdt:ows_DescripcionRuso>Il s´agit d´une plage de sable noir, qui se trouve sur la côte de Puerto Santiago. Pendant 24 années d´affilée, elle a mérité le pavillon bleu pour les eaux limpi des décerné par l ¨Europe (1988)</tdt:ows_DescripcionRuso>
+      <tdt:ows_DescripcionItaliano>Spiaggia di sabbia nera situata lungo la costa di Puerto Santiago, insignita per 24 anni consecutivi con la bandiera azzurra dei mari  pulitid´Europa</tdt:ows_DescripcionItaliano>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>178 m</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>100 m</tdt:ows_AnchoPlaya>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadelosGuiosoArgel">
+      <tdt:ows_LinkTitle>Playa de los Guios o Argel</tdt:ows_LinkTitle>
+      <tdt:ows_Zona>Sur</tdt:ows_Zona>
+      <tdt:ows_CodigoPostal>38683</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>C/ los Guios, los Gigantes</tdt:ows_Direccion>
+      <tdt:ows_Telefono>922 86 03 48</tdt:ows_Telefono>
+      <tdt:ows_Fax>922 86 03 48</tdt:ows_Fax>
+      <tdt:ows_Web>http://www.santiagodelteide.org</tdt:ows_Web>
+      <tdt:ows_FechaActualizacion>2011-06-08 13:51:18</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Playa junto al acantilado y al muelle de los Gigantes.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Email>turismo@santiagodelteide.es</tdt:ows_Email>
+      <tdt:ows_Municipio>Santiago del Teide</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Arena fina,Aseos,Bar,Duchas,Hamacas,Restaurante,Socorrismo,Sombrillas,Vigilante,</tdt:ows_Categorias>
+      <tdt:ows_Recomendado>Familias</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>140 m</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>40 m</tdt:ows_AnchoPlaya>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadelCamis%C3%B3n">
+      <tdt:ows_LinkTitle>Playa del Camisón</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadelCamis%C3%B3n">
+            <geo:lat>28.0639452</geo:lat>
+            <geo:long>-16.730575600000065</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38660</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa de Las Américas</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 15:53:14</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol> Ubicada en una de las zonas más transitadas de Playa de Las Américas, la Playa del Camisón brinda a sus bañistas sol y relax.  Localizada frente a complejos hoteleros de primer orden, esta playa se ha consolidado como una de las más importantes del municipio.  Bordeada por el paseo marítimo, dispone de todo tipo de servicios y comodidades para los turistas. El especial cuidado que se ha llevado a cabo en esta playa ha hecho que en 2010 la Fundación Europea de Educación Ambiental le concediese la Bandera Azul por la calidad de sus aguas, gestión medioambiental y cuidado del entorno, así como los servicios prestados para todo tipo de bañistas. En las cercanías se encuentra una agradable terraza donde se puede disfrutar relajadamente de cualquier aperitivo junto al mar. Por las inmediaciones del paseo marítimo se puede contemplar una panorámica inmejorable de la vecina isla de La Gomera. Longitud: 350 metros. Anchura: 40 metros. Grado de ocupación: Alto Ubicación física: En el centro de Playa de Las Américas, frente al paseo marítimo y complejos hoteleros de exclusividad.  Accesos a la playa: para peatones. Parking cercanos para vehículos. Proximidad al núcleo turístico: Sí. Tipo de playa: Artificial Condiciones de baño: Aguas tranquilas Morfología: Arena   Servicios prestados:   - Alquiler de Hamacas y sombrillas - Duchas / Lavapiés - Papeleras - Baños - Servicio de limpieza - Actividades acuáticas (Jetsky, motos acuáticas,  parascending, pedales, banana) -     Seguridad policial Galardones:  2010: Bandera Azul otorgada por la FEEE (Fundación Europea para la Educación ambiental) Datos históricos:    De sus llanuras se extrajo la arena y el callao con que fabricar viviendas, acequias, charcas, etc., y de su litoral la piedra caliza que después se transformaría en cal en los hornos de la zona. En la Punta de El Camisón, a los pies de El Cabezo Grande existieron unas salinas hasta mediados de los años 80: las Salinas de El Gincho. Importante entorno donde recababan, para descansar, muchas aves migratorias y de las que se abastecían los pescadores para el salado y jareado del pescado. En este paraje, casi desértico, se llegó a plantar cereales, tomates y algodón y existieron salones para guardar las herramientas y la sal que se extraía de las salinas, y dos hornos de cal. Esta zona reunía las condiciones perfectas, según numerosas autoridades e instituciones, para la construcción del aeropuerto de Tenerife, pero, lo lejos que estaba Los Cristianos de la capital, la falta de carretera en condiciones y otras carencias hicieron que se frustrara el proyecto.   Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Américas Tel: 922 797 668  Oficina de Información Turística Playa de Las Vistas Tel: 922 787 011 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Arena,Aseos,Bandera Azul,Bar,Chiringuitos,Hamacas,Policia,Sombrillas,</tdt:ows_Categorias>
+      <tdt:ows_ColorArena>Gris</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>350 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>40 metros</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Desde la autopista TF 1 en dirección Playa de Las Américas frente al paseo marítimo Francisco Andrade Fumero y cercanías de la zona comercial por excelencia conocida como ‘La Milla de Oro’. Disponibilidad de señalización viaria. En transporte público regular: Líneas 473, 416, 467, 417, 477. </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayasDeportivas%3APlayaHonda%3A%E2%80%98LasPalmeras%E2%80%99%2C%E2%80%98LaIzquierda%E2%80%99%E2%80%98ElMedio%E2%80%99LaMonta%C3%B1eta%E2%80%98ElConquistador%E2%80%99o%E2%80%98LaDerecha%E2%80%99ElGuincho%3A%E2%80%98LaPiscina%E2%80%99ElDedoElCabezoGrande%3A%E2%80%98Salinas%E2%80%99CharcodelMarqu%C3%A9s%3A%E2%80%98Fitenia%E2%80%99">
+      <tdt:ows_LinkTitle>Playas Deportivas: Playa Honda: ‘Las Palmeras’, ‘La Izquierda’‘El Medio’La Montañeta‘El Conquistador’ o ‘La Derecha’El Guincho: ‘La Piscina’El DedoEl Cabezo Grande: ‘Salinas’Charco del Marqués: ‘Fitenia’</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayasDeportivas%3APlayaHonda%3A%E2%80%98LasPalmeras%E2%80%99%2C%E2%80%98LaIzquierda%E2%80%99%E2%80%98ElMedio%E2%80%99LaMonta%C3%B1eta%E2%80%98ElConquistador%E2%80%99o%E2%80%98LaDerecha%E2%80%99ElGuincho%3A%E2%80%98LaPiscina%E2%80%99ElDedoElCabezoGrande%3A%E2%80%98Salinas%E2%80%99CharcodelMarqu%C3%A9s%3A%E2%80%98Fitenia%E2%80%99">
+            <geo:lat>28.0639452</geo:lat>
+            <geo:long>-16.730575600000065</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38660</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa de Las Américas</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-11-25 20:01:41</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>En un enclave natural incomparable Arona brinda una amplia gama de playas para la práctica de surf, donde expertos y principiantes podrán descubrir la particularidad de este deporte. Más de un kilómetro y medio de playas para  surfear se despliegan ante el visitante, sin duda un espectáculo durante todo el año.    En estas playas deportivas el amante del surf encontrará distintos tipo de olas, aptas para todos. Escuelas especializadas en este deporte brindan clases para distintos niveles, así como alquiler de equipos y tablas.    Durante años consecutivos se han realizado campeonatos de renombre en las playas para la práctica de surf que Arona oferta en este litoral de Playa de Las Américas, siendo este lugar el más óptimo para surfear en el sur de la isla de Tenerife.                  Es usual que los asiduos a este deporte se desplacen hasta este punto de la isla para la práctica de surf en busca del tipo de olas que el  municipio de Arona ofrece. Para muchos, es idílico poder zambullirse sobre la tabla bajo el sol de invierno que caracteriza este municipio.    Con la isla de la Gomera como telón de fondo, un paseo por esta zona del litoral puede resultar realmente placentero. Desde este lugar, donde existen terrazas  ‘chill out’ pensadas para el disfrute del buen tiempo todo el año, se pueden admirar los mejores atardeceres del sur de Tenerife.     Divagando entre las esculturas ubicadas en esta zona del paseo marítimo, el visitante encontrará un rincón  de la isla, donde el Atlántico, olas e incomparables atardeceres, convierten este lugar en un paraje singular en el municipio de Arona Longitud: 1,6 Kilómetros de extensión Grado de Ocupación: Medio Ubicación Física: Playa de Las Américas Proximidad al núcleo turístico: Sí Accesos a la playa: para peatones y vehículos. Parking Público en las cercanías. Tipo de playa: Natural Condiciones de baño: Oleaje fuerte Morfología: Rocas   Servicios Prestados:  -Papeleras -Seguridad Policial -Servicio de Limpieza   Olas y Picos en las Playas Deportivas:  Playa Honda: ‘Las Palmeras’, ‘La Izquierda’ ‘El Medio’ La Montañeta ‘El Conquistador’ o ‘La Derecha’ El Guincho: ‘La Piscina’ El Dedo El Cabezo Grande: ‘Salinas’ Charco del Marqués: ‘Fitenia’     El litoral costero de Playa de Las Américas es perfecto para los amantes de surf y bodyboard. Aquí se encuentran picos bien definidos en la zona de Palmeras, El Medio, Playa Honda, La Derecha, El Conquistador, La Piscina, El Dedo y Fitenia.    Todas presentan unas condiciones perfectas lo cual permite la práctica de este deporte tanto para principiantes como deportistas con un nivel más avanzado.    Las olas de este enclave se caracterizan por ser de ‘reef’ rocoso (comúnmente denominadas como bajas). Esto hace que se pueda formar una ola con características únicas, formando una ola con largo recorrido e incluso tubos. Éstas son muy valoradas por surfistas, pues nada tienen que envidiar a las de otros lugares del mundo.     En los años 90 la ola de ‘Palmeras’ quedó entre las diez mejores olas de Europa, dándole un merecido reconocimiento a nivel nacional e internacional, sumado a la sucesión de múltiples campeonatos de Surf de distintas categorías llevados a cabo en este lugar.    Las condiciones en invierno son de olas perfectas que rondan el metro de altura constante, con fuerza noroeste, llegando a rachas de temporal superando los dos metros de altura.     En Playa de Las Américas se puede presumir de un clima perfecto en nuestras playas, con temperaturas agradables durante todo el año. No en vano la temperatura del agua ronda los 19º. Un lujo que permite a los amantes de este deporte surfear con una licra de neopreno o para los más frioleros un 3/2 mm de traje de neopreno. Todo ello permite el baño prolongado durante más de dos horas sin sentir frío, considerándose impensable en Europa durante los meses de invierno.     En verano en las playas se disfruta del sol estival, con un mínimo de medio metro de olas ‘glassi’, con fuerza sur constante. No se requiere traje de neopreno, pues la temperatura del agua supera los 20º.    Las escuelas para la práctica de surf ofrecen clases de iniciación para el disfrute de las olas de Playa de Las Américas. En una sucesión de más de 1.5 kilómetros de costa encontrarás  olas consideradas de las mejores del mundo. Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Américas Tel: 922 797 668 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Policia,</tdt:ows_Categorias>
+      <tdt:ows_Recomendado>Deportes</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>1,6 Kilómetros de extensión</tdt:ows_LongitudPlaya>
+      <tdt:ows_ComoLlegarEspanol>Ubicación en Playa de Las Américas, Paseo Marítimo Francisco Andrade Fumero. Frente a Hotel Villa Cortés y Hotel Conquistador. En transporte público regular: Líneas 473, 416, 467, 417, 477. </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeLasVistas">
+      <tdt:ows_LinkTitle>Playa de Las Vistas</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeLasVistas">
+            <geo:lat>28.050039</geo:lat>
+            <geo:long>-16.717233999999962</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38650</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa de Los Cristianos</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 16:05:24</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>Sin duda alguna la más extensa del municipio de Arona, la Playa de Las Vistas se prolonga a lo largo de casi 1 kilómetro de longitud como nexo entre Playa de Las Américas y Los Cristianos.  Considerada como uno de los puntos de interés de la isla de Tenerife, esta playa se caracteriza por su variedad, animación y accesibilidad para todo tipo de bañistas.    La Playa de las Vistas se despliega ante el visitante, teniendo cabida para el relax, un clima incomparable,  actividades acuáticas de distinta índole, así como un baño en aguas limpias y tranquilas.    No en vano, se considera una playa para todos, donde turistas y residentes disfrutan del sol y el mar durante las cuatro estaciones.  Jóvenes y mayores, familias y parejas, encontrarán en la Playa de Las Vistas la playa perfecta para sus vacaciones.      Considerada como una de las de mayor renombre de Tenerife no sólo por sus características, sino por ser pionera en accesibilidad en Canarias, la Playa de las Vistas es una de las dos playas más visitadas de España por personas con movilidad reducida y ha sido galardonada con la distinción temática “Accesibilidad en Playas”.    Esta playa totalmente accesible es un lugar ideal para turistas con movilidad reducida gracias a sus  instalaciones sin barreras, todo tipo de servicios adaptados y la tranquilidad de sus aguas. Todo ello vinculado al excelente clima del municipio a lo largo de todo el año.    Durante varios años ha sido galardonada con la Bandera Azul de la Unión Europea por sus excelentes características y servicios prestados.   Longitud: 925 metros Anchura: 80 metros. Grado de ocupación: alto. Ubicación Física: Paseo Marítimo Playa de Las Vistas. Limita con Playa de Las Américas por el paseo marítimo. Cercana a la Estación Marítima de Los Cristianos. Proximidad al núcleo turístico: Sí Accesos a la playa: para peatones. Aparcamiento gratuito. Parking privados en las inmediaciones. Localización acceso para vehículos de emergencias: Sí. Tipo de playa: artificial Condiciones de baño: aguas tranquilas Morfología: arena  Servicios prestados:  -Alquiler de hamacas y sombrillas -Pasarelas -Duchas / Lavapiés -Papeleras -Baños -Servicio de limpieza -Contenedores para reciclaje de residuos -Socorrismo, vigilancia y equipos de salvamento - Área accesible para turistas con movilidad reducida. -Actividades acuáticas (Jetsky, motos acuáticas, parascending,  pedales, banana) -Seguridad Policial  -Webcam de la Playa de Las Vistas  en www.arona.travel   Área accesible en la Playa de Las Vistas:  Arona es uno de los destinos vacacionales con mayor número de turistas con movilidad reducida del mundo. La Playa de Las Vistas ofrece al visitante un área accesible donde podrá disfrutar de los siguientes servicios:   - Estacionamiento próximo a la playa con plazas reservadas. -Señalización de itinerario accesible, playa accesible y servicios. -Itinerario Accesible. -Rampas de acceso –6%. -Sillas anfibias -Muletas anfibias -Grúa hidráulica  -Pasarelas fijas de madera -Pasarelas enrollables -Zona de descanso con sombrillas -Área de vigilancia -Aseos adaptados -Duchas adaptadas  Servicio de la Silla Acuática: La empresa de Salvamento Marítimo ubicada en la playa realiza el servicio de baño adaptado de forma gratuita   • Servicio diario (todo el año). • Horario de 10 a 17h.                      10 a 18 h. de Julio a Septiembre  • Reservas: Directamente (el mismo día) en el puesto de vigilancia de la Zona Accesible.  Los grupos deben reservar el servicio de la silla acuática por vía telefónica: 608 843 561  Información útil: Es obligatorio que niños o personas con discapacidad psíquica estén acompañados por un adulto.  Galardones:   Desde el año 1999  Bandera Azul otorgada por la FEEE (Fundación Europea para la Educación ambiental)    Distinción Temática “Accesibilidad en Playas” por la Asociación de Educación Ambiental y del Consumidor (ADEAC).   Distinción Temática en Información y Educación Ambiental concedido en el 2010 gracias al desarrollo de diferentes campañas de concienciación y de limpieza del litoral  todo el municipio. Playa de Las Vistas, fruto de las recientes obras de remodelación y ampliación tomó su nombre de la pequeña playa más próxima a San Telmo y que los vecinos llamaban “Vistas del Camisón”, uniéndose a la “Playa de la Carnada” situada delante de Vintersol  Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Vistas Tel: 922 787 011 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Area recreativa,Arena fina,Aseos,Bandera Azul,Bar,Chiringuitos,Dique,Duchas,Hamacas,Parking,Plataforma,Policia,Restaurante,Sillas anfibias,Socorrismo,Sombrillas,Teléfono,Vestuarios,Vigilante,</tdt:ows_Categorias>
+      <tdt:ows_Recomendado>Accesibilidad</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>925 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>80 metros</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Desde autopista TF1 en dirección Los Cristianos hasta la estación marítima. Seguir señalización viaria. En transporte público: líneas 110, 111, 473. 416, 467, 477, 417, 472, 418.  </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadelosCristianos">
+      <tdt:ows_LinkTitle>Playa de los Cristianos </tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadelosCristianos">
+            <geo:lat>28.050039</geo:lat>
+            <geo:long>-16.717233999999962</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38650</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa de Los Cristianos</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 16:10:32</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>   La Playa de los Cristianos se considera una de las playas históricas del municipio de Arona. Ubicada en pleno centro neurálgico de Los Cristianos conserva aún la esencia del que antaño fue un pequeño poblado marinero, dando  paso posteriormente a uno de los núcleos turísticos más conocidos de Tenerife. Distintas embarcaciones pesqueras hacen hoy en día que permanezca la esencia del pueblo de pescadores que aún en la actualidad se funde con el enclave turístico de Los Cristianos, lo que le confiere cierta particularidad donde se mezclan pasado y presente.  Longitud: 400 metros Anchura: 82 metros Grado de ocupación: Alto Ubicación Física: Junto a la zona peatonal comercial de Los Cristianos, frente al paseo marítimo. En las cercanías de la explanada de la estación marítima. Proximidad al núcleo turístico: Sí Accesos a la playa: para peatones. Parking privado para vehículos en las inmediaciones. Tipo de playa: Natural Condiciones de baño: aguas tranquilas Morfología: Arena.    Servicios prestados:  -Alquiler de hamacas y sombrillas -Duchas / Lavapiés -Papeleras -Baños -Servicio de limpieza -Contenedores para reciclaje de residuos -Socorrismo, vigilancia y equipos de salvamento -Escuela de Vela Datos históricos:     La Playa de Los Cristianos está en gran manera unida al comienzo del turismo en el sur de Tenerife. En el año 1957 un grupo de jóvenes suecos con movilidad reducida, originada por problemas reumáticos, llegó al poblado marinero de Los Cristianos después de haber recorrido medio mundo. En este lugar, gracias a su agradable clima y a su playa, mejoró notablemente su estado de salud. La llegada de estos visitantes escandinavos dio lugar al nacimiento del turismo en el municipio de Arona. Desde entonces hasta la actualidad, Los Cristianos se ha convertido en un reclamo turístico para visitantes de distintas nacionalidades a lo largo del año. Gracias a su clima benéfico y las óptimas condiciones de su costa, miles de turistas  buscan en Playa de Los Cristianos y Playa de Las Américas el sol de invierno tan anhelado en sus países en los meses de frío. Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Vistas Tel: 922 787 011 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Arena,Aseos,Bar,Chiringuitos,Duchas,Hamacas,Parking,Policia,Restaurante,Teléfono,</tdt:ows_Categorias>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>400 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>82 metros</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Desde autopista TF1 en dirección Los Cristianos hasta la estación marítima. Seguir señalización viaria. En transporte público: líneas 110, 111, 473. 416, 467. 477, 417, 472, 418, 343.                                      Parada más cercana: estación de guaguas de Los Cristianos </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadelCallao">
+      <tdt:ows_LinkTitle>Playa del Callao </tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadelCallao">
+            <geo:lat>28.0396244</geo:lat>
+            <geo:long>-16.708548599999972</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38650</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa del Callao. Playa de Los Cristianos</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 16:15:33</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>   La Playa del Callao ofrece al bañista tranquilidad y relax. En un enclave sin aglomeraciones el visitante podrá disfrutar del mar en su estado más puro. En esta playa, alejada del bullicio, el turista encontrará un paraje en el que el Espacio Natural Protegido de Guaza tiene sus faldas.     Una de las principales características de la Playa del Callao es que dispone de un área nudista. La combinación de arena y piedras le confieren un aspecto natural, y sus aguas limpias a mar abierto hacen de la Playa del Callao un espacio donde el disfrute del sol y el mar está garantizado. Longitud: 420 m. Anchura: 30 m.  Grado de ocupación: bajo Ubicación física: Final de la Avenida Juan Carlos I, dejando atrás el paseo marítimo. Proximidad al núcleo turístico: Semiurbana. Accesos a la playa: Para peatones. Aparcamiento público en los alrededores. Tipo de Playa: Natural Vegetación: Sí Condiciones de Baño: Aguas tranquilas Morfología: ‘Callaos’ (Piedras redondas semiplanas) Zona nudista: Si Servicios prestados:   -Papeleras -Seguridad policial -Servicio de limpieza  Esta playa está tradicionalmente vinculada a la pesca y el marisqueo de burgados y lapas  </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Nudista,</tdt:ows_Categorias>
+      <tdt:ows_Recomendado>LGTB</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>420 m</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>30 m</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Salida de la autopista TF1 en dirección Los Cristianos. Seguir siempre recto hasta el final de la Avenida Juan Carlos I. Junto al Arona Gran Hotel.  En transporte público: líneas 110, 111, 473. 416, 467.                                      Parada más cercana: Estación de Guaguas de Los Cristianos </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeLasGalletas">
+      <tdt:ows_LinkTitle>Playa de Las Galletas</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeLasGalletas">
+            <geo:lat>28.0086864</geo:lat>
+            <geo:long>-16.659929000000033</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_Direccion>Playa de Las Galletas</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 16:19:07</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol> A 15 km de los núcleos turísticos de Playa de Las Américas y Los Cristianos se encuentra el enclave costero de Las Galletas. Su costa, abastecimiento de pescadores ayer y hoy, es transitada por gente del lugar convirtiendo la Playa de Las Galletas en una de las de mayor ambiente local del municipio de Arona.     El mercado de pescado, y la Marina del Sur, le confieren un peculiar aspecto marinero. Es  frecuente encontrar pescadores realizando su actividad diaria, tejiendo redes o habilitando sus barcas para el ejercicio cotidiano de la pesca.     Sin duda alguna la Playa de Las Galletas muestra al visitante un claro ejemplo del más puro ambiente local, donde el turismo se mezcla con los lugareños durante todo el año. Longitud: 420 metros Anchura: 25 metros Grado de ocupación: medio Zona de fondeo: dispone de pantalanes y zona de fondeo para barcos. Ubicación física: En una de las principales vías de entrada al núcleo costero de Las Galletas. Proximidad al núcleo turístico: Sí. Accesos a la playa: para peatones. Aparcamiento público en las inmediaciones. Tipo de playa: natural Condiciones de baño: Aguas tranquilas Morfología: Playa mixta de grava y arena.   Servicios prestados:  -Alquiler de hamacas -Lavapiés -Papeleras -Baños -Servicio de limpieza -Torre de vigilancia -Webcam de la Playa de Las Galletas  en www.arona.travel  Datos históricos:   Las Galletas nace como núcleo vinculado a la pesca y al marisqueo en sus bellos  bahíos. La Playa de Las Galletas es aquella en la que los pescadores varaban sus barcos y sobre los negros ‘callaos’, sus mujeres clasificaban el pescado, dispuestos en cajas o cestas  para su venta.    En la orilla de la Playa de Las Galletas se levantaba “El Salón”, hoy desaparecido pero aún presente en la memoria de sus vecinos. El Salón, era una construcción de principios del siglo XX, y está relacionado al cultivo del tomate. En el Salón se almacenaban los tomates a la espera de ser trasladados en barcos de cabotaje a Santa Cruz, capital de la isla,  para su posterior exportación.  Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Galletas Tel: 922 730 133 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>420 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>25 metros</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Salida 25 de la autopista TF1 en dirección Las Galletas.  En transporte público: Líneas 115 desde Santa Cruz, 467 y 470 desde Los Cristianos-Playa de Las Américas y Golf del Sur. </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaCharcodelba%C3%B1o">
+      <tdt:ows_LinkTitle>Playa Charco del baño </tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaCharcodelba%C3%B1o">
+            <geo:lat>28.0086864</geo:lat>
+            <geo:long>-16.659929000000033</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_Direccion>Playa de Las Galletas</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-06-16 16:24:21</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>Esta pequeña playa se encuentra a continuación de la Playa de Las Galletas, separadas por el muelle embarcadero de esta localidad.     Charco del baño se caracteriza por ser una playa con carácter acogedor, frecuentada mayormente por lugareños, donde se respira aún el olor a sal y tiempos pasados. El  descanso está garantizado en este pequeño enclave bordeado por un pequeño paseo marítimo donde variedad de restaurantes ofrecen productos de la tierra y el mar. Terrazas para el disfrute del buen tiempo y la comodidad se encuentran en primera línea de esta singular playa.   Longitud: 240 metros Anchura: 16 metros Grado de ocupación: Bajo Ubicación física: en el paseo marítimo de Las Galletas. Junto al muelle y la rambla. Proximidad al núcleo turístico: Sí Accesos a la playa: para peatones. Aparcamiento público en vías de acceso al pueblo. Tipo de playa: Natural Condiciones de baño: Oleaje moderado Morfología: Mixta (Arena y rocas)    Servicios Prestados:  Alquiler de hamacas Duchas Papeleras Baños Servicio de limpieza Rampas de acceso  Datos Históricos:  El Charco del Baño ha acogido tradicionalmente el trasiego de vecinos y visitantes. La vinculación de los pescadores del lugar y sus familias con sus bahíos es intensa pues de ellos obtienen  sustento y como no, momentos  de ocio.    Oficina de Información Turística más cercana:  Oficina de Información Turística Playa de Las Galletas Tel: 922 730 133 </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Arona</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Bar,Chiringuitos,Duchas,Hamacas,</tdt:ows_Categorias>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>240 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>16 metros</tdt:ows_AnchoPlaya>
+      <tdt:ows_ComoLlegarEspanol>Salida 25 de la autopista TF1 en dirección Las Galletas.  En transporte público: Líneas 115 desde Santa Cruz, 467 y 470 desde Los Cristianos-Playa de Las Américas y Golf del Sur.  </tdt:ows_ComoLlegarEspanol>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaJard%C3%ADn">
+      <tdt:ows_LinkTitle>Playa Jardín</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaJard%C3%ADn">
+            <geo:lat>28.4110894</geo:lat>
+            <geo:long>-16.560798400000067</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38400</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avenida Francisco Afonso Carrillo, Puerto de la Cruz</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2011-09-15 15:28:44</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Playa artificial, construida en 1993. Diseñada por César Manrique. Cuenta con  jardines con palmeras, cocoteros, plataneras y otros árboles, la superficie ajardinada de la playa supera los 17.000 metros cuadrados.   </tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Puerto de la Cruz (El)</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Adaptada (discapacitados),Arena,Aseos,Bar,Duchas,Piedras,Vestuarios,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/69747_129079037151127_119349914790706_185351_4153208_n.jpg</tdt:ows_Image>
+      <tdt:ows_Recomendado>Accesibilidad</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>700 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>50 metros</tdt:ows_AnchoPlaya>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadePlayaSanJuan">
+      <tdt:ows_LinkTitle>Playa de Playa San Juan</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadePlayaSanJuan">
+            <geo:lat>28.181263</geo:lat>
+            <geo:long>-16.817625700000008</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38687</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Playa San Juan</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2014-02-14 11:37:25</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Guía de Isora</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Acceso en barco,Alquiler Equipo deportivo,Area recreativa,Arena,Aseos,Bandera Azul,Bar,Duchas,Hamacas,Parking,Restaurante,Sombrillas,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/IMG_0867.JPG</tdt:ows_Image>
+      <tdt:ows_Recomendado>Accesibilidad</tdt:ows_Recomendado>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayaAbama">
+      <tdt:ows_LinkTitle>Playa Abama</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayaAbama">
+            <geo:lat>28.1709783</geo:lat>
+            <geo:long>-16.796781399999986</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38687</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Crta. General Tf 47, Playa San Juan (Hotel Abama)</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2014-02-14 11:31:42</tdt:ows_FechaActualizacion>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Guía de Isora</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Arena,Arena fina,Aseos,Duchas,Hamacas,Restaurante,Sombrillas,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/abama.jpg</tdt:ows_Image>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeAlcal%C3%A1">
+      <tdt:ows_LinkTitle>Playa de Alcalá</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeAlcal%C3%A1">
+            <geo:lat>28.2026563</geo:lat>
+            <geo:long>-16.828296799999976</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38686</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Alcalá</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2014-02-14 11:32:12</tdt:ows_FechaActualizacion>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Guía de Isora</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Acceso a pie,Arena,Callaos,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/IMG_1295.JPG</tdt:ows_Image>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadelasTeresitas">
+      <tdt:ows_LinkTitle>Playa de las Teresitas</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadelasTeresitas">
+            <geo:lat>28.508522359508084</geo:lat>
+            <geo:long>-16.187152862548828</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38003</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>San Andrés</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2012-05-06 13:11:38</tdt:ows_FechaActualizacion>
+      <tdt:ows_Situacion>Abierto</tdt:ows_Situacion>
+      <tdt:ows_DescripcionEspanol>Situada en el pueblo de San Andrés. Hasta su transformación estaba dividida en tres partes bien diferenciadas que poseían nombres distintos: Tras la Arena que era la parte inicial, Los Moros, en el medio y por último la zona comprendida por el barranco de Las Teresas. Sobre la playa de arena negra, se echó arena blanca traída del desierto del Sáhara, y se construyó un dique rompeolas para evitar el oleaje.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Santa Cruz de Tenerife</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Adaptada (discapacitados),Area recreativa,Arena fina,Aseos,Chiringuitos,Dique,Duchas,Hamacas,Parking,Policia,Restaurante,Socorrismo,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Playa de las Teresitas.jpg</tdt:ows_Image>
+      <tdt:ows_ColorArena>Dorada</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Tranquilo</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+      <tdt:ows_LongitudPlaya>1.300 metros</tdt:ows_LongitudPlaya>
+      <tdt:ows_AnchoPlaya>80 metros</tdt:ows_AnchoPlaya>
+   </places:Beach>
+   <places:Beach rdf:about="http://turismo-de-tenerife.org/resource/playas/PlayadeMarti%C3%A1nez">
+      <tdt:ows_LinkTitle>Playa de Martiánez</tdt:ows_LinkTitle>
+      <tdt:ows_Georeferencia>
+         <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/playas/PlayadeMarti%C3%A1nez">
+            <geo:lat>28.41778677597734</geo:lat>
+            <geo:long>-16.54163360595703</geo:long>
+         </geo:Point>
+      </tdt:ows_Georeferencia>
+      <tdt:ows_CodigoPostal>38400</tdt:ows_CodigoPostal>
+      <tdt:ows_Direccion>Avda. de Colón</tdt:ows_Direccion>
+      <tdt:ows_FechaActualizacion>2013-03-09 13:44:16</tdt:ows_FechaActualizacion>
+      <tdt:ows_DescripcionEspanol>Es la zona más tradicional de baño del Puerto de la Cruz y centro del boom turístico que experimentó la ciudad en la década de los 60 del siglo XX. También llamada La Barranquera, por ser la desembocadura del barranco de Martiánez, es una playa natural de arena negra volcánica, protegida en parte por una escollera artificial. La denominación de este lugar emblemático de la ciudad es una derivación popular del nombre del propietario original de estos terrenos costeros: Martín Yanes.</tdt:ows_DescripcionEspanol>
+      <tdt:ows_TipoActividad>Playas</tdt:ows_TipoActividad>
+      <tdt:ows_Actividad>Naturaleza y Monumentos</tdt:ows_Actividad>
+      <tdt:ows_Municipio>Puerto de la Cruz (El)</tdt:ows_Municipio>
+      <tdt:ows_Categorias>Arena,Dique,</tdt:ows_Categorias>
+      <tdt:ows_Image>../PublishingImages/Playa Martiánez.jpg</tdt:ows_Image>
+      <tdt:ows_ColorArena>Negra</tdt:ows_ColorArena>
+      <tdt:ows_TipoOleaje>Moderado</tdt:ows_TipoOleaje>
+      <tdt:ows_Dificultad>Bajo</tdt:ows_Dificultad>
+      <tdt:ows_Peligrosidad>Bajo</tdt:ows_Peligrosidad>
+   </places:Beach>
+
+</rdf:RDF>
