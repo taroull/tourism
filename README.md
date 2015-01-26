@@ -2,16 +2,16 @@
 
 ### Tourism API operations list ###
 
-* `GET` **/resource?uri=**[alphanumeric]
-* `GET` **/dbpediaResource?name=**[alphanumeric]
-* `GET` **/accommodation?name=**[alphanumeric]
-* `GET` **/gastro?name=**[alphanumeric]
-* `GET` **/municipalityInfo?uri=**[alphanumeric]
-* `GET` **/municipalityPhotos?uri=**[alphanumeric]
-* `GET` **/photosAround?uri=**[alphanumeric]**&radius=**[float]
-* `GET` **/placesNear?uri=**[alphanumeric]**&radius=**[float]
-* `GET` **/wheatherProps?uri=**[alphanumeric]**
-* `GET` **/tourismOfficeResource?name=**[alphanumeric]**
-* `GET` **/tourismOfficesAround?uri=**[alphanumeric]**&radius=**[float]
-* `GET` **/beachesAround?uri=**[alphanumeric]**&radius=**[float]*
-* `GET` **/beachResource?name=**[alphanumeric]
+* `GET` **/v1/resource?uri=**[alphanumeric]
+* `GET` **/v1/dbpediaResource?name=**[alphanumeric]
+* `GET` **/v1/accommodation?name=**[alphanumeric]
+* `GET` **/v1/gastro?name=**[alphanumeric]
+* `GET` **/v1/municipalityInfo?uri=**[alphanumeric]
+* `GET` **/v1/municipalityPhotos?uri=**[alphanumeric]
+* `GET` **/v1/photosAround?uri=**[alphanumeric]**&radius=**[float]
+* `GET` **/v1/placesNear?uri=**[alphanumeric]**&radius=**[float]
+* `GET` **/v1/wheatherProps?uri=**[alphanumeric]**
+* `GET` **/v1/tourismOfficeResource?name=**[alphanumeric]
+* `GET` **/v1/tourismOfficesAround?uri=**[alphanumeric]**&radius=**[float]
+* `GET` **/v1/beachesAround?uri=**[alphanumeric]**&radius=**[float]
+* `GET` **/v1/beachResource?name=**[alphanumeric]
