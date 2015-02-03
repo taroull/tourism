@@ -12,8 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.github.jsonldjava.core.JsonLdError;
-import com.github.jsonldjava.core.JsonLdProcessor;
-import com.github.jsonldjava.jena.JenaRDFParser;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
@@ -51,19 +49,19 @@ public class CoreServiceImpl implements CoreService {
 	@Autowired
 	private PlacesService placesService;
 
+	// @Override
+	// public Object retrieve(String uri) throws JsonLdError {
+	//
+	// FileManager fileManager = FileManager.get();
+	// fileManager.addLocatorURL();
+	// Model model = fileManager.loadModel(uri);
+	//
+	// final JenaRDFParser parser = new JenaRDFParser();
+	// return JsonLdProcessor.fromRDF(model, parser);
+	// }
+
 	@Override
 	public Object retrieve(String uri) throws JsonLdError {
-
-		FileManager fileManager = FileManager.get();
-		fileManager.addLocatorURL();
-		Model model = fileManager.loadModel(uri);
-
-		final JenaRDFParser parser = new JenaRDFParser();
-		return JsonLdProcessor.fromRDF(model, parser);
-	}
-
-	@Override
-	public Object retrieve2(String uri) throws JsonLdError {
 
 		TDTResourceType type = Utils.resolveTdtResourceType(uri);
 		switch (type) {

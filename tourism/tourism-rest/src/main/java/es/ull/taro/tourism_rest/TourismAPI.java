@@ -39,25 +39,18 @@ public class TourismAPI {
 
 	@Autowired
 	protected PlacesService placesService;
-	
+
 	@Autowired
 	protected TourismOfficesService tourismOfficesService;
-	
+
 	@Autowired
 	protected AemetService aemetService;
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("resource")
-	public Object getResourceByUri(@QueryParam(value = "uri") String uri) throws Exception {
-		return coreService.retrieve(uri);
-	}
-
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("resource2")
 	public Object getResourceByUri2(@QueryParam(value = "uri") String uri) throws Exception {
-		return coreService.retrieve2(uri);
+		return coreService.retrieve(uri);
 	}
 
 	@GET
@@ -129,14 +122,14 @@ public class TourismAPI {
 	public HashMap<String, String> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
 		return placesService.find(name);
 	}
-	
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("tourismOfficeResource")
 	public HashMap<String, String> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
 		return tourismOfficesService.find(name);
 	}
-	
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("wheatherProps")

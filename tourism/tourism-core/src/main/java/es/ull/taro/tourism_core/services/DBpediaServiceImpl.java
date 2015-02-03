@@ -35,10 +35,10 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		dbpediaQuery.append("PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> ");
 		dbpediaQuery.append("SELECT DISTINCT ?city ");
 		dbpediaQuery.append("WHERE {");
-		dbpediaQuery.append("  ?city      rdf:type dbpedia-owl:PopulatedPlace . ");
-		dbpediaQuery.append("  ?city      rdfs:label ?label .");
-		dbpediaQuery.append("  ?city      dbpedia-owl:country ?country . ");
-		dbpediaQuery.append("  ?country   dbpprop:commonName  \"Spain\"@en. ");
+		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
+		dbpediaQuery.append("  ?city rdfs:label ?label .");
+		dbpediaQuery.append("  ?city dbpedia-owl:country ?country . ");
+		dbpediaQuery.append("  ?country dbpprop:commonName  \"Spain\"@en. ");
 		dbpediaQuery.append("  ?city  dbpedia-owl:postalCode \"").append(postalCode).append("\"@en . ");
 		dbpediaQuery.append("}");
 
@@ -105,9 +105,9 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
-				// FIXME QuerySolution sol = (QuerySolution) results.next();
-				// FIXME Resource resource = sol.getResource("?resource");
-				// FIXME result.add(createGeoResource(resource));
+				QuerySolution sol = (QuerySolution) results.next();
+				Resource resource = sol.getResource("?resource");
+				result.add(new GeoResource(resource.getURI()));
 			}
 		} finally {
 			qe.close();
