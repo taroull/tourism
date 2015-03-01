@@ -3,7 +3,6 @@ package es.ull.taro.tourism_core.services;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
@@ -32,14 +31,14 @@ public class HTOServiceTest {
 
 	@Test
 	public void testFindAccommodations() {
-		HashMap<String, String> accommodations = accommodationService.find("Aguere");
+		List<HTOResource> accommodations = accommodationService.find("Aguere");
 		assertEquals(accommodations.size(), 1);
 		assertEquals(accommodations.get(0), "http://turismo-de-tenerife.org/resource/alojamiento/Aguere");
 	}
 
 	@Test
 	public void testFindGastros() {
-		HashMap<String, String> accommodations = gastroService.find("avencio");
+		List<HTOResource> accommodations = gastroService.find("avencio");
 		assertEquals(accommodations.size(), 1);
 		assertEquals(accommodations.get(0), "http://turismo-de-tenerife.org/resource/restauracion/AVENCIO");
 	}

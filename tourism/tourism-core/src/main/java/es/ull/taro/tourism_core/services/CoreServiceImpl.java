@@ -1,10 +1,12 @@
 package es.ull.taro.tourism_core.services;
 
+import static org.apache.commons.lang.StringUtils.EMPTY;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.jena.riot.RDFDataMgr;
@@ -61,7 +63,7 @@ public class CoreServiceImpl implements CoreService {
 	// }
 
 	@Override
-	public Object retrieve(String uri) throws JsonLdError {
+	public Map<String, String> retrieve(String uri) throws JsonLdError {
 
 		TDTResourceType type = Utils.resolveTdtResourceType(uri);
 		switch (type) {
@@ -144,16 +146,13 @@ public class CoreServiceImpl implements CoreService {
 	}
 
 	@Override
-	public HashMap<String, String> findPlacesNear(String uri, int radiusInMeters) throws IOException {
+	public List<es.ull.taro.tourism_core.domain.Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException {
 
 		TDTResource tdtResource = buildTDTResource(uri);
 		return tdtResource != null ? spatialSearch(tdtResource.getLatitude(), tdtResource.getLongitude(), radiusInMeters) : null;
-
 	}
 
-	private HashMap<String, String> spatialSearch(float latitude, float longitude, int radiusInMeters) throws IOException {
-
-		HashMap<String, String> result = new HashMap<String, String>();
+	private List<es.ull.taro.tourism_core.domain.Resource> spatialSearch(float latitude, float longitude, int radiusInMeters) throws IOException {
 
 		Model model = ModelFactory.createDefaultModel();
 		InputStream inAcc = FileManager.get().open("tdtalojamientos.rdf");
@@ -161,22 +160,20 @@ public class CoreServiceImpl implements CoreService {
 		InputStream inOff = FileManager.get().open("tdtoficinasdeturismov1.2.0.rdf");
 		InputStream inBeach = FileManager.get().open("playas.rdf");
 
-		model.read(inAcc, "");
-		model.read(inRest, "");
-		model.read(inOff, "");
-		model.read(inBeach, "");
+		model.read(inAcc, EMPTY);
+		model.read(inRest, EMPTY);
+		model.read(inOff, EMPTY);
+		model.read(inBeach, EMPTY);
 		String placesDBP = "http://es.dbpedia.org/sparql?default-graph-uri=&query=%0D%0Aselect+%3Furi+%3Fname+%3Flatitude+%3Flongitude+%7B+%0D%0A++++%3Furi+rdfs%3Alabel+%3Fname+.%0D%0A++++%3Furi+geo%3Alat+%3Flatitude+.%0D%0A++++%3Furi+geo%3Along+%3Flongitude+.%0D%0A++++%3Furi+dcterms%3Asubject+%3Fprovince+.%0D%0A++++FILTER+regex%28%3Fprovince%2C+%22tenerife%22%2C+%22i%22%29.+%0D%0A+++%0D%0A%7D&format=text%2Fturtle&timeout=0&debug=on";
 		RDFDataMgr.read(model, placesDBP);
 
-		result = queryData(model, latitude, longitude, radiusInMeters);
-		return result;
+		return queryData(model, latitude, longitude, radiusInMeters);
 	}
 
-	public HashMap<String, String> queryData(Model model, float latitude, float longitude, int radiusInMeters) {
+	public List<es.ull.taro.tourism_core.domain.Resource> queryData(Model model, float latitude, float longitude, int radiusInMeters) {
 
 		double convertedRadius = Double.valueOf(radiusInMeters) / 100000;
 
-		HashMap<String, String> results = new HashMap<String, String>();
 		StringBuilder query = new StringBuilder();
 		query.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>");
 		query.append("PREFIX res: <http://www.w3.org/2005/sparql-results#>");
@@ -214,6 +211,8 @@ public class CoreServiceImpl implements CoreService {
 
 		QueryExecution qe = QueryExecutionFactory.create(query.toString(), model);
 
+		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
+
 		try {
 			com.hp.hpl.jena.query.ResultSet rs = qe.execSelect();
 
@@ -225,19 +224,18 @@ public class CoreServiceImpl implements CoreService {
 				Resource solnBeach = soln.getResource("?resourceBeach");
 
 				if (solnHTO != null)
-					results.put(solnHTO.getURI(), soln.getLiteral("?NameHTO").toString());
+					resources.add(new es.ull.taro.tourism_core.domain.Resource(solnHTO.getURI(), soln.getLiteral("?NameHTO").toString()));
 				if (solnDBP != null)
-					results.put(solnDBP.getURI(), soln.getLiteral("?NameDBP").toString());
+					resources.add(new es.ull.taro.tourism_core.domain.Resource(solnDBP.getURI(), soln.getLiteral("?NameDBP").toString()));
 				if (solnOff != null)
-					results.put(solnOff.getURI(), soln.getLiteral("?NameOff").toString());
+					resources.add(new es.ull.taro.tourism_core.domain.Resource(solnOff.getURI(), soln.getLiteral("?NameOff").toString()));
 				if (solnBeach != null)
-					results.put(solnBeach.getURI(), soln.getLiteral("?NameBeach").toString());
+					resources.add(new es.ull.taro.tourism_core.domain.Resource(solnBeach.getURI(), soln.getLiteral("?NameBeach").toString()));
 			}
-
 		} finally {
 			qe.close();
 		}
 
-		return results;
+		return resources;
 	}
 }

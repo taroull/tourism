@@ -1,6 +1,9 @@
 package es.ull.taro.tourism_core.services;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.jena.riot.RDFDataMgr;
 
@@ -8,7 +11,6 @@ import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
@@ -25,7 +27,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 	}
 
 	@Override
-	public HashMap<String, String> find(String query) {
+	public List<HTOResource> find(String query) {
 
 		Model model = loadRDFFile();
 
@@ -44,26 +46,24 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 
-		HashMap<String, String> resourceURIs = new HashMap<String, String>();
+		List<HTOResource> resources = new ArrayList<HTOResource>();
 
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
-				String resource = sol.getResource("?resource").getURI().toString();
-				String name = sol.getLiteral("?text").toString();
-				resourceURIs.put(resource, name);
-
+				HTOResource htoResource = new HTOResource(sol.getResource("?resource").getURI().toString());
+				htoResource.setName(sol.getLiteral("?text").toString());
+				resources.add(htoResource);
 			}
 		} finally {
 			qe.close();
 		}
-
-		return resourceURIs;
+		return resources;
 	}
 
 	@Override
-	public HashMap<Literal, String> describeUri(String uri) {
+	public Map<String, String> describeUri(String uri) {
 
 		Model model = loadRDFFile();
 
@@ -113,36 +113,43 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				.append(" OPTIONAL {?resource tdt:howArriveText ?B12_MultiLanguageText . ?B12_MultiLanguageText hto:languageText ?B12_LanguageText . ?B12_LanguageText hto:text ?HowToGet . }}");
 
 		QueryExecution qe2 = QueryExecutionFactory.create(sparqlQuery2.toString(), resultModel);
-		HashMap<Literal, String> results = new HashMap<Literal, String>();
+		Map<String, String> results = new HashMap<String, String>();
 		try {
 			com.hp.hpl.jena.query.ResultSet ns = qe2.execSelect();
 			while (ns.hasNext()) {
 				QuerySolution soln = ns.nextSolution();
-				results.put(soln.getLiteral("?Name"), "Nombre");
+				results.put("Nombre", soln.getLiteral("?Name").toString());
 				if (soln.getLiteral("?AccommodationType") != null)
-					results.put(soln.getLiteral("?AccommodationType"), "Tipo de alojamiento");
+					results.put("Tipo de alojamiento", soln.getLiteral("?AccommodationType").toString());
 				if (soln.getLiteral("?Description") != null)
-					results.put(soln.getLiteral("?Description"), "Description");
-				results.put(soln.getLiteral("?PostCode"), "Código Postal");
-				results.put(soln.getLiteral("?City"), "Ciudad");
-				results.put(soln.getLiteral("?StreetName"), "Calle");
-				results.put(soln.getLiteral("?CountryCode"), "Código del país");
-				results.put(soln.getLiteral("?TelNumber"), "Teléfono");
-				if (soln.getLiteral("?FaxNumber") != null && !soln.getLiteral("?FaxNumber").toString().isEmpty())
-					results.put(soln.getLiteral("?FaxNumber"), "Fax");
-				if (soln.getLiteral("?Email") != null && !soln.getLiteral("?Email").toString().isEmpty())
-					results.put(soln.getLiteral("?Email"), "Correo");
-				if (soln.getLiteral("?Url") != null && !soln.getLiteral("?Url").toString().isEmpty())
-					results.put(soln.getLiteral("?Url"), "URL");
-				if (soln.getLiteral("?GastroType") != null)
-					results.put(soln.getLiteral("?GastroType"), "Tipo de actividad");
-				if (soln.getLiteral("?Timeline") != null)
-					results.put(soln.getLiteral("?Timeline"), "Horario");
-				results.put(soln.getLiteral("?ProfileValue"), soln.getLiteral("?ProfileName").toString());
-				if (soln.getLiteral("?FacilityValue") != null)
-					results.put(soln.getLiteral("?FacilityValue"), "facility-" + soln.getLiteral("?FacilityValue"));
-				if (soln.getLiteral("?HowToGet") != null)
-					results.put(soln.getLiteral("?HowToGet"), "Cómo llegar");
+					results.put("Description", soln.getLiteral("?Description").toString());
+				results.put("Código Postal", soln.getLiteral("?PostCode").toString());
+				results.put("Ciudad", soln.getLiteral("?City").toString());
+				results.put("Calle", soln.getLiteral("?StreetName").toString());
+				results.put("Código del país", soln.getLiteral("?CountryCode").toString());
+				results.put("Teléfono", soln.getLiteral("?TelNumber").toString());
+				if (soln.getLiteral("?FaxNumber") != null && !soln.getLiteral("?FaxNumber").toString().isEmpty()) {
+					results.put("Fax", soln.getLiteral("?FaxNumber").toString());
+				}
+				if (soln.getLiteral("?Email") != null && !soln.getLiteral("?Email").toString().isEmpty()) {
+					results.put("Correo", soln.getLiteral("?Email").toString());
+				}
+				if (soln.getLiteral("?Url") != null && !soln.getLiteral("?Url").toString().isEmpty()) {
+					results.put("URL", soln.getLiteral("?Url").toString());
+				}
+				if (soln.getLiteral("?GastroType") != null) {
+					results.put("Tipo de actividad", soln.getLiteral("?GastroType").toString());
+				}
+				if (soln.getLiteral("?Timeline") != null) {
+					results.put("Horario", soln.getLiteral("?Timeline").toString());
+				}
+				results.put(soln.getLiteral("?ProfileName").toString(), soln.getLiteral("?ProfileValue").toString());
+				if (soln.getLiteral("?FacilityValue") != null) {
+					results.put("facility-" + soln.getLiteral("?FacilityValue").toString(), soln.getLiteral("?FacilityValue").toString());
+				}
+				if (soln.getLiteral("?HowToGet") != null) {
+					results.put("Cómo llegar", soln.getLiteral("?HowToGet").toString());
+				}
 			}
 
 		} finally {
@@ -161,13 +168,11 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		Statement organiser = resource.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#organiser"));
 		Statement coordinates = organiser.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#coordinates"));
 		Statement address = coordinates.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#address"));
-		String postalCode = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#postcode")).getLiteral()
-				.getString();
+		String postalCode = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#postcode")).getLiteral().getString();
 		Statement xy = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#xy"));
 		try {
 			float latitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral().getFloat();
-			float longitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral()
-					.getFloat();
+			float longitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral().getFloat();
 			htoResource.setLatitude(latitude);
 			htoResource.setLongitude(longitude);
 		} catch (NumberFormatException e) {

@@ -3,6 +3,7 @@ package es.ull.taro.tourism_core.services;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.jena.riot.RDFDataMgr;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ import es.ull.taro.tourism_core.domain.BeachResource;
 public class PlacesServiceImpl implements PlacesService {
 
 	@Override
-	public HashMap<String, String> find(String name) {
+	public List<es.ull.taro.tourism_core.domain.Resource> find(String name) {
 
 		Model model = loadRDFFile();
 
@@ -38,22 +39,22 @@ public class PlacesServiceImpl implements PlacesService {
 		sparqlQuery.append("  FILTER regex(?title, \"").append(name).append("\", \"i\"). ");
 		sparqlQuery.append("}");
 
-		HashMap<String, String> uris = new HashMap<String, String>();
+		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
-				String resource = sol.getResource("?beach").getURI().toString();
-				String title = sol.getLiteral("?title").toString();
-				uris.put(resource, title);
+				es.ull.taro.tourism_core.domain.Resource resource = new es.ull.taro.tourism_core.domain.Resource(sol.getResource("?beach").getURI().toString());
+				resource.setName(sol.getLiteral("?title").toString());
+				resources.add(resource);
 			}
 		} finally {
 			qe.close();
 		}
 
-		return uris;
+		return resources;
 	}
 
 	@Override
@@ -81,8 +82,7 @@ public class PlacesServiceImpl implements PlacesService {
 		sparqlQuery.append("FILTER(xsd:double(?lat) - xsd:double('").append(latitude).append("') <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double('").append(latitude).append("') - xsd:double(?lat) <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double(?long) - xsd:double('").append(longitude).append("') <= ").append(convertedRadius);
-		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius)
-				.append(" ). ");
+		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius).append(" ). ");
 		sparqlQuery.append("}");
 
 		List<String> uris = new ArrayList<String>();
@@ -103,7 +103,7 @@ public class PlacesServiceImpl implements PlacesService {
 	}
 
 	@Override
-	public HashMap<String, String> describeUri(String uri) {
+	public Map<String, String> describeUri(String uri) {
 
 		Model model = loadRDFFile();
 
@@ -156,53 +156,53 @@ public class PlacesServiceImpl implements PlacesService {
 				QuerySolution soln = ns.nextSolution();
 				results.put(soln.getLiteral("?Name").toString(), "Nombre");
 				if (soln.getLiteral("?ActivityType") != null)
-					results.put(soln.getLiteral("?ActivityType").toString(), "Tipo de actividad");
+					results.put("Tipo de actividad", soln.getLiteral("?ActivityType").toString());
 				if (soln.getLiteral("?Zone") != null)
-					results.put(soln.getLiteral("?Zone").toString(), "Zona");
+					results.put("Zona", soln.getLiteral("?Zone").toString());
 				if (soln.getLiteral("?PostalCode") != null)
-					results.put(soln.getLiteral("?PostalCode").toString(), "Código Postal");
+					results.put("Código Postal", soln.getLiteral("?PostalCode").toString());
 				if (soln.getLiteral("?Address") != null)
-					results.put(soln.getLiteral("?Address").toString(), "Dirección");
+					results.put("Dirección", soln.getLiteral("?Address").toString());
 				if (soln.getLiteral("?Telephone") != null)
-					results.put(soln.getLiteral("?Telephone").toString(), "Teléfono");
+					results.put("Teléfono", soln.getLiteral("?Telephone").toString());
 				if (soln.getLiteral("?Fax") != null)
-					results.put(soln.getLiteral("?Fax").toString(), "Fax");
+					results.put("Fax", soln.getLiteral("?Fax").toString());
 				if (soln.getLiteral("?URL") != null)
-					results.put(soln.getLiteral("?URL").toString(), "URL");
+					results.put("URL", soln.getLiteral("?URL").toString());
 				if (soln.getLiteral("?Remark") != null)
-					results.put(soln.getLiteral("?Remark").toString(), "Observaciones");
+					results.put("Observaciones", soln.getLiteral("?Remark").toString());
 				if (soln.getLiteral("?Description") != null)
-					results.put(soln.getLiteral("?Description").toString(), "Description");
+					results.put("Description", soln.getLiteral("?Description").toString());
 				if (soln.getLiteral("?Email") != null)
-					results.put(soln.getLiteral("?Email").toString(), "Correo");
+					results.put("Correo", soln.getLiteral("?Email").toString());
 				if (soln.getLiteral("?Municipality") != null)
-					results.put(soln.getLiteral("?Municipality").toString(), "Municipio");
+					results.put("Municipio", soln.getLiteral("?Municipality").toString());
 				if (soln.getLiteral("?SandColor") != null)
-					results.put(soln.getLiteral("?SandColor").toString(), "Color de la arena");
+					results.put("Color de la arena", soln.getLiteral("?SandColor").toString());
 				if (soln.getLiteral("?Swell") != null)
-					results.put(soln.getLiteral("?Swell").toString(), "Tipo de oleaje");
+					results.put("Tipo de oleaje", soln.getLiteral("?Swell").toString());
 				if (soln.getLiteral("?HowToGet") != null)
-					results.put(soln.getLiteral("?HowToGet").toString(), "Cómo llegar");
+					results.put("Cómo llegar", soln.getLiteral("?HowToGet").toString());
 				if (soln.getLiteral("?Category") != null)
-					results.put(soln.getLiteral("?Category").toString(), "Categorías");
+					results.put("Categorías", soln.getLiteral("?Category").toString());
 				if (soln.getLiteral("?Recommendation") != null)
-					results.put(soln.getLiteral("?Recommendation").toString(), "Recomendación");
+					results.put("Recomendación", soln.getLiteral("?Recommendation").toString());
 				if (soln.getLiteral("?BeachLenght") != null)
-					results.put(soln.getLiteral("?BeachLenght").toString(), "Longitud de la playa");
+					results.put("Longitud de la playa", soln.getLiteral("?BeachLenght").toString());
 				if (soln.getLiteral("?BeachWidth") != null)
-					results.put(soln.getLiteral("?BeachWidth").toString(), "Ancho de la playa");
+					results.put("Ancho de la playa", soln.getLiteral("?BeachWidth").toString());
 				if (soln.getLiteral("?Situation") != null)
-					results.put(soln.getLiteral("?Situation").toString(), "Situación");
+					results.put("Situación", soln.getLiteral("?Situation").toString());
 				if (soln.getLiteral("?BlueFlag") != null)
-					results.put(soln.getLiteral("?BlueFlag").toString(), "Bandera azul");
+					results.put("Bandera azul", soln.getLiteral("?BlueFlag").toString());
 				if (soln.getLiteral("?Nudist") != null)
-					results.put(soln.getLiteral("?Nudist").toString(), "Nudista");
+					results.put("Nudista", soln.getLiteral("?Nudist").toString());
 				if (soln.getLiteral("?FirstAid") != null)
-					results.put(soln.getLiteral("?FirstAid").toString(), "Socorrismo");
+					results.put("Socorrismo", soln.getLiteral("?FirstAid").toString());
 				if (soln.getLiteral("?Flammable") != null)
-					results.put(soln.getLiteral("?Flammable").toString(), "Material Inflamable");
+					results.put("Material Inflamable", soln.getLiteral("?Flammable").toString());
 				if (soln.getLiteral("?Endangerment") != null)
-					results.put(soln.getLiteral("?Endangerment").toString(), "Peligrosidad");
+					results.put("Peligrosidad", soln.getLiteral("?Endangerment").toString());
 			}
 		} finally {
 			qe2.close();
@@ -217,14 +217,10 @@ public class PlacesServiceImpl implements PlacesService {
 		Model m = loadRDFFile();
 
 		beachResource.setUri(resource.getURI());
-		Statement ows_Georeferencia = resource
-				.getProperty(m.createProperty("http://turismo-de-tenerife.org/def/turismo#ows_Georeferencia"));
-		float latitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#lat")).getLiteral()
-				.getFloat();
-		float longitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#long")).getLiteral()
-				.getFloat();
-		String postalCode = resource.getProperty(m.createProperty("http://turismo-de-tenerife.org/def/turismo#ows_CodigoPostal"))
-				.getLiteral().getString();
+		Statement ows_Georeferencia = resource.getProperty(m.createProperty("http://turismo-de-tenerife.org/def/turismo#ows_Georeferencia"));
+		float latitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#lat")).getLiteral().getFloat();
+		float longitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#long")).getLiteral().getFloat();
+		String postalCode = resource.getProperty(m.createProperty("http://turismo-de-tenerife.org/def/turismo#ows_CodigoPostal")).getLiteral().getString();
 
 		beachResource.setPostalCode(postalCode);
 		beachResource.setLatitude(latitude);

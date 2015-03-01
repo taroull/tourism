@@ -3,6 +3,7 @@ package es.ull.taro.tourism_core.services;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -116,7 +117,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 	}
 
 	@Override
-	public HashMap<String, String> describeUri(String uri) {
+	public Map<String, String> describeUri(String uri) {
 
 		StringBuilder dbpediaQuery = new StringBuilder();
 		dbpediaQuery.append("DESCRIBE ").append("<").append(uri).append(">");
@@ -163,37 +164,37 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 			for (; rs.hasNext();) {
 				QuerySolution sol = (QuerySolution) rs.next();
 				if (sol.get("?Name") != null)
-					results.put(sol.get("?Name").toString(), "Nombre");
+					results.put("Nombre", sol.get("?Name").toString());
 				if (sol.get("?Demonym") != null)
-					results.put(sol.get("?Demonym").toString(), "Gentilicio");
+					results.put("Gentilicio", sol.get("?Demonym").toString());
 				if (sol.get("?FoundingYear") != null)
-					results.put(sol.get("?FoundingYear").toString(), "Año de fundación");
+					results.put("Año de fundación", sol.get("?FoundingYear").toString());
 				if (sol.get("?LeaderName") != null)
-					results.put(sol.get("?LeaderName").toString(), "Alcalde");
+					results.put("Alcalde", sol.get("?LeaderName").toString());
 				if (sol.get("?Address") != null)
-					results.put(sol.get("?Address").toString(), "Dirección del ayuntamiento");
+					results.put("Dirección del ayuntamiento", sol.get("?Address").toString());
 				if (sol.get("?Sede") != null)
-					results.put(sol.get("?Sede").toString(), "Sede");
+					results.put("Sede", sol.get("?Sede").toString());
 				if (sol.get("?Elevation") != null)
-					results.put(sol.get("?Elevation").toString(), "Altitud");
+					results.put("Altitud", sol.get("?Elevation").toString());
 				if (sol.get("?FlagPhoto") != null)
-					results.put(sol.get("?FlagPhoto").toString(), "Bandera");
+					results.put("Bandera", sol.get("?FlagPhoto").toString());
 				if (sol.get("?AreaCode") != null)
-					results.put(sol.get("?AreaCode").toString(), "Código de Área");
+					results.put("Código de Área", sol.get("?AreaCode").toString());
 				if (sol.get("?MunicipalityCode") != null)
-					results.put(sol.get("?MunicipalityCode").toString(), "Código del municipio");
+					results.put("Código del municipio", sol.get("?MunicipalityCode").toString());
 				if (sol.get("?ProvinceCode") != null)
-					results.put(sol.get("?ProvinceCode").toString(), "Código de provincia");
+					results.put("Código de provincia", sol.get("?ProvinceCode").toString());
 				if (sol.get("?Description") != null)
-					results.put(sol.get("?Description").toString(), "Description");
+					results.put("Description", sol.get("?Description").toString());
 				if (sol.get("?URL") != null)
-					results.put(sol.get("?URL").toString(), "URL");
+					results.put("URL", sol.get("?URL").toString());
 				if (sol.get("?WikiLink") != null)
-					results.put(sol.get("?WikiLink").toString(), "Enlace a Wikipedia");
+					results.put("Enlace a Wikipedia", sol.get("?WikiLink").toString());
 				if (sol.get("?OtherLink") != null)
-					results.put(sol.get("?OtherLink").toString(), "Otros enlaces");
+					results.put("Otros enlaces", sol.get("?OtherLink").toString());
 				if (sol.get("?Population") != null)
-					results.put(sol.get("?Population").toString(), "Número de habitantes");
+					results.put("Número de habitantes", sol.get("?Population").toString());
 			}
 		} finally {
 			qe.close();

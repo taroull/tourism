@@ -16,7 +16,6 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 public class JenaRDFParserTest {
-	private static Logger logger = LoggerFactory.getLogger(JenaRDFParserTest.class);
 
 	public void test() throws JsonLdError {
 

@@ -1,7 +1,7 @@
 package es.ull.taro.tourism_core.services;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.hp.hpl.jena.rdf.model.Resource;
 
@@ -11,13 +11,13 @@ public interface PlacesService {
 
 	public static final String BEAN_ID = "placesService";
 
-	public HashMap<String, String> find(String name);
-	
+	public List<es.ull.taro.tourism_core.domain.Resource> find(String name);
+
 	public List<String> findBeachesAround(float latitude, float longitude, int radiusInMeters);
 
-	public HashMap<String, String> describeUri(String uri);
+	public Map<String, String> describeUri(String uri);
 
 	public BeachResource createBeachResource(String uri);
-	
+
 	public Resource retrieve(String uri);
 }

@@ -1,16 +1,18 @@
 package es.ull.taro.tourism_core.services;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.github.jsonldjava.core.JsonLdError;
+
+import es.ull.taro.tourism_core.domain.Resource;
 
 public interface CoreService {
 
 	public static final String BEAN_ID = "coreService";
 
-	public Object retrieve(String uri) throws JsonLdError;
+	public Map<String, String> retrieve(String uri) throws JsonLdError;
 
 	public List<String> retrieveMunicipalityInfo(String htoResourceUri) throws JsonLdError;
 
@@ -22,7 +24,7 @@ public interface CoreService {
 
 	public List<String> retrieveTourismOfficesAround(String htoResourceUri, int radius);
 
-	public HashMap<String, String> findPlacesNear(String uri, int radiusInMeters) throws IOException;
+	public List<Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException;
 
 	public List<String> retrieveBeachesAround(String htoResourceUri, int radius);
 

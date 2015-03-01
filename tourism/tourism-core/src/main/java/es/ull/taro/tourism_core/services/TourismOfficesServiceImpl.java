@@ -3,6 +3,7 @@ package es.ull.taro.tourism_core.services;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.jena.riot.RDFDataMgr;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
@@ -22,7 +22,7 @@ import es.ull.taro.tourism_core.domain.OfficeResource;
 public class TourismOfficesServiceImpl implements TourismOfficesService {
 
 	@Override
-	public HashMap<String, String> find(String name) {
+	public List<es.ull.taro.tourism_core.domain.Resource> find(String name) {
 
 		Model model = loadRDFFile();
 
@@ -45,28 +45,24 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("  FILTER regex(?locality, \"").append(name).append("\", \"i\"). ");
 		sparqlQuery.append("}");
 
-		HashMap<String, String> uris = new HashMap<String, String>();
+		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
-				Resource resource = sol.getResource("?office");
-				Literal locality = sol.getLiteral("?locality");
-				
-				
-				System.out.println("uri " + resource + " nombre " + locality);
-				uris.put(resource.getURI().toString(), locality.toString());
+				es.ull.taro.tourism_core.domain.Resource resource = new es.ull.taro.tourism_core.domain.Resource(sol.getResource("?office").getURI().toString());
+				resource.setName(sol.getLiteral("?locality").toString());
+				resources.add(resource);
 			}
 		} finally {
 			qe.close();
 		}
 
-		return uris;
+		return resources;
 	}
-	
-	
+
 	@Override
 	public List<String> findTourismOfficesAround(float latitude, float longitude, int radiusInMeters) {
 
@@ -119,9 +115,9 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 	protected Model loadRDFFile() {
 		return RDFDataMgr.loadModel("tdtoficinasdeturismov1.2.0.rdf");
 	}
-	
+
 	@Override
-	public HashMap<String, String> describeUri(String uri) {
+	public Map<String, String> describeUri(String uri) {
 
 		Model model = loadRDFFile();
 
@@ -141,37 +137,38 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery2.append("PREFIX org: <http://www.w3.org/TR/vocab-org/> ");
 		sparqlQuery2.append("PREFIX vCard: <http://www.w3.org/TR/vcard-rdf/> ");
 		sparqlQuery2.append("PREFIX foaf: <http://xmlns.com/foaf/spec/>");
-		sparqlQuery2.append("SELECT ?Email ?Telephone ?StreetName ?City ?PostCode ?Photo ?Url ?Purpose " +
-				                    "{ OPTIONAL {?resource org:hasRegisteredSite ?B1_Site . ?B1_Site org:siteAddress ?B1_Location . ?B1_Location vCard:hasEmail ?Email . }" +
-				                    "?B1_Location vCard:hasTelephone ?B2_Telephone . ?B2_Telephone vCard:hasValue ?Telephone . " +
-				                    "?B1_Location vCard:hasAddress ?B3_Address . ?B3_Address vCard:street-address ?StreetName ." +
-				                    "?B3_Address vCard:locality ?City . " +
-				                    "?B3_Address vCard:postal-code ?PostCode ." +
-				                    "OPTIONAL {?B1_Location vCard:hasPhoto ?Photo . }" +
-				                    "OPTIONAL {?B1_Location foaf:homepage ?Url . }" +
-				                    "OPTIONAL {?resource org:purpose ?Purpose .}}");
+		sparqlQuery2.append("SELECT ?Email ?Telephone ?StreetName ?City ?PostCode ?Photo ?Url ?Purpose "
+				+ "{ OPTIONAL {?resource org:hasRegisteredSite ?B1_Site . ?B1_Site org:siteAddress ?B1_Location . ?B1_Location vCard:hasEmail ?Email . }"
+				+ "?B1_Location vCard:hasTelephone ?B2_Telephone . ?B2_Telephone vCard:hasValue ?Telephone . "
+				+ "?B1_Location vCard:hasAddress ?B3_Address . ?B3_Address vCard:street-address ?StreetName ." + "?B3_Address vCard:locality ?City . "
+				+ "?B3_Address vCard:postal-code ?PostCode ." + "OPTIONAL {?B1_Location vCard:hasPhoto ?Photo . }"
+				+ "OPTIONAL {?B1_Location foaf:homepage ?Url . }" + "OPTIONAL {?resource org:purpose ?Purpose .}}");
 
 		QueryExecution qe2 = QueryExecutionFactory.create(sparqlQuery2.toString(), resultModel);
 		HashMap<String, String> results = new HashMap<String, String>();
 		try {
 			com.hp.hpl.jena.query.ResultSet ns = qe2.execSelect();
-	        while(ns.hasNext()){
-	            QuerySolution soln = ns.nextSolution();
-	            if (soln.getResource("?Email") != null) results.put(soln.getResource("?Email").toString(), "Correo"); 
-	            results.put(soln.getResource("?Telephone").toString(), "Teléfono"); 
-	            results.put(soln.getLiteral("?StreetName").toString(), "Dirección");
-	            results.put(soln.getLiteral("?City").toString(), "Nombre");
-	            results.put(soln.getLiteral("?PostCode").toString(), "Código Postal");
-	            //if (soln.getResource("?Photo") != null) results.put(soln.getResource("?Photo").toString(), "Foto");
-	            if (soln.getResource("?Url") != null) results.put(soln.getResource("?Url").toString(), "URL");
-	            if (soln.getLiteral("?Purpose") != null) results.put(soln.getLiteral("?Purpose").toString(), "Tipo de actividad");
-	    }
+			while (ns.hasNext()) {
+				QuerySolution soln = ns.nextSolution();
+				if (soln.getResource("?Email") != null)
+					results.put(soln.getResource("?Email").toString(), "Correo");
+				results.put("Teléfono", soln.getResource("?Telephone").toString());
+				results.put("Dirección", soln.getLiteral("?StreetName").toString());
+				results.put("Nombre", soln.getLiteral("?City").toString());
+				results.put("Código Postal", soln.getLiteral("?PostCode").toString());
+				if (soln.getResource("?Url") != null) {
+					results.put("URL", soln.getResource("?Url").toString());
+				}
+				if (soln.getLiteral("?Purpose") != null) {
+					results.put("Tipo de actividad", soln.getLiteral("?Purpose").toString());
+				}
+			}
 		} finally {
 			qe2.close();
 		}
-	return results;
+		return results;
 	}
-	
+
 	@Override
 	public OfficeResource createOfficeResource(String uri) {
 		Resource resource = retrieve(uri);
@@ -186,14 +183,14 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		float longitude = location.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#long")).getLiteral().getFloat();
 		Statement hasAddress = siteAddress.getProperty(m.createProperty("http://www.w3.org/TR/vcard-rdf/hasAddress"));
 		String postalCode = hasAddress.getProperty(m.createProperty("http://www.w3.org/TR/vcard-rdf/postal-code")).getLiteral().getString();
-		
+
 		offResource.setPostalCode(postalCode);
 		offResource.setLatitude(latitude);
 		offResource.setLongitude(longitude);
-        
+
 		return offResource;
 	}
-   
+
 	@Override
 	public Resource retrieve(String uri) {
 		Model model = loadRDFFile();

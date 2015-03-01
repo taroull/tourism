@@ -1,12 +1,9 @@
 package es.ull.taro.tourism_core.domain;
 
-import java.io.Serializable;
+public class GeoResource extends Resource {
 
-public class GeoResource implements Serializable {
+	private static final long serialVersionUID = 6987557186908227631L;
 
-	private static final long serialVersionUID = -8739986500622917719L;
-
-	private String uri;
 	private float latitude;
 	private float longitude;
 
@@ -14,15 +11,7 @@ public class GeoResource implements Serializable {
 	}
 
 	public GeoResource(String uri) {
-		this.uri = uri;
-	}
-
-	public String getUri() {
-		return uri;
-	}
-
-	public void setUri(String uri) {
-		this.uri = uri;
+		super(uri);
 	}
 
 	public float getLatitude() {

@@ -1,7 +1,7 @@
 package es.ull.taro.tourism_core.services;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.github.jsonldjava.core.JsonLdError;
 
@@ -17,5 +17,5 @@ public interface DBpediaService extends BaseService {
 
 	public List<GeoResource> find(String query) throws JsonLdError;
 
-	public HashMap<String, String> describeUri(String uri);
+	public Map<String, String> describeUri(String uri);
 }

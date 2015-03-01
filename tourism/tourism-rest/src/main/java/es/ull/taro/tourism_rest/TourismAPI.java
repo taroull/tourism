@@ -2,6 +2,7 @@ package es.ull.taro.tourism_rest;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import es.ull.taro.tourism_core.domain.GeoResource;
+import es.ull.taro.tourism_core.domain.HTOResource;
+import es.ull.taro.tourism_core.domain.Resource;
 import es.ull.taro.tourism_core.services.AccommodationService;
 import es.ull.taro.tourism_core.services.AemetService;
 import es.ull.taro.tourism_core.services.CoreService;
@@ -49,7 +52,7 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("resource")
-	public Object getResourceByUri2(@QueryParam(value = "uri") String uri) throws Exception {
+	public Map<String, String> getResourceByUri(@QueryParam(value = "uri") String uri) throws Exception {
 		return coreService.retrieve(uri);
 	}
 
@@ -63,14 +66,14 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("accommodation")
-	public HashMap<String, String> findAccommodation(@QueryParam(value = "name") String name) throws Exception {
+	public List<HTOResource> findAccommodation(@QueryParam(value = "name") String name) throws Exception {
 		return accommodationService.find(name);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("gastro")
-	public HashMap<String, String> findGastro(@QueryParam(value = "name") String name) throws Exception {
+	public List<HTOResource> findGastro(@QueryParam(value = "name") String name) throws Exception {
 		return gastroService.find(name);
 	}
 
@@ -112,21 +115,21 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("placesNear")
-	public HashMap<String, String> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<Resource> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.findPlacesNear(uri, radius);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("beachResource")
-	public HashMap<String, String> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
+	public List<Resource> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
 		return placesService.find(name);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("tourismOfficeResource")
-	public HashMap<String, String> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
+	public List<Resource> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
 		return tourismOfficesService.find(name);
 	}
 
