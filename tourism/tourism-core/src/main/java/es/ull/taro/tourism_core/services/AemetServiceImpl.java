@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.ws.rs.core.UriBuilder;
+
+import org.apache.commons.lang.StringUtils;
+import org.json.XML;
 import org.springframework.stereotype.Service;
 
 import com.hp.hpl.jena.query.QueryExecution;
@@ -11,8 +15,15 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.api.client.config.ClientConfig;
+import com.sun.jersey.api.client.config.DefaultClientConfig;
 
-@Service("aemetService")
+import es.ull.taro.tourism_core.utils.PostalCodesMapping;
+
+@Service(AemetService.BEAN_ID)
 public class AemetServiceImpl implements AemetService {
 
 	@Override
@@ -39,8 +50,7 @@ public class AemetServiceImpl implements AemetService {
 		sparqlQuery.append("FILTER(xsd:double(?lat) - xsd:double('").append(latitude).append("') <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double('").append(latitude).append("') - xsd:double(?lat) <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double(?long) - xsd:double('").append(longitude).append("') <= ").append(convertedRadius);
-		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius)
-				.append(" ). ");
+		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius).append(" ). ");
 		sparqlQuery.append("}");
 
 		List<String> uris = new ArrayList<String>();
@@ -125,5 +135,26 @@ public class AemetServiceImpl implements AemetService {
 		}
 
 		return props;
+	}
+
+	public Object getWeatherPrediction(String postalCode) {
+
+		String municipalityCode = PostalCodesMapping.getInstance().getMunicipalityCode(postalCode);
+
+		ClientConfig config = new DefaultClientConfig();
+		Client client = Client.create(config);
+		WebResource webResource = client.resource(UriBuilder.fromUri("http://www.aemet.es/").build());
+
+		ClientResponse response = webResource.path("xml/municipios/localidad_" + municipalityCode + ".xml").accept("application/xml")
+				.get(ClientResponse.class);
+
+		if (response != null) {
+			String result = response.getEntity(String.class);
+			if (StringUtils.isNotBlank(result)) {
+				return XML.toJSONObject(result).get("root").toString();
+			}
+		}
+
+		return null;
 	}
 }

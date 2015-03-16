@@ -1,0 +1,422 @@
+CodProvincia;CodMunicipio;CodigoPostal;Municipio
+35;001;35480;Agaete
+35;001;35489;Agaete
+35;002;35269;Agüimes
+35;002;35270;Agüimes
+35;002;35260;Agüimes
+35;002;35119;Agüimes
+35;002;35118;Agüimes
+35;003;35610;Antigua
+35;003;35630;Antigua
+35;003;35638;Antigua
+35;003;35639;Antigua
+35;003;35369;Antigua
+35;004;35500;Arrecife
+35;005;35350;Artenara
+35;006;35413;Arucas
+35;006;35412;Arucas
+35;006;35418;Arucas
+35;006;35414;Arucas
+35;006;35000;Arucas
+35;006;35404;Arucas
+35;006;35400;Arucas
+35;006;35415;Arucas
+35;006;35411;Arucas
+35;007;35637;Betancuria
+35;008;35430;Firgas
+35;008;35431;Firgas
+35;008;35432;Firgas
+35;008;35435;Firgas
+35;009;35468;Gáldar
+35;009;35640;Gáldar
+35;009;35469;Gáldar
+35;009;35460;Gáldar
+35;009;35420;Gáldar
+35;009;35188;Gáldar
+35;009;35488;Gáldar
+35;010;35520;Haría
+35;010;35541;Haría
+35;010;35542;Haría
+35;010;35543;Haría
+35;011;35000;Ingenio
+35;011;35240;Ingenio
+35;011;35250;Ingenio
+35;011;35259;Ingenio
+35;012;35139;Mogán
+35;012;35149;Mogán
+35;012;35138;Mogán
+35;012;35130;Mogán
+35;012;35129;Mogán
+35;012;35120;Mogán
+35;012;35140;Mogán
+35;013;35422;Moya
+35;013;35423;Moya
+35;013;35421;Moya
+35;013;35420;Moya
+35;013;35413;Moya
+35;013;35422;Moya
+35;013;35423;Moya
+35;013;35421;Moya
+35;013;35420;Moya
+35;013;35413;Moya
+35;014;35660;Oliva, La
+35;014;35640;Oliva, La
+35;014;35649;Oliva, La
+35;014;35650;Oliva, La
+35;014;35469;Oliva, La
+35;015;35627;Pájara
+35;015;35628;Pájara
+35;015;35625;Pájara
+35;015;35626;Pájara
+35;016;35012;Palmas de Gran Canaria, Las
+35;016;35229;Palmas de Gran Canaria, Las
+35;016;35220;Palmas de Gran Canaria, Las
+35;016;35019;Palmas de Gran Canaria, Las
+35;016;35018;Palmas de Gran Canaria, Las
+35;016;35017;Palmas de Gran Canaria, Las
+35;016;35016;Palmas de Gran Canaria, Las
+35;016;35015;Palmas de Gran Canaria, Las
+35;016;35014;Palmas de Gran Canaria, Las
+35;016;35013;Palmas de Gran Canaria, Las
+35;016;35008;Palmas de Gran Canaria, Las
+35;016;35009;Palmas de Gran Canaria, Las
+35;016;35007;Palmas de Gran Canaria, Las
+35;016;35006;Palmas de Gran Canaria, Las
+35;016;35005;Palmas de Gran Canaria, Las
+35;016;35004;Palmas de Gran Canaria, Las
+35;016;35003;Palmas de Gran Canaria, Las
+35;016;35002;Palmas de Gran Canaria, Las
+35;016;35001;Palmas de Gran Canaria, Las
+35;016;35011;Palmas de Gran Canaria, Las
+35;016;35010;Palmas de Gran Canaria, Las
+35;017;35610;Puerto del Rosario
+35;017;35637;Puerto del Rosario
+35;017;35613;Puerto del Rosario
+35;017;35611;Puerto del Rosario
+35;017;35600;Puerto del Rosario
+35;017;35612;Puerto del Rosario
+35;018;35509;San Bartolom�
+35;018;35550;San Bartolom�
+35;019;35120;San Bartolom� de Tirajana
+35;019;35369;San Bartolom� de Tirajana
+35;019;35299;San Bartolom� de Tirajana
+35;019;35290;San Bartolom� de Tirajana
+35;019;35280;San Bartolom� de Tirajana
+35;019;35128;San Bartolom� de Tirajana
+35;019;35109;San Bartolom� de Tirajana
+35;019;35108;San Bartolom� de Tirajana
+35;019;35107;San Bartolom� de Tirajana
+35;019;35100;San Bartolom� de Tirajana
+35;019;35106;San Bartolom� de Tirajana
+35;019;35119;San Bartolom� de Tirajana
+35;020;34570;Aldea de San Nicolás, La
+35;020;35470;Aldea de San Nicolás, La
+35;020;35478;Aldea de San Nicolás, La
+35;020;35479;Aldea de San Nicolás, La
+35;020;35579;Aldea de San Nicolás, La
+35;021;35308;Santa Brígida
+35;021;35309;Santa Brígida
+35;021;35307;Santa Brígida
+35;021;35300;Santa Brígida
+35;021;35310;Santa Brígida
+35;022;35000;Santa Lucía de Tirajana
+35;022;35110;Santa Lucía de Tirajana
+35;022;35280;Santa Lucía de Tirajana
+35;023;35450;Santa María de Guía de Gran Canaria
+35;023;35457;Santa María de Guía de Gran Canaria
+35;023;35458;Santa María de Guía de Gran Canaria
+35;023;35540;Santa María de Guía de Gran Canaria
+35;024;35508;Teguise
+35;024;35543;Teguise
+35;024;35561;Teguise
+35;024;35558;Teguise
+35;024;35544;Teguise
+35;024;35539;Teguise
+35;024;35507;Teguise
+35;024;35509;Teguise
+35;024;35540;Teguise
+35;024;35530;Teguise
+35;025;35360;Tejeda
+35;025;35368;Tejeda
+35;026;35212;Telde
+35;026;35259;Telde
+35;026;35229;Telde
+35;026;35220;Telde
+35;026;35219;Telde
+35;026;35218;Telde
+35;026;35215;Telde
+35;026;35213;Telde
+35;026;35211;Telde
+35;026;35210;Telde
+35;026;35200;Telde
+35;026;35214;Telde
+35;027;35000;Teror
+35;027;35338;Teror
+35;027;35339;Teror
+35;027;35330;Teror
+35;027;35333;Teror
+35;028;35510;Tías
+35;028;35571;Tías
+35;028;35572;Tías
+35;029;35550;Tinajo
+35;029;35560;Tinajo
+35;030;35620;Tuineje
+35;030;35627;Tuineje
+35;030;35628;Tuineje
+35;030;35629;Tuineje
+35;030;35660;Tuineje
+35;031;35216;Valsequillo de Gran Canaria
+35;031;35217;Valsequillo de Gran Canaria
+35;032;35340;Valleseco
+35;032;35349;Valleseco
+35;032;35000;Valleseco
+35;033;35320;Vega de San Mateo
+35;033;35328;Vega de San Mateo
+35;033;35329;Vega de San Mateo
+35;034;35370;Yaiza
+35;034;35570;Yaiza
+35;034;35580;Yaiza
+38;001;38670;Adeje
+38;001;38679;Adeje
+38;001;38677;Adeje
+38;001;38660;Adeje
+38;001;38615;Adeje
+38;001;38678;Adeje
+38;002;38830;Agulo
+38;002;38890;Agulo
+38;003;38810;Alajeró
+38;003;38811;Alajeró
+38;003;38812;Alajeró
+38;003;38813;Alajeró
+38;004;38509;Arafo
+38;004;38550;Arafo
+38;005;38589;Arico
+38;005;38592;Arico
+38;005;38580;Arico
+38;005;38593;Arico
+38;005;38588;Arico
+38;006;38649;Arona
+38;006;38660;Arona
+38;006;38650;Arona
+38;006;38640;Arona
+38;006;38639;Arona
+38;006;38632;Arona
+38;006;38631;Arona
+38;006;38630;Arona
+38;006;38627;Arona
+38;006;38626;Arona
+38;006;38652;Arona
+38;007;38726;Barlovento
+38;007;38727;Barlovento
+38;008;38710;Breña Alta
+38;008;38712;Breña Alta
+38;008;38713;Breña Alta
+38;009;38711;Breña Baja
+38;009;38712;Breña Baja
+38;010;38480;Buenavista del Norte
+38;010;38489;Buenavista del Norte
+38;010;38479;Buenavista del Norte
+38;011;38510;Candelaria
+38;011;38520;Candelaria
+38;011;38530;Candelaria
+38;011;38540;Candelaria
+38;011;38509;Candelaria
+38;012;38570;Fasnia
+38;012;38579;Fasnia
+38;013;38911;Frontera
+38;013;38912;Frontera
+38;013;38913;Frontera
+38;014;38740;Fuencaliente de la Palma
+38;014;38749;Fuencaliente de la Palma
+38;015;38458;Garachico
+38;015;38459;Garachico
+38;015;38460;Garachico
+38;015;38450;Garachico
+38;016;38728;Garafía
+38;016;38787;Garafía
+38;016;38788;Garafía
+38;017;38618;Granadilla de Abona
+38;017;38616;Granadilla de Abona
+38;017;38639;Granadilla de Abona
+38;017;38617;Granadilla de Abona
+38;017;38611;Granadilla de Abona
+38;017;38600;Granadilla de Abona
+38;017;38595;Granadilla de Abona
+38;017;38594;Granadilla de Abona
+38;017;38612;Granadilla de Abona
+38;018;38440;Guancha, La
+38;018;38441;Guancha, La
+38;018;38449;Guancha, La
+38;019;38688;Guía de Isora
+38;019;38689;Guía de Isora
+38;019;38687;Guía de Isora
+38;019;38686;Guía de Isora
+38;019;38685;Guía de Isora
+38;019;38680;Guía de Isora
+38;020;38508;Güimar
+38;020;38509;Güimar
+38;020;38560;Güimar
+38;020;38590;Güimar
+38;020;38591;Güimar
+38;020;38500;Güimar
+38;021;38820;Hermigua
+38;021;38829;Hermigua
+38;021;38869;Hermigua
+38;021;38890;Hermigua
+38;022;38438;Icod de los Vinos
+38;022;38439;Icod de los Vinos
+38;022;38430;Icod de los Vinos
+38;022;38434;Icod de los Vinos
+38;023;38260;San Cristóbal de La Laguna
+38;023;38330;San Cristóbal de La Laguna
+38;023;38329;San Cristóbal de La Laguna
+38;023;38320;San Cristóbal de La Laguna
+38;023;38297;San Cristóbal de La Laguna
+38;023;38296;San Cristóbal de La Laguna
+38;023;38294;San Cristóbal de La Laguna
+38;023;38293;San Cristóbal de La Laguna
+38;023;38108;San Cristóbal de La Laguna
+38;023;38270;San Cristóbal de La Laguna
+38;023;38203;San Cristóbal de La Laguna
+38;023;38291;San Cristóbal de La Laguna
+38;023;38202;San Cristóbal de La Laguna
+38;023;38250;San Cristóbal de La Laguna
+38;023;38204;San Cristóbal de La Laguna
+38;023;38205;San Cristóbal de La Laguna
+38;023;38206;San Cristóbal de La Laguna
+38;023;38207;San Cristóbal de La Laguna
+38;023;38208;San Cristóbal de La Laguna
+38;023;38240;San Cristóbal de La Laguna
+38;023;38201;San Cristóbal de La Laguna
+38;024;38759;Llanos de Aridane, Los
+38;024;38760;Llanos de Aridane, Los
+38;024;38767;Llanos de Aridane, Los
+38;024;38768;Llanos de Aridane, Los
+38;024;38769;Llanos de Aridane, Los
+38;025;38370;Matanza de Acentejo, La
+38;025;38379;Matanza de Acentejo, La
+38;026;38300;Orotava, La
+38;026;38310;Orotava, La
+38;026;38311;Orotava, La
+38;026;38312;Orotava, La
+38;026;38313;Orotava, La
+38;026;38314;Orotava, La
+38;026;38315;Orotava, La
+38;027;38750;Paso, El
+38;027;38758;Paso, El
+38;027;38759;Paso, El
+38;027;38768;Paso, El
+38;027;38769;Paso, El
+38;028;38400;Puerto de la Cruz
+38;029;38789;Puntagorda
+38;030;38714;Puntallana
+38;030;38715;Puntallana
+38;031;38410;Realejos, Los
+38;031;38412;Realejos, Los
+38;031;38413;Realejos, Los
+38;031;38414;Realejos, Los
+38;031;38415;Realejos, Los
+38;031;38416;Realejos, Los
+38;031;38417;Realejos, Los
+38;031;38418;Realejos, Los
+38;031;38419;Realejos, Los
+38;032;38510;Rosario, El
+38;032;38109;Rosario, El
+38;032;38190;Rosario, El
+38;032;38290;Rosario, El
+38;033;38729;San Andrés y Sauces
+38;033;38720;San Andrés y Sauces
+38;034;38420;San Juan de la Rambla
+38;034;38428;San Juan de la Rambla
+38;034;38429;San Juan de la Rambla
+38;035;38620;San Miguel de Abona
+38;035;38628;San Miguel de Abona
+38;035;38629;San Miguel de Abona
+38;035;38639;San Miguel de Abona
+38;036;38800;San Sebasti�n de la Gomera
+38;036;38801;San Sebasti�n de la Gomera
+38;036;38811;San Sebasti�n de la Gomera
+38;037;38713;Santa Cruz de la Palma
+38;037;38714;Santa Cruz de la Palma
+38;037;38700;Santa Cruz de la Palma
+38;037;38712;Santa Cruz de la Palma
+38;037;38715;Santa Cruz de la Palma
+38;038;38160;Santa Cruz de Tenerife
+38;038;38120;Santa Cruz de Tenerife
+38;038;38129;Santa Cruz de Tenerife
+38;038;38130;Santa Cruz de Tenerife
+38;038;38139;Santa Cruz de Tenerife
+38;038;38140;Santa Cruz de Tenerife
+38;038;38320;Santa Cruz de Tenerife
+38;038;38004;Santa Cruz de Tenerife
+38;038;38170;Santa Cruz de Tenerife
+38;038;38180;Santa Cruz de Tenerife
+38;038;38294;Santa Cruz de Tenerife
+38;038;38111;Santa Cruz de Tenerife
+38;038;38150;Santa Cruz de Tenerife
+38;038;38001;Santa Cruz de Tenerife
+38;038;38108;Santa Cruz de Tenerife
+38;038;38107;Santa Cruz de Tenerife
+38;038;38010;Santa Cruz de Tenerife
+38;038;38009;Santa Cruz de Tenerife
+38;038;38008;Santa Cruz de Tenerife
+38;038;38007;Santa Cruz de Tenerife
+38;038;38005;Santa Cruz de Tenerife
+38;038;38003;Santa Cruz de Tenerife
+38;038;38002;Santa Cruz de Tenerife
+38;038;38110;Santa Cruz de Tenerife
+38;038;38006;Santa Cruz de Tenerife
+38;039;38399;Santa Úrsula
+38;039;38398;Santa Úrsula
+38;039;38390;Santa Úrsula
+38;040;38683;Santiago del Teide
+38;040;38684;Santiago del Teide
+38;040;38690;Santiago del Teide
+38;041;38359;Sauzal, El
+38;041;38360;Sauzal, El
+38;042;38435;Silos, Los
+38;042;38479;Silos, Los
+38;042;38470;Silos, Los
+38;042;38460;Silos, Los
+38;043;38340;Tacoronte
+38;043;38350;Tacoronte
+38;043;38355;Tacoronte
+38;043;38356;Tacoronte
+38;043;38357;Tacoronte
+38;043;38358;Tacoronte
+38;044;38435;Tanque, El
+38;045;38770;Tazacorte
+38;045;38779;Tazacorte
+38;046;38289;Tegueste
+38;046;38292;Tegueste
+38;046;38293;Tegueste
+38;046;38297;Tegueste
+38;046;38280;Tegueste
+38;047;38780;Tijarafe
+38;047;38789;Tijarafe
+38;048;38915;Valverde
+38;048;38916;Valverde
+38;048;38900;Valverde
+38;048;38910;Valverde
+38;049;38852;Valle Gran Rey
+38;049;38870;Valle Gran Rey
+38;049;38879;Valle Gran Rey
+38;049;38892;Valle Gran Rey
+38;050;38891;Vallehermoso
+38;050;38840;Vallehermoso
+38;050;38849;Vallehermoso
+38;050;38850;Vallehermoso
+38;050;38852;Vallehermoso
+38;050;38860;Vallehermoso
+38;050;38869;Vallehermoso
+38;051;38380;Victoria de Acentejo, La
+38;051;38389;Victoria de Acentejo, La
+38;052;38613;Vilaflor
+38;052;38614;Vilaflor
+38;052;38615;Vilaflor
+38;052;38629;Vilaflor
+38;053;38730;Villa de Mazo
+38;053;38738;Villa de Mazo
+38;053;38739;Villa de Mazo
+38;901;38914;Pinar de El Hierro, El
+38;901;38917;Pinar de El Hierro, El

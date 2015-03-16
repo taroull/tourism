@@ -1,14 +1,14 @@
 package es.ull.taro.tourism_core.utils;
 
 import static es.ull.taro.tourism_core.domain.TDTResourceType.ACCOMMODATION;
-import static es.ull.taro.tourism_core.domain.TDTResourceType.GASTRO;
-import static es.ull.taro.tourism_core.domain.TDTResourceType.OFFICE;
 import static es.ull.taro.tourism_core.domain.TDTResourceType.BEACH;
+import static es.ull.taro.tourism_core.domain.TDTResourceType.GASTRO;
 import static es.ull.taro.tourism_core.domain.TDTResourceType.NOTDT;
+import static es.ull.taro.tourism_core.domain.TDTResourceType.OFFICE;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.ACCOMMODATION_BASE_URI;
+import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.BEACH_BASE_URI;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.GASTRO_BASE_URI;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.OFFICE_BASE_URI;
-import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.BEACH_BASE_URI;
 
 import org.apache.commons.lang.StringUtils;
 

@@ -28,4 +28,6 @@ public interface CoreService {
 
 	public List<String> retrieveBeachesAround(String htoResourceUri, int radius);
 
+	public Object getWeatherPrediction(String uri);
+
 }

@@ -27,7 +27,7 @@ import es.ull.taro.tourism_core.domain.TDTResourceType;
 import es.ull.taro.tourism_core.utils.Utils;
 import es.ull.taro.tourism_core.vocabularies.DBpedia;
 
-@Service("coreService")
+@Service(CoreService.BEAN_ID)
 public class CoreServiceImpl implements CoreService {
 
 	@Autowired
@@ -50,6 +50,9 @@ public class CoreServiceImpl implements CoreService {
 
 	@Autowired
 	private PlacesService placesService;
+
+	@Autowired
+	private AemetService aemetService;
 
 	// @Override
 	// public Object retrieve(String uri) throws JsonLdError {
@@ -237,5 +240,11 @@ public class CoreServiceImpl implements CoreService {
 		}
 
 		return resources;
+	}
+
+	@Override
+	public Object getWeatherPrediction(String uri) {
+		TDTResource tdtResource = buildTDTResource(uri);
+		return aemetService.getWeatherPrediction(tdtResource.getPostalCode());
 	}
 }

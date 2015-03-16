@@ -1,6 +1,5 @@
 package es.ull.taro.tourism_rest;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -135,8 +134,8 @@ public class TourismAPI {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("wheatherProps")
-	public HashMap<String, String> stationProps(@QueryParam(value = "uri") String uri) throws Exception {
-		return aemetService.showWeatherStationProps(uri);
+	@Path("weatherPrediction")
+	public Object weatherPrediction(@QueryParam(value = "uri") String uri) throws Exception {
+		return coreService.getWeatherPrediction(uri);
 	}
 }

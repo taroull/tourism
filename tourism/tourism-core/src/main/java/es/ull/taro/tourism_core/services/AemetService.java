@@ -8,5 +8,8 @@ public interface AemetService {
 	public static final String BEAN_ID = "aemetService";
 
 	public List<String> findWeatherStationsAround(float latitude, float longitude, int radiusInMeters);
+
 	public HashMap<String, String> showWeatherStationProps(String uri);
+
+	public Object getWeatherPrediction(String postalCode);
 }
