@@ -31,9 +31,11 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ");
 		sparqlQuery.append("PREFIX org: <http://www.w3.org/TR/vocab-org/> ");
 		sparqlQuery.append("PREFIX vCard: <http://www.w3.org/TR/vcard-rdf/> ");
+		sparqlQuery.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ");
 
-		sparqlQuery.append("SELECT ?office ?locality");
+		sparqlQuery.append("SELECT ?name ?office ?locality");
 		sparqlQuery.append("{ ");
+		sparqlQuery.append("  ?office rdfs:label ?name. ");
 		sparqlQuery.append("  ?office a org:OrganizationalUnit. ");
 		sparqlQuery.append("  ?office org:hasRegisteredSite ?registeredSite. ");
 		sparqlQuery.append("  ?registeredSite a org:Site. ");
@@ -53,7 +55,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
 				es.ull.taro.tourism_core.domain.Resource resource = new es.ull.taro.tourism_core.domain.Resource(sol.getResource("?office").getURI().toString());
-				resource.setName(sol.getLiteral("?locality").toString());
+				resource.setName(sol.getLiteral("?name").toString());
 				resources.add(resource);
 			}
 		} finally {
@@ -113,7 +115,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 	}
 
 	protected Model loadRDFFile() {
-		return RDFDataMgr.loadModel("tdtoficinasdeturismov1.2.0.rdf");
+		return RDFDataMgr.loadModel("oficinasdeturismo.rdf");
 	}
 
 	@Override

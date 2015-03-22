@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:org="http://www.w3.org/TR/vocab-org/"
+         xmlns:vCard="http://www.w3.org/TR/vcard-rdf/"
+         xmlns:foaf="http://xmlns.com/foaf/spec/">
+   <org:FormalOrganization rdf:about="http://turismo-de-tenerife.org/resource/turismo-de-tenerife">
+      <org:purpose>Turismo</org:purpose>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto: info@webtenerife.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34 902 321 331"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34 922 237 876"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avenida de la Constitución, 12</vCard:street-address>
+                        <vCard:locality>Santa Cruz de Tenerife</vCard:locality>
+                        <vCard:postal-code>38005</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.454738,-16.254963</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/turismo-de-tenerife">
+                        <geo:lat>28.454738</geo:lat>
+                        <geo:long>-16.254963</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.webtenerife.com/corporativa/"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+   </org:FormalOrganization>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/CentrodeVisitantesCruzdelCarmen">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Centro de Visitantes Cruz del Carmen</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:cvisitantes@cabtfe.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 63 35 76"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Ctra. Las Mercedes, km.6</vCard:street-address>
+                        <vCard:locality>San Cristóbal de la Laguna</vCard:locality>
+                        <vCard:postal-code>38294</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.531297762237123, -16.28023624420166</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/CentrodeVisitantesCruzdelCarmen">
+                        <geo:lat>28.531297762237123</geo:lat>
+                        <geo:long> -16.28023624420166</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fcentro%20de%20visitantes%20Cruz%20del%20Carmen.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Arico">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Arico</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@ayuntamientodearico.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 16 11 33"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>C/ Benítez de Lugo, 1 </vCard:street-address>
+                        <vCard:locality>Arico</vCard:locality>
+                        <vCard:postal-code>38580</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.1666549, -16.501374800000008</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Arico">
+                        <geo:lat>28.1666549</geo:lat>
+                        <geo:long> -16.501374800000008</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.ayuntamientodearico.com"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Candelaria">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Candelaria </rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:oit@candelaria.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 03 22 30"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 50 00 08"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. de la Constitución, s/n, Candelaria</vCard:street-address>
+                        <vCard:locality>Candelaria</vCard:locality>
+                        <vCard:postal-code>38530</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.3574725, -16.36918289999994</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Candelaria">
+                        <geo:lat>28.3574725</geo:lat>
+                        <geo:long> -16.36918289999994</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.turismocandelaria.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOIT%20CANDELARIA.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Adeje-PlayadeFa%C3%B1ab%C3%A9">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Adeje - Playa de Fañabé</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@adeje.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 71 65 39"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 71 66 43"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Litoral, s/n. Playa de Fañabé</vCard:street-address>
+                        <vCard:locality>Adeje</vCard:locality>
+                        <vCard:postal-code>38660</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.08609883027464, -16.736991084180772</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Adeje-PlayadeFa%C3%B1ab%C3%A9">
+                        <geo:lat>28.08609883027464</geo:lat>
+                        <geo:long> -16.736991084180772</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.costa-adeje.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOIT%20Playa%20%20Fa%C3%B1ab%C3%A93sep%202010.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Garachico">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Garachico</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:citgara@hotmail.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 13 34 61"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 13 34 61"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda Republica de Venezuela (explanada del antiguo muelle)</vCard:street-address>
+                        <vCard:locality>Garachico</vCard:locality>
+                        <vCard:postal-code>38450</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.373011654612746, -16.765332520008087</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Garachico">
+                        <geo:lat>28.373011654612746</geo:lat>
+                        <geo:long> -16.765332520008087</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.garachico.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FCIT%20Garachico.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/G%C3%BC%C3%ADmar%28C.I.T%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Güímar (C.I.T)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:citguimar@hotmail.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 51 15 90"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 51 35 69"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Obispo Pérez Cáceres, 18</vCard:street-address>
+                        <vCard:locality>Güímar</vCard:locality>
+                        <vCard:postal-code>38500</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <foaf:homepage rdf:resource="http://www.citguimar.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fcit%20g%C3%BCimar.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/LaOrotava">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>La Orotava</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 32 30 41"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 32 43 67"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>C/ Calvario, 4</vCard:street-address>
+                        <vCard:locality>Orotava (La)</vCard:locality>
+                        <vCard:postal-code>38300</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.3916415, -16.522502300000042</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/LaOrotava">
+                        <geo:lat>28.3916415</geo:lat>
+                        <geo:long> -16.522502300000042</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOROTAVA.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/LosRealejos">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Los Realejos</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info@losrealejos.travel"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 34 61 81"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 34 66 03"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Plaza de la Unión, s/n</vCard:street-address>
+                        <vCard:locality>Realejos (Los)</vCard:locality>
+                        <vCard:postal-code>38410</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.3806049, -16.585461200000054</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/LosRealejos">
+                        <geo:lat>28.3806049</geo:lat>
+                        <geo:long> -16.585461200000054</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.losrealejos.travel"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fofi%20tur2.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Arona-PlayadelasAm%C3%A9ricas">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Arona - Playa de las Américas</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info-americas@arona.travel"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 79 76 68"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address> Plza. del City Center. Avda. Rafael Puig, 19 </vCard:street-address>
+                        <vCard:locality>Arona</vCard:locality>
+                        <vCard:postal-code>38660</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.0596063, -16.733153799999968</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Arona-PlayadelasAm%C3%A9ricas">
+                        <geo:lat>28.0596063</geo:lat>
+                        <geo:long> -16.733153799999968</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.arona.travel"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2F9_7273_1.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Adeje-PlazadelDuque">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Adeje - Plaza del Duque</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@adeje.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 71 63 77"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 71 43 97"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>C.C. Plaza del Duque </vCard:street-address>
+                        <vCard:locality>Adeje</vCard:locality>
+                        <vCard:postal-code>38660</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.0933361, -16.741363699999965</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Adeje-PlazadelDuque">
+                        <geo:lat>28.0933361</geo:lat>
+                        <geo:long> -16.741363699999965</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.costa-adeje.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FP8250016.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/PuertodelaCruz%28C.I.T%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Puerto de la Cruz (C.I.T)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info@citpuerto.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 38 87 77"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address> C/ Puerto Viejo, 13 </vCard:street-address>
+                        <vCard:locality>Puerto de la Cruz (El)</vCard:locality>
+                        <vCard:postal-code>38400</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.415654213815642, -16.55336022377014</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/PuertodelaCruz%28C.I.T%29">
+                        <geo:lat>28.415654213815642</geo:lat>
+                        <geo:long> -16.55336022377014</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.citpuerto.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FCIT%20PUERTO%20Cruz.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/LaLaguna-CasaAlvaradoBracamonte">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>La Laguna - Casa Alvarado Bracamonte</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo.laguna.@cabtfe.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 63 11 94"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>C/ La Carrera, 7, Bajo. Casa Alvarado Bracamonte (Capitanes Generales) </vCard:street-address>
+                        <vCard:locality>San Cristóbal de la Laguna</vCard:locality>
+                        <vCard:postal-code>38201</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.4874009, -16.315906100000007</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/LaLaguna-CasaAlvaradoBracamonte">
+                        <geo:lat>28.4874009</geo:lat>
+                        <geo:long> -16.315906100000007</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.aytolalaguna.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Foficina-de-turismo-de-la-laguna_388663.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/LaLaguna-AeropuertoTfe.NorteLosRodeos">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>La Laguna -  Aeropuerto Tfe. Norte Los Rodeos </rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo.laguna@cabtfe.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 82 50 46"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Aeropuerto Tenerife Norte - Los Rodeos</vCard:street-address>
+                        <vCard:locality>San Cristóbal de la Laguna</vCard:locality>
+                        <vCard:postal-code>38297</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.482573524849567, -16.342849731445312</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/LaLaguna-AeropuertoTfe.NorteLosRodeos">
+                        <geo:lat>28.482573524849567</geo:lat>
+                        <geo:long> -16.342849731445312</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.aytolalaguna.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fla_laguna%255B2%255D.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SanMigueldeAbona">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>San Miguel de Abona</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:costasanmiguel@sanmigueldeabona.org"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 73 86 64"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 72 75 01"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Galván Bello, s/n </vCard:street-address>
+                        <vCard:locality>San Miguel de Abona</vCard:locality>
+                        <vCard:postal-code>38620</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.03933428449891, -16.612915992736816</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SanMigueldeAbona">
+                        <geo:lat>28.03933428449891</geo:lat>
+                        <geo:long> -16.612915992736816</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.costasanmiguel.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOIT%20San%20Miguel.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SantaCruz%28Cabildo%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Santa Cruz (Cabildo)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 28 12 87 "/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 28 49 65"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Plaza de España, s/n</vCard:street-address>
+                        <vCard:locality>Santa Cruz de Tenerife</vCard:locality>
+                        <vCard:postal-code>38003</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.467172818038, -16.24768763780594</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SantaCruz%28Cabildo%29">
+                        <geo:lat>28.467172818038</geo:lat>
+                        <geo:long> -16.24768763780594</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.todotenerife.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Foficina-de-turismo-de-plaza-de-espana_61527.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SantaCruzdeTenerife%28C.I.T.%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Santa Cruz de Tenerife (C.I.T.)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:livingsc@livingsantacruz.es "/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34637 365 429"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Francisco Laroche, s/n.  </vCard:street-address>
+                        <vCard:locality>Santa Cruz de Tenerife</vCard:locality>
+                        <vCard:postal-code>38004</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.4735719, -16.24688889999993</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SantaCruzdeTenerife%28C.I.T.%29">
+                        <geo:lat>28.4735719</geo:lat>
+                        <geo:long> -16.24688889999993</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FCIT%20SANTA%20CRUZ.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SantaCruz-Intercambiador">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Santa Cruz - Intercambiador </rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:cityexpertinter@gmail.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34607 830 104"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 28 95 36 "/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Intercambiador TITSA C/ Fomento, s/n (zona guaguas interurbanas)</vCard:street-address>
+                        <vCard:locality>Santa Cruz de Tenerife</vCard:locality>
+                        <vCard:postal-code>38005</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.459221371653598, -16.253522615879774</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SantaCruz-Intercambiador">
+                        <geo:lat>28.459221371653598</geo:lat>
+                        <geo:long> -16.253522615879774</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOIT%20INTERCAMBIADOR.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SantaCruzdeTenerife-CalleCastillo">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Santa Cruz de Tenerife - Calle Castillo</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:cityexpertcastillo@gmail.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34607 830 068 "/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 28 95 36"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>C/ Castillo, 1. (C/Castillo con C/Cruz Verde)</vCard:street-address>
+                        <vCard:locality>Santa Cruz de Tenerife</vCard:locality>
+                        <vCard:postal-code/>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.4660559, -16.24919729999999</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SantaCruzdeTenerife-CalleCastillo">
+                        <geo:lat>28.4660559</geo:lat>
+                        <geo:long> -16.24919729999999</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FSanta%20Cruz%20Calle%20el%20Castillo%20Sociedad%20de%20Desarrollo.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/SantiagodelTeide-PlayaLaArena">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Santiago del Teide - Playa La Arena</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@santiagodelteide.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 86 03 48"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 86 03 48"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Ctro. Com. Seguro de Sol, Avda. Marítima, Local 34. Playa la Arena</vCard:street-address>
+                        <vCard:locality>Santiago del Teide</vCard:locality>
+                        <vCard:postal-code>38683</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.233615271852027, -16.84127926826477</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/SantiagodelTeide-PlayaLaArena">
+                        <geo:lat>28.233615271852027</geo:lat>
+                        <geo:long> -16.84127926826477</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.santiagodelteide.org"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Ffotos%20oficina%20005.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/AeropuertoTenerifeNorteLosRodeos">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Aeropuerto Tenerife Norte Los Rodeos</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info@webtenerife.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 63 51 92 "/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 25 54 33"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Zona de Llegadas (recogida de equipajes) en Aeropuerto Tenerife Norte.  </vCard:street-address>
+                        <vCard:locality>San Cristóbal de la Laguna</vCard:locality>
+                        <vCard:postal-code>38297</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.486802589139625, -16.34782934153918</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/AeropuertoTenerifeNorteLosRodeos">
+                        <geo:lat>28.486802589139625</geo:lat>
+                        <geo:long> -16.34782934153918</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.webtenerife.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FS6001589.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Sur%28C.I.T%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Sur (C.I.T)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info@citsur.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 79 33 12"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 79 33 90"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Rafael Puig, 17 </vCard:street-address>
+                        <vCard:locality>Adeje</vCard:locality>
+                        <vCard:postal-code>38660</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.0726101, -16.731365900000014</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Sur%28C.I.T%29">
+                        <geo:lat>28.0726101</geo:lat>
+                        <geo:long> -16.731365900000014</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fcartel_oficina_004%255B1%255D.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Granadilla-ElM%C3%A9dano">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Granadilla - El Médano</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@granadilladeabona.org"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 17 60 02"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 17 60 02"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Plaza de los Príncipes de España, s/n</vCard:street-address>
+                        <vCard:locality>Granadilla de Abona</vCard:locality>
+                        <vCard:postal-code>38612</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.043950586126744, -16.538506150245667</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Granadilla-ElM%C3%A9dano">
+                        <geo:lat>28.043950586126744</geo:lat>
+                        <geo:long> -16.538506150245667</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.granadilladeaona.org"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Fofi%20nueva.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Arona-PlayadeLasVistas">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Arona - Playa de Las Vistas</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info-vistas@arona.travel"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 78 70 11"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>P.º Marítimo Playa de Las Vistas. Los Cristianos</vCard:street-address>
+                        <vCard:locality>Arona</vCard:locality>
+                        <vCard:postal-code>38650</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.050445, -16.717322700000068</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Arona-PlayadeLasVistas">
+                        <geo:lat>28.050445</geo:lat>
+                        <geo:long> -16.717322700000068</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.arona.travel"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2F17_7275_1.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/AeropuertoTenerifeSurReinaSof%C3%ADa">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Aeropuerto Tenerife Sur Reina Sofía</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:aeropuertosur@webtenerife.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 39 20 37"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 39 20 37"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Aeropuerto Tenerife Sur</vCard:street-address>
+                        <vCard:locality>Granadilla de Abona</vCard:locality>
+                        <vCard:postal-code>38610</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.0464178, -16.577046300000006</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/AeropuertoTenerifeSurReinaSof%C3%ADa">
+                        <geo:lat>28.0464178</geo:lat>
+                        <geo:long> -16.577046300000006</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.webtenerife.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FPantalla%20t%C3%A1ctil%204.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Arona-PlayadeLasGalletas">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Arona - Playa de Las Galletas </rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info-galletas@arona.travel"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 73 01 33"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>P.º Marítimo Dionisio Glez. Delgado, 1. Las Galletas</vCard:street-address>
+                        <vCard:locality>Arona</vCard:locality>
+                        <vCard:postal-code>38631</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.0064055, -16.655876499999976</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Arona-PlayadeLasGalletas">
+                        <geo:lat>28.0064055</geo:lat>
+                        <geo:long> -16.655876499999976</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.arona.travel"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2F0_11114_1.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/PuertodelaCruz">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Puerto de la Cruz</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:manuelp@tenerife.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 38 60 00"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 38 47 69"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Casa de la Aduana - C/ Las Lonjas, s/n</vCard:street-address>
+                        <vCard:locality>Puerto de la Cruz (El)</vCard:locality>
+                        <vCard:postal-code>38400</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.418084010213544, -16.550034284591675</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/PuertodelaCruz">
+                        <geo:lat>28.418084010213544</geo:lat>
+                        <geo:long> -16.550034284591675</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.todotenerife.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FPTOCRUZCASADEADUANAAlta.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/BuenavistadelNorte">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Buenavista del Norte</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@buenavistadelnorte.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 12 80 80"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 12 80 93"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Plza. de Los Remedios, s/n - Casa Matula</vCard:street-address>
+                        <vCard:locality>Buenavista del Norte</vCard:locality>
+                        <vCard:postal-code>38480</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.371797426644615, -16.85162991285324</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/BuenavistadelNorte">
+                        <geo:lat>28.371797426644615</geo:lat>
+                        <geo:long> -16.85162991285324</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.buenavistadelnorte.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FMatula-005.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/CentrodeVisitantesParqueRuraldeTeno">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Centro de Visitantes Parque Rural de Teno</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:tenoparque@tenerife.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 44 79 70"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 12 80 43"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Finca Los Pedregales, s/n-El Palmar</vCard:street-address>
+                        <vCard:locality>Buenavista del Norte</vCard:locality>
+                        <vCard:postal-code>38480</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.345941, -16.8460149</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/CentrodeVisitantesParqueRuraldeTeno">
+                        <geo:lat>28.345941</geo:lat>
+                        <geo:long> -16.8460149</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.tenerife.es/wps/portal/tenerifees/medioambiente/espaciosnaturales/categoriasproteccion/parquesrurales/ParqueRuralTeno"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Ffinca-los-pedregales%20Parque%20Rural%20de%20Teno.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Tacoronte">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Tacoronte</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@aytotacoronte.org"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 57 00 15"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 57 00 15"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Ctra. Tacoronte-Tejina, s/n</vCard:street-address>
+                        <vCard:locality>Tacoronte</vCard:locality>
+                        <vCard:postal-code>38350</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.476990674415823, -16.41533374786377</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Tacoronte">
+                        <geo:lat>28.476990674415823</geo:lat>
+                        <geo:long> -16.41533374786377</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.tacoronte.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FDSC00343.JPG"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Adeje-PlayadeTroya">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Adeje - Playa de Troya</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:turismo@adeje.es"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 98 50 80"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 78 89 55"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Fax"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Rafael Puig Lluvina, nº1 - Costa Adeje</vCard:street-address>
+                        <vCard:locality>Adeje</vCard:locality>
+                        <vCard:postal-code>38660</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.067213656409855, -16.73244473990053</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Adeje-PlayadeTroya">
+                        <geo:lat>28.067213656409855</geo:lat>
+                        <geo:long> -16.73244473990053</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.costa-adeje.es"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2FOIT%20Troya%20Im%C3%A1genes%20013.jpg"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+   <org:OrganizationalUnit rdf:about="http://turismo-de-tenerife.org/resource/oficinas-turismo/Candelaria-Caletillas%28C.I.T%29">
+      <org:unitOf rdf:resource="http://turismo-de-tenerife.org/resource/turismo-de-tenerife"/>
+      <rdfs:label>Candelaria - Caletillas (C.I.T)</rdfs:label>
+      <org:hasRegisteredSite>
+         <org:Site>
+            <org:siteAddress>
+               <vCard:Location>
+                  <vCard:hasEmail rdf:resource="mailto:info@citcandelaria.com"/>
+                  <vCard:hasTelephone rdf:parseType="Resource">
+                     <vCard:hasValue rdf:resource="tel:+34922 50 04 15"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Voice"/>
+                     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+                  </vCard:hasTelephone>
+                  <vCard:hasAddress>
+                     <vCard:Address>
+                        <vCard:street-address>Avda. Maritíma, 176 d  Plaza del C.I.T.</vCard:street-address>
+                        <vCard:locality>Candelaria</vCard:locality>
+                        <vCard:postal-code>38520</vCard:postal-code>
+                     </vCard:Address>
+                  </vCard:hasAddress>
+                  <vCard:hasGeo>geo: 28.37522177344538, -16.36263370513916</vCard:hasGeo>
+                  <geo:location>
+                     <geo:Point rdf:about="http://turismo-de-tenerife.org/resource/XY/oficinas-turismo/Candelaria-Caletillas%28C.I.T%29">
+                        <geo:lat>28.37522177344538</geo:lat>
+                        <geo:long> -16.36263370513916</geo:long>
+                     </geo:Point>
+                  </geo:location>
+                  <foaf:homepage rdf:resource="http://www.citcandelaria.com"/>
+                  <vCard:hasPhoto rdf:resource="http://infoten.es/fichas%2FPublishingImages%2Flogooriginal%20%20con%20CIT%20CANDELARIA.bmp"/>
+               </vCard:Location>
+            </org:siteAddress>
+         </org:Site>
+      </org:hasRegisteredSite>
+      <org:purpose>Oficinas de información Turística</org:purpose>
+   </org:OrganizationalUnit>
+</rdf:RDF>

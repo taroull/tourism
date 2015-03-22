@@ -158,7 +158,7 @@ public class CoreServiceImpl implements CoreService {
 		Model model = ModelFactory.createDefaultModel();
 		InputStream inAcc = FileManager.get().open("tdtalojamientos.rdf");
 		InputStream inRest = FileManager.get().open("tdt-restauracion.rdf");
-		InputStream inOff = FileManager.get().open("tdtoficinasdeturismov1.2.0.rdf");
+		InputStream inOff = FileManager.get().open("oficinasdeturismo.rdf");
 		InputStream inBeach = FileManager.get().open("playas.rdf");
 
 		model.read(inAcc, EMPTY);
