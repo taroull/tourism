@@ -134,18 +134,16 @@ public class CoreServiceImpl implements CoreService {
 
 	private TDTResource buildTDTResource(String tdtResourceUri) {
 		TDTResourceType type = Utils.resolveTdtResourceType(tdtResourceUri);
-		switch (type) {
-		case GASTRO:
-			return gastroService.createHtoResource(tdtResourceUri);
-		case ACCOMMODATION:
-			return accommodationService.createHtoResource(tdtResourceUri);
-		case OFFICE:
-			return tourismOfficesService.createOfficeResource(tdtResourceUri);
-		case BEACH:
+		if (TDTResourceType.BEACH.equals(type)) {
 			return placesService.createBeachResource(tdtResourceUri);
-		default:
-			return null;
+		} else if (TDTResourceType.GASTRO.equals(type)) {
+			return gastroService.createHtoResource(tdtResourceUri);
+		} else if (TDTResourceType.ACCOMMODATION.equals(type)) {
+			return accommodationService.createHtoResource(tdtResourceUri);
+		} else if (TDTResourceType.OFFICE.equals(type)) {
+			return tourismOfficesService.createOfficeResource(tdtResourceUri);
 		}
+		return null;
 	}
 
 	@Override
