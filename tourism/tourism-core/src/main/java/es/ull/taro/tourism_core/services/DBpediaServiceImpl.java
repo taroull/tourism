@@ -63,14 +63,26 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 	@Override
 	public List<String> retrieveMunicipalityInfoES(String postalCode) throws JsonLdError {
 
+		// String municipalityCode =
+		// PostalCodesMapping.getInstance().getMunicipalityCode(postalCode);
+		// List<String> postalCodes =
+		// PostalCodesMapping.getInstance().getPostalCodes(municipalityCode);
+
 		StringBuilder dbpediaQuery = new StringBuilder();
 		dbpediaQuery.append("PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> ");
 		dbpediaQuery.append("prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ");
 		dbpediaQuery.append("SELECT DISTINCT ?city ");
 		dbpediaQuery.append("WHERE {");
 		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
-		dbpediaQuery.append("  { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/Spain> }").append(
-				" UNION { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/España> } . ");
+		// dbpediaQuery.append("  { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/Spain> }").append(
+		// " UNION { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/España> } . ");
+		// for (int i = 0; i < postalCodes.size(); i++) {
+		// if (i > 0) {
+		// dbpediaQuery.append(" UNION ");
+		// }
+		// dbpediaQuery.append(" { ?city dbpedia-owl:postalCode \"").append(postalCodes.get(i)).append("\" }");
+		// }
+		// dbpediaQuery.append(" . ");
 		dbpediaQuery.append("  ?city dbpedia-owl:postalCode \"").append(postalCode).append("\" . ");
 		dbpediaQuery.append("}");
 
