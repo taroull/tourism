@@ -28,7 +28,7 @@ public class GeoLinkedDataServiceImpl implements GeoLinkedDataService {
 		StringBuilder sparqlQuery = new StringBuilder();
 		sparqlQuery.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ");
 		sparqlQuery.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ");
-		sparqlQuery.append("SELECT  ?subject ");
+		sparqlQuery.append("SELECT  DISTINCT ?subject ");
 		sparqlQuery.append("WHERE { ");
 		sparqlQuery.append("  ?subject geo:geometry ?g.  ");
 		sparqlQuery.append("  ?g geo:lat ?lat. ");

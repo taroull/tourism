@@ -69,8 +69,9 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		dbpediaQuery.append("SELECT DISTINCT ?city ");
 		dbpediaQuery.append("WHERE {");
 		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
-		dbpediaQuery.append("  ?city dbpedia-owl:country <http://es.dbpedia.org/resource/Spain> . ");
-		dbpediaQuery.append("  ?city dbpedia-owl:postalCode \"").append(postalCode).append("\"@es . ");
+		dbpediaQuery.append("  { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/Spain> }").append(
+				" UNION { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/España> } . ");
+		dbpediaQuery.append("  ?city dbpedia-owl:postalCode \"").append(postalCode).append("\" . ");
 		dbpediaQuery.append("}");
 
 		List<String> uris = new ArrayList<String>();

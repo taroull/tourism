@@ -33,7 +33,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 
 		StringBuilder sparqlQuery = new StringBuilder();
 		sparqlQuery.append("PREFIX hto: <").append(HTO.VOCABULARY).append(">");
-		sparqlQuery.append("SELECT ?resource ?text");
+		sparqlQuery.append("SELECT DISTINCT ?resource ?text");
 		sparqlQuery.append("{ ");
 		sparqlQuery.append("?resource a ").append(getResourceType()).append(".");
 		sparqlQuery.append("?resource hto:name ?multilanguageText. ");
