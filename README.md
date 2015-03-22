@@ -9,7 +9,7 @@
 * `GET` **/v1/municipalityInfo?uri=**[alphanumeric]
 * `GET` **/v1/municipalityPhotos?uri=**[alphanumeric]
 * `GET` **/v1/photosAround?uri=**[alphanumeric]**&radius=**[float]
-* `GET` **/v1/placesNear?uri=**[alphanumeric]**&radius=**[float]
+* `GET` **/v1/placesAround?uri=**[alphanumeric]**&radius=**[float]
 * `GET` **/v1/weatherPrediction?uri=**[alphanumeric]**
 * `GET` **/v1/tourismOfficeResource?name=**[alphanumeric]
 * `GET` **/v1/tourismOfficesAround?uri=**[alphanumeric]**&radius=**[float]
