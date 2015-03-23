@@ -154,7 +154,7 @@ public class PlacesServiceImpl implements PlacesService {
 			com.hp.hpl.jena.query.ResultSet ns = qe2.execSelect();
 			while (ns.hasNext()) {
 				QuerySolution soln = ns.nextSolution();
-				results.put(soln.getLiteral("?Name").toString(), "Nombre");
+				results.put("Nombre", soln.getLiteral("?Name").toString());
 				if (soln.getLiteral("?ActivityType") != null)
 					results.put("Tipo de actividad", soln.getLiteral("?ActivityType").toString());
 				if (soln.getLiteral("?Zone") != null)
