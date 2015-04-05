@@ -5,10 +5,13 @@ import static org.apache.commons.lang.StringUtils.EMPTY;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -148,7 +151,6 @@ public class CoreServiceImpl implements CoreService {
 
 	@Override
 	public List<es.ull.taro.tourism_core.domain.Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException {
-
 		TDTResource tdtResource = buildTDTResource(uri);
 		return tdtResource != null ? spatialSearch(tdtResource.getLatitude(), tdtResource.getLongitude(), radiusInMeters) : null;
 	}
@@ -166,7 +168,13 @@ public class CoreServiceImpl implements CoreService {
 		model.read(inOff, EMPTY);
 		model.read(inBeach, EMPTY);
 		String placesDBP = "http://es.dbpedia.org/sparql?default-graph-uri=&query=%0D%0Aselect+%3Furi+%3Fname+%3Flatitude+%3Flongitude+%7B+%0D%0A++++%3Furi+rdfs%3Alabel+%3Fname+.%0D%0A++++%3Furi+geo%3Alat+%3Flatitude+.%0D%0A++++%3Furi+geo%3Along+%3Flongitude+.%0D%0A++++%3Furi+dcterms%3Asubject+%3Fprovince+.%0D%0A++++FILTER+regex%28%3Fprovince%2C+%22tenerife%22%2C+%22i%22%29.+%0D%0A+++%0D%0A%7D&format=text%2Fturtle&timeout=0&debug=on";
+//		String placesGeoLinkedData = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0A"
+//				+ "SELECT++DISTINCT+%3Fsubject+%0D%0AWHERE+%7B+%0D%0A++%3Fsubject+geo%3Ageometry+%3Fg.++%0D%0A++%3Fg+geo%3Alat+%3Flat.+%0D%0A++%3Fg+geo%3Along+%3Flong.+%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%27" + latitude +  "%27%29+%3C%3D+" + radiusInMeters + "%0D%0A++%26%26+"
+//				+ "xsd%3Adouble%28%27" + latitude + "%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+" + radiusInMeters + "%0D%0A++%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27" + longitude + "%27%29+%3C%3D+" + radiusInMeters +"%0D%0A++%26%26+xsd%3Adouble%28%27" + longitude + "%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+" + radiusInMeters + "+%29.+%0D%0A%7D&format=text%2Fplain&debug=on&timeout=";
+//		RDFDataMgr.read (model, placesGeoLinkedData, Lang.NTRIPLES);
 		RDFDataMgr.read(model, placesDBP);
+		String uri = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0ASELECT++DISTINCT+%3Fsubject+%0D%0AWHERE+%7B+%0D%0A++%3Fsubject+geo%3Ageometry+%3Fg.++%0D%0A++%3Fg+geo%3Alat+%3Flat.+%0D%0A++%3Fg+geo%3Along+%3Flong.+%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%2728.4091309%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%2728.4091309%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27-16.5440964%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%27-16.5440964%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+1000+%29.+%0D%0A%7D&format=text%2Fplain&debug=on&timeout=";
+		RDFDataMgr.read(model, uri, Lang.TRIG);
 
 		return queryData(model, latitude, longitude, radiusInMeters);
 	}
@@ -185,7 +193,7 @@ public class CoreServiceImpl implements CoreService {
 		query.append("PREFIX vCard: <http://www.w3.org/TR/vcard-rdf/>");
 		query.append("PREFIX tdt: <http://turismo-de-tenerife.org/def/turismo#>");
 
-		query.append("SELECT ?resourceDBP ?NameDBP ?resourceHTO ?NameHTO ?resourceOff ?NameOff ?resourceBeach ?NameBeach { ");
+		query.append("SELECT DISTINCT ?resourceDBP ?NameDBP ?resourceHTO ?NameHTO ?resourceOff ?NameOff ?resourceBeach ?NameBeach { ");
 		query.append("OPTIONAL {?B1 res:binding ?Uri . ?Uri res:variable \"uri\" . ?Uri res:value ?resourceDBP . ?B1 res:binding ?Name . ?Name res:variable \"name\" . ?Name res:value ?NameDBP . ");
 		query.append("		              ?B1 res:binding ?Lat . ?Lat res:variable \"latitude\" . ?Lat res:value ?latDBP . ?B1 res:binding ?Long . ?Long res:variable \"longitude\" . ?Long res:value ?longDBP . ");
 		query.append("		              FILTER(xsd:double(?latDBP) - xsd:double('" + latitude + "') <= " + convertedRadius);
@@ -212,7 +220,7 @@ public class CoreServiceImpl implements CoreService {
 
 		QueryExecution qe = QueryExecutionFactory.create(query.toString(), model);
 
-		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
+		Set<es.ull.taro.tourism_core.domain.Resource> resources = new HashSet<es.ull.taro.tourism_core.domain.Resource>();
 
 		try {
 			com.hp.hpl.jena.query.ResultSet rs = qe.execSelect();
@@ -237,7 +245,7 @@ public class CoreServiceImpl implements CoreService {
 			qe.close();
 		}
 
-		return resources;
+		return new ArrayList<es.ull.taro.tourism_core.domain.Resource>(resources);
 	}
 
 	@Override
