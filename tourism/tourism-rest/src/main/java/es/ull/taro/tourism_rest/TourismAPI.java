@@ -20,6 +20,8 @@ import es.ull.taro.tourism_core.services.AemetService;
 import es.ull.taro.tourism_core.services.CoreService;
 import es.ull.taro.tourism_core.services.DBpediaService;
 import es.ull.taro.tourism_core.services.GastroService;
+import es.ull.taro.tourism_core.services.HistoricalMonumentsService;
+import es.ull.taro.tourism_core.services.NaturalMonumentsService;
 import es.ull.taro.tourism_core.services.PlacesService;
 import es.ull.taro.tourism_core.services.TourismOfficesService;
 
@@ -44,6 +46,12 @@ public class TourismAPI {
 
 	@Autowired
 	protected TourismOfficesService tourismOfficesService;
+	
+	@Autowired
+	protected NaturalMonumentsService naturalMonumentsService;
+	
+	@Autowired
+	protected HistoricalMonumentsService historicalMonumentsService;
 
 	@Autowired
 	protected AemetService aemetService;
@@ -110,6 +118,20 @@ public class TourismAPI {
 	public List<String> retrieveTourismOfficesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveTourismOfficesAround(uri, radius);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("naturalMonumentsAround")
+	public List<String> retrieveNaturalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveNaturalMonumentsAround(uri, radius);
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("historicalMonumentsAround")
+	public List<String> retrieveHistoricalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveHistoricalMonumentsAround(uri, radius);
+	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -130,6 +152,20 @@ public class TourismAPI {
 	@Path("tourismOfficeResource")
 	public List<Resource> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
 		return tourismOfficesService.find(name);
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("naturalMonumentsResource")
+	public List<HTOResource> findNaturalMonumentsByName(@QueryParam(value = "name") String name) throws Exception {
+		return naturalMonumentsService.find(name);
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("historicalMonumentsResource")
+	public List<HTOResource> findHistoricalMonumentsByName(@QueryParam(value = "name") String name) throws Exception {
+		return historicalMonumentsService.find(name);
 	}
 
 	@GET

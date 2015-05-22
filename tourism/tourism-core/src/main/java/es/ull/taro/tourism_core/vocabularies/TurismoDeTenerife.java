@@ -7,4 +7,6 @@ public class TurismoDeTenerife {
 	public static final String ACCOMMODATION_BASE_URI = TDT_BASE_URI + "alojamiento/";
 	public static final String OFFICE_BASE_URI = TDT_BASE_URI + "oficinas-turismo/";
 	public static final String BEACH_BASE_URI = TDT_BASE_URI + "playas/";
+	public static final String NATURAL_BASE_URI = TDT_BASE_URI + "monumentosNaturales/";
+	public static final String HISTORICAL_BASE_URI = TDT_BASE_URI + "monumentosHistoricos/";
 }

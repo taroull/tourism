@@ -5,10 +5,14 @@ import static es.ull.taro.tourism_core.domain.TDTResourceType.BEACH;
 import static es.ull.taro.tourism_core.domain.TDTResourceType.GASTRO;
 import static es.ull.taro.tourism_core.domain.TDTResourceType.NOTDT;
 import static es.ull.taro.tourism_core.domain.TDTResourceType.OFFICE;
+import static es.ull.taro.tourism_core.domain.TDTResourceType.NATURAL;
+import static es.ull.taro.tourism_core.domain.TDTResourceType.HISTORICAL;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.ACCOMMODATION_BASE_URI;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.BEACH_BASE_URI;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.GASTRO_BASE_URI;
 import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.OFFICE_BASE_URI;
+import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.NATURAL_BASE_URI;
+import static es.ull.taro.tourism_core.vocabularies.TurismoDeTenerife.HISTORICAL_BASE_URI;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -25,7 +29,11 @@ public class Utils {
 			return OFFICE;
 		} else if (StringUtils.startsWith(uri, BEACH_BASE_URI)) {
 			return BEACH;
-		} else {
+		} else if (StringUtils.startsWith(uri, NATURAL_BASE_URI)){
+			return NATURAL;
+		} else if (StringUtils.startsWith(uri, HISTORICAL_BASE_URI)){
+			return HISTORICAL;
+		} else{
 			return NOTDT;
 		}
 	}

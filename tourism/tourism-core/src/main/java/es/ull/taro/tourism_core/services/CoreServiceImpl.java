@@ -25,6 +25,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.FileManager;
 
+import es.ull.taro.tourism_core.domain.HTOResource;
 import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.domain.TDTResourceType;
 import es.ull.taro.tourism_core.utils.Utils;
@@ -50,6 +51,12 @@ public class CoreServiceImpl implements CoreService {
 
 	@Autowired
 	private TourismOfficesService tourismOfficesService;
+	
+	@Autowired
+	private NaturalMonumentsService naturalMonumentsService;
+	
+	@Autowired
+	private HistoricalMonumentsService historicalMonumentsService;
 
 	@Autowired
 	private PlacesService placesService;
@@ -81,6 +88,10 @@ public class CoreServiceImpl implements CoreService {
 			return tourismOfficesService.describeUri(uri);
 		case BEACH:
 			return placesService.describeUri(uri);
+		case NATURAL:
+			return naturalMonumentsService.describeUri(uri);
+		case HISTORICAL:
+			return historicalMonumentsService.describeUri(uri);
 		default:
 			return dBpediaService.describeUri(uri);
 		}
@@ -128,6 +139,18 @@ public class CoreServiceImpl implements CoreService {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return tourismOfficesService.findTourismOfficesAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
+	
+	@Override
+	public List<String> retrieveNaturalMonumentsAround(String htoResourceUri, int radius) {
+		TDTResource tdtResource = buildTDTResource(htoResourceUri);
+		return naturalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
+	
+	@Override
+	public List<String> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius) {
+		TDTResource tdtResource = buildTDTResource(htoResourceUri);
+		return historicalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
 
 	@Override
 	public List<String> retrieveBeachesAround(String tdtResourceUri, int radius) {
@@ -143,6 +166,10 @@ public class CoreServiceImpl implements CoreService {
 			return gastroService.createHtoResource(tdtResourceUri);
 		} else if (TDTResourceType.ACCOMMODATION.equals(type)) {
 			return accommodationService.createHtoResource(tdtResourceUri);
+		} else if (TDTResourceType.NATURAL.equals(type)) {
+			return naturalMonumentsService.createHtoResource(tdtResourceUri);
+		} else if (TDTResourceType.HISTORICAL.equals(type)) {
+			return historicalMonumentsService.createHtoResource(tdtResourceUri);
 		} else if (TDTResourceType.OFFICE.equals(type)) {
 			return tourismOfficesService.createOfficeResource(tdtResourceUri);
 		}
@@ -162,11 +189,15 @@ public class CoreServiceImpl implements CoreService {
 		InputStream inRest = FileManager.get().open("tdt-restauracion.rdf");
 		InputStream inOff = FileManager.get().open("oficinasdeturismo.rdf");
 		InputStream inBeach = FileManager.get().open("playas.rdf");
+		InputStream inNatural = FileManager.get().open("monumentosNaturales.rdf");
+		InputStream inHistorical = FileManager.get().open("monumentosHistoricos.RDF");
 
 		model.read(inAcc, EMPTY);
 		model.read(inRest, EMPTY);
 		model.read(inOff, EMPTY);
 		model.read(inBeach, EMPTY);
+		model.read(inNatural, EMPTY);
+		model.read(inHistorical, EMPTY);
 		String placesDBP = "http://es.dbpedia.org/sparql?default-graph-uri=&query=%0D%0Aselect+%3Furi+%3Fname+%3Flatitude+%3Flongitude+%7B+%0D%0A++++%3Furi+rdfs%3Alabel+%3Fname+.%0D%0A++++%3Furi+geo%3Alat+%3Flatitude+.%0D%0A++++%3Furi+geo%3Along+%3Flongitude+.%0D%0A++++%3Furi+dcterms%3Asubject+%3Fprovince+.%0D%0A++++FILTER+regex%28%3Fprovince%2C+%22tenerife%22%2C+%22i%22%29.+%0D%0A+++%0D%0A%7D&format=text%2Fturtle&timeout=0&debug=on";
 //		String placesGeoLinkedData = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0A"
 //				+ "SELECT++DISTINCT+%3Fsubject+%0D%0AWHERE+%7B+%0D%0A++%3Fsubject+geo%3Ageometry+%3Fg.++%0D%0A++%3Fg+geo%3Alat+%3Flat.+%0D%0A++%3Fg+geo%3Along+%3Flong.+%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%27" + latitude +  "%27%29+%3C%3D+" + radiusInMeters + "%0D%0A++%26%26+"
@@ -200,18 +231,21 @@ public class CoreServiceImpl implements CoreService {
 		query.append("					     && xsd:double('" + latitude + "') - xsd:double(?latDBP) <= " + convertedRadius);
 		query.append("  && xsd:double(?longDBP) - xsd:double('" + longitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + longitude + "') - xsd:double(?longDBP) <= " + convertedRadius + ")}");
+		
 		query.append("OPTIONAL {?resourceHTO hto:name ?MultiLanguageText . ?MultiLanguageText hto:languageText ?LanguageText . ?LanguageText hto:text ?NameHTO .");
 		query.append("?resourceHTO hto:organiser ?Organisation . ?Organisation hto:coordinates ?Coordinates . ?Coordinates hto:address ?Address . ?Address hto:xy ?XY . ?XY hto:latitude ?latHTO . ?XY hto:longitude ?longHTO . ");
 		query.append("FILTER(xsd:double(?latHTO) - xsd:double('" + latitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + latitude + "') - xsd:double(?latHTO) <= " + convertedRadius);
 		query.append("  && xsd:double(?longHTO) - xsd:double('" + longitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + longitude + "') - xsd:double(?longHTO) <= " + convertedRadius + " )} ");
+		
 		query.append("OPTIONAL {?resourceOff org:hasRegisteredSite ?Site . ?Site org:siteAddress ?Location . ?Location vCard:hasAddress ?Address . ?Address vCard:locality ?NameOff .");
 		query.append("?Location geo:location ?Point . ?Point geo:lat ?latOff . ?Point geo:long ?longOff . ");
 		query.append("FILTER(xsd:double(?latOff) - xsd:double('" + latitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + latitude + "') - xsd:double(?latOff) <= " + convertedRadius);
 		query.append("  && xsd:double(?longOff) - xsd:double('" + longitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + longitude + "') - xsd:double(?longOff) <= " + convertedRadius + ")}");
+		
 		query.append("OPTIONAL {?resourceBeach tdt:ows_LinkTitle ?NameBeach . ?resourceBeach tdt:ows_Georeferencia ?GeoPoint . ?GeoPoint geo:lat ?latBeach . ?GeoPoint geo:long ?longBeach .");
 		query.append("FILTER(xsd:double(?latBeach) - xsd:double('" + latitude + "') <= " + convertedRadius);
 		query.append("  && xsd:double('" + latitude + "') - xsd:double(?latBeach) <= " + convertedRadius);

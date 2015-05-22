@@ -14,6 +14,8 @@ public abstract interface HTOService extends TDTService {
 	public abstract Map<String, String> describeUri(String uri);
 
 	public abstract List<HTOResource> find(String query);
+	
+	public abstract List<String> findAround(float latitude, float longitude, int radiousInMeters);
 
 	public abstract HTOResource createHtoResource(String uri);
 }

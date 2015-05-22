@@ -46,6 +46,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("  ?address vCard:locality ?locality. ");
 		sparqlQuery.append("  FILTER regex(?locality, \"").append(name).append("\", \"i\"). ");
 		sparqlQuery.append("}");
+		
 
 		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
 
@@ -139,6 +140,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery2.append("PREFIX org: <http://www.w3.org/TR/vocab-org/> ");
 		sparqlQuery2.append("PREFIX vCard: <http://www.w3.org/TR/vcard-rdf/> ");
 		sparqlQuery2.append("PREFIX foaf: <http://xmlns.com/foaf/spec/>");
+		
 		sparqlQuery2.append("SELECT ?Email ?Telephone ?StreetName ?City ?PostCode ?Photo ?Url ?Purpose "
 				+ "{ OPTIONAL {?resource org:hasRegisteredSite ?B1_Site . ?B1_Site org:siteAddress ?B1_Location . ?B1_Location vCard:hasEmail ?Email . }"
 				+ "?B1_Location vCard:hasTelephone ?B2_Telephone . ?B2_Telephone vCard:hasValue ?Telephone . "
