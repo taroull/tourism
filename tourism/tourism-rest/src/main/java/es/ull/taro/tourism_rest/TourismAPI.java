@@ -132,6 +132,20 @@ public class TourismAPI {
 	public List<String> retrieveHistoricalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveHistoricalMonumentsAround(uri, radius);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("gastroAround")
+	public List<String> retrieveGastroAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveGastroAround(uri, radius);
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("accommodationAround")
+	public List<String> retrieveAccommodationAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveAccommodationAround(uri, radius);
+	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

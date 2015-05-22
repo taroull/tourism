@@ -27,6 +27,10 @@ public interface CoreService {
 	public List<String> retrieveNaturalMonumentsAround(String htoResourceUri, int radius);
 	
 	public List<String> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius);
+	
+	public List<String> retrieveGastroAround(String htoResourceUri, int radius);
+	
+	public List<String> retrieveAccommodationAround(String htoResourceUri, int radius);
 
 	public List<Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException;
 

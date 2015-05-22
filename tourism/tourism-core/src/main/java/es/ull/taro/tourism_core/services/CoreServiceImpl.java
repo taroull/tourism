@@ -151,6 +151,18 @@ public class CoreServiceImpl implements CoreService {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return historicalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
+	
+	@Override
+	public List<String> retrieveGastroAround(String htoResourceUri, int radius) {
+		TDTResource tdtResource = buildTDTResource(htoResourceUri);
+		return gastroService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
+	
+	@Override
+	public List<String> retrieveAccommodationAround(String htoResourceUri, int radius) {
+		TDTResource tdtResource = buildTDTResource(htoResourceUri);
+		return accommodationService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
 
 	@Override
 	public List<String> retrieveBeachesAround(String tdtResourceUri, int radius) {
