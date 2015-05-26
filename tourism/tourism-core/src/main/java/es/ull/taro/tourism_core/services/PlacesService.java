@@ -11,7 +11,7 @@ public interface PlacesService {
 
 	public static final String BEAN_ID = "placesService";
 
-	public List<es.ull.taro.tourism_core.domain.Resource> find(String name);
+	public List<es.ull.taro.tourism_core.domain.TDTResource> find(String name);
 
 	public List<String> findBeachesAround(float latitude, float longitude, int radiusInMeters);
 

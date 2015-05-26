@@ -22,7 +22,7 @@ import es.ull.taro.tourism_core.domain.BeachResource;
 public class PlacesServiceImpl implements PlacesService {
 
 	@Override
-	public List<es.ull.taro.tourism_core.domain.Resource> find(String name) {
+	public List<es.ull.taro.tourism_core.domain.TDTResource> find(String name) {
 
 		Model model = loadRDFFile();
 
@@ -32,22 +32,34 @@ public class PlacesServiceImpl implements PlacesService {
 		sparqlQuery.append("PREFIX places: <http://purl.org/ontology/places#> ");
 		sparqlQuery.append("PREFIX tdt: <http://turismo-de-tenerife.org/def/turismo#> ");
 
-		sparqlQuery.append("SELECT ?beach ?title");
+		sparqlQuery.append("SELECT ?beach ?title ?lat ?long ?PostCode");
 		sparqlQuery.append("{ ");
 		sparqlQuery.append("  ?beach a places:Beach. ");
-		sparqlQuery.append("  ?beach tdt:ows_LinkTitle ?title. ");
+		sparqlQuery.append(" OPTIONAL {  ?beach tdt:ows_LinkTitle ?title. ");
+		sparqlQuery.append("  ?beach tdt:ows_Georeferencia ?geoPoint. ");
+		sparqlQuery.append("  ?geoPoint a geo:Point. ");
+		sparqlQuery.append("  ?geoPoint geo:lat ?lat. ");
+		sparqlQuery.append("  ?geoPoint geo:long ?long. }");
+		sparqlQuery.append("OPTIONAL {?beach tdt:ows_CodigoPostal ?PostCode . }");
+		
 		sparqlQuery.append("  FILTER regex(?title, \"").append(name).append("\", \"i\"). ");
 		sparqlQuery.append("}");
 
-		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
+		List<es.ull.taro.tourism_core.domain.TDTResource> resources = new ArrayList<es.ull.taro.tourism_core.domain.TDTResource>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
-				es.ull.taro.tourism_core.domain.Resource resource = new es.ull.taro.tourism_core.domain.Resource(sol.getResource("?beach").getURI().toString());
+				es.ull.taro.tourism_core.domain.TDTResource resource = new es.ull.taro.tourism_core.domain.TDTResource(sol.getResource("?beach").getURI().toString());
 				resource.setName(sol.getLiteral("?title").toString());
+				if(sol.getLiteral("?PostCode") != null)
+					resource.setPostalCode(sol.getLiteral("?PostCode").toString());
+				else
+					resource.setPostalCode("-----");
+				resource.setLatitude(sol.getLiteral("?lat").getFloat());
+				resource.setLongitude(sol.getLiteral("?long").getFloat());
 				resources.add(resource);
 			}
 		} finally {

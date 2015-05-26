@@ -22,7 +22,7 @@ import es.ull.taro.tourism_core.domain.OfficeResource;
 public class TourismOfficesServiceImpl implements TourismOfficesService {
 
 	@Override
-	public List<es.ull.taro.tourism_core.domain.Resource> find(String name) {
+	public List<es.ull.taro.tourism_core.domain.TDTResource> find(String name) {
 
 		Model model = loadRDFFile();
 
@@ -33,7 +33,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("PREFIX vCard: <http://www.w3.org/TR/vcard-rdf/> ");
 		sparqlQuery.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ");
 
-		sparqlQuery.append("SELECT ?name ?office ?locality");
+		sparqlQuery.append("SELECT ?name ?office ?locality ?lat ?long ?PostCode");
 		sparqlQuery.append("{ ");
 		sparqlQuery.append("  ?office rdfs:label ?name. ");
 		sparqlQuery.append("  ?office a org:OrganizationalUnit. ");
@@ -44,19 +44,35 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("  ?location vCard:hasAddress ?address. ");
 		sparqlQuery.append("  ?address a vCard:Address. ");
 		sparqlQuery.append("  ?address vCard:locality ?locality. ");
+		sparqlQuery.append(" OPTIONAL {  ?office a org:OrganizationalUnit. ");
+		sparqlQuery.append("  ?office org:hasRegisteredSite ?site. ");
+		sparqlQuery.append("  ?site a org:Site. ");
+		sparqlQuery.append("  ?site org:siteAddress ?siteAddress. ");
+		sparqlQuery.append("  ?siteAddress a vCard:Location. ");
+		sparqlQuery.append("  ?siteAddress geo:location ?geoLocation. ");
+		sparqlQuery.append("  ?geoLocation a geo:Point. ");
+		sparqlQuery.append("  ?geoLocation geo:lat ?lat. ");
+		sparqlQuery.append("  ?geoLocation geo:long ?long. }");
+		sparqlQuery.append("  OPTIONAL { ?office vCard:postal-code ?PostCode . }");
 		sparqlQuery.append("  FILTER regex(?locality, \"").append(name).append("\", \"i\"). ");
 		sparqlQuery.append("}");
 		
 
-		List<es.ull.taro.tourism_core.domain.Resource> resources = new ArrayList<es.ull.taro.tourism_core.domain.Resource>();
+		List<es.ull.taro.tourism_core.domain.TDTResource> resources = new ArrayList<es.ull.taro.tourism_core.domain.TDTResource>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
-				es.ull.taro.tourism_core.domain.Resource resource = new es.ull.taro.tourism_core.domain.Resource(sol.getResource("?office").getURI().toString());
+				es.ull.taro.tourism_core.domain.TDTResource resource = new es.ull.taro.tourism_core.domain.TDTResource(sol.getResource("?office").getURI().toString());
 				resource.setName(sol.getLiteral("?name").toString());
+				if(sol.getLiteral("?PostCode") != null)
+					resource.setPostalCode(sol.getLiteral("?PostCode").toString());
+				else
+					resource.setPostalCode("-----");
+				resource.setLatitude(sol.getLiteral("?lat").getFloat());
+				resource.setLongitude(sol.getLiteral("?long").getFloat());
 				resources.add(resource);
 			}
 		} finally {

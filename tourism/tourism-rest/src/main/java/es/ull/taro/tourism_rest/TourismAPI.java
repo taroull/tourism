@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import es.ull.taro.tourism_core.domain.GeoResource;
 import es.ull.taro.tourism_core.domain.HTOResource;
 import es.ull.taro.tourism_core.domain.Resource;
+import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.services.AccommodationService;
 import es.ull.taro.tourism_core.services.AemetService;
 import es.ull.taro.tourism_core.services.CoreService;
@@ -157,14 +158,14 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("beachResource")
-	public List<Resource> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
+	public List<TDTResource> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
 		return placesService.find(name);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("tourismOfficeResource")
-	public List<Resource> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
+	public List<TDTResource> findTourismOfficeByName(@QueryParam(value = "name") String name) throws Exception {
 		return tourismOfficesService.find(name);
 	}
 	

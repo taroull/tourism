@@ -73,20 +73,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Norte" />
+                        <hto:fieldValue>Norte</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -96,7 +89,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Norte" />
+                        <hto:domainValue>Norte</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -107,13 +100,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Bosque_de_Agua_Garcia_en_Tacoronte" />
+                              <hto:text>Bosque de Agua García en Tacoronte</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Bosque_de_Agua_Garcia_en_Tacoronte" />
+                              <hto:text>Bosque de Agua García en Tacoronte</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -188,18 +181,18 @@
                                     <hto:number>Oficina de Turismo 922 57 00 15. Centro de Información Patrimonial de Agua García 922 58 45 60.</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@aytotacoronte.org" />
+                              <hto:email>turismo@aytotacoronte.org</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tacoronte.es" />
+                                          <hto:text>http://www.tacoronte.es</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tacoronte.es" />
+                                          <hto:text>http://www.tacoronte.es</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -218,7 +211,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/Bosque de Agua García.jpg" />
+                              <hto:domainValue>http://www.tacoronte.es</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -289,16 +282,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -385,20 +368,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -408,7 +384,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -419,13 +395,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Volcan_Chinyero" />
+                              <hto:text>Volcán Chinyero</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Volcan_Chinyero" />
+                              <hto:text>Volcán Chinyero</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -500,18 +476,18 @@
                                     <hto:number>922860348</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@santiagodelteide.es" />
+                              <hto:email>turismo@santiagodelteide.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -530,7 +506,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -601,16 +577,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -697,20 +663,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -720,7 +679,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -731,13 +690,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Reserva_Natural_Malpais_de_Rasca_" />
+                              <hto:text>Reserva Natural Malpaís de Rasca</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Reserva_Natural_Malpais_de_Rasca_" />
+                              <hto:text>Reserva Natural Malpaís de Rasca</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -812,18 +771,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -842,7 +801,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/rasca.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -913,16 +872,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -1009,20 +958,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -1032,7 +974,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1043,13 +985,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Monumento_Natural_Roque_de_Jama" />
+                              <hto:text>Monumento Natural Roque de Jama</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Monumento_Natural_Roque_de_Jama" />
+                              <hto:text>Monumento Natural Roque de Jama</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -1124,18 +1066,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -1154,7 +1096,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/jama.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1225,16 +1167,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -1321,20 +1253,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -1344,7 +1269,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1355,13 +1280,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Monumento_Natural_Montana_de_Guaza" />
+                              <hto:text>Monumento Natural Montaña de Guaza</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Monumento_Natural_Montana_de_Guaza" />
+                              <hto:text>Monumento Natural Montaña de Guaza</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -1436,18 +1361,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -1466,7 +1391,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/guaza.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1537,16 +1462,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -1633,20 +1548,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -1656,7 +1564,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1667,13 +1575,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Mirador_de_Cherfe" />
+                              <hto:text>Mirador de Cherfe</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Mirador_de_Cherfe" />
+                              <hto:text>Mirador de Cherfe</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -1748,18 +1656,18 @@
                                     <hto:number>922860348</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@santiagodelteide.es" />
+                              <hto:email>turismo@santiagodelteide.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -1778,7 +1686,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1849,16 +1757,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -1945,20 +1843,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -1968,7 +1859,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1979,13 +1870,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilado_de_los_Gigantes" />
+                              <hto:text>Acantilado de los Gigantes</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilado_de_los_Gigantes" />
+                              <hto:text>Acantilado de los Gigantes</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2060,18 +1951,18 @@
                                     <hto:number>922860348</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@santiagodelteide.es" />
+                              <hto:email>turismo@santiagodelteide.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -2090,7 +1981,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/Los gigantes.jpg" />
+                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2161,16 +2052,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -2257,20 +2138,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -2280,7 +2154,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2291,13 +2165,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Avistamiento_de_cetaceos" />
+                              <hto:text>Avistamiento de cetáceos</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Avistamiento_de_cetaceos" />
+                              <hto:text>Avistamiento de cetáceos</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2372,18 +2246,18 @@
                                     <hto:number>922860348</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@santiagodelteide.es" />
+                              <hto:email>turismo@santiagodelteide.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.santiagodelteide.org" />
+                                          <hto:text>http://www.santiagodelteide.org</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -2402,7 +2276,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2473,16 +2347,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -2569,20 +2433,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -2592,7 +2449,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2603,13 +2460,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Montana_Amarilla" />
+                              <hto:text>Montaña Amarilla</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Montana_Amarilla" />
+                              <hto:text>Montaña Amarilla</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2684,18 +2541,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -2714,7 +2571,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2785,16 +2642,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -2881,20 +2728,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -2904,7 +2744,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2915,13 +2755,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Almacigo_de_Arona,_arbol_monumento" />
+                              <hto:text>Almácigo de Arona, árbol monumento</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Almacigo_de_Arona,_arbol_monumento" />
+                              <hto:text>Almácigo de Arona, árbol monumento</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2996,18 +2836,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -3026,7 +2866,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3097,16 +2937,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -3193,20 +3023,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="" />
+                        <hto:fieldValue />
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -3216,7 +3039,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="" />
+                        <hto:domainValue />
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3227,13 +3050,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Hijuela_del_Botanico" />
+                              <hto:text>Hijuela del Botánico</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Hijuela_del_Botanico" />
+                              <hto:text>Hijuela del Botánico</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -3308,18 +3131,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -3338,7 +3161,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3409,16 +3232,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -3505,20 +3318,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="" />
+                        <hto:fieldValue />
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -3528,7 +3334,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="" />
+                        <hto:domainValue />
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3539,13 +3345,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Jardin_Victoria" />
+                              <hto:text>Jardin Victoria</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Jardin_Victoria" />
+                              <hto:text>Jardin Victoria</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -3620,18 +3426,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -3650,7 +3456,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3721,16 +3527,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -3817,20 +3613,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="" />
+                        <hto:fieldValue />
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -3840,7 +3629,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="" />
+                        <hto:domainValue />
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3851,13 +3640,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Pueblo_Chico" />
+                              <hto:text>Pueblo Chico</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Pueblo_Chico" />
+                              <hto:text>Pueblo Chico</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -3932,18 +3721,18 @@
                                     <hto:number>922 320 669</hto:number>
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.pueblochico.com" />
+                                          <hto:text>http://www.pueblochico.com</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.pueblochico.com" />
+                                          <hto:text>http://www.pueblochico.com</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -3962,7 +3751,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.pueblochico.com</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4033,16 +3822,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -4129,20 +3908,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="" />
+                        <hto:fieldValue />
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -4152,7 +3924,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="" />
+                        <hto:domainValue />
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4163,13 +3935,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Parque_Natural_Corona_Forestal" />
+                              <hto:text>Parque Natural Corona Forestal</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Parque_Natural_Corona_Forestal" />
+                              <hto:text>Parque Natural Corona Forestal</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -4244,18 +4016,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -4274,7 +4046,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4345,16 +4117,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -4441,20 +4203,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -4464,7 +4219,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4475,13 +4230,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilados_de_la_Isorana" />
+                              <hto:text>Acantilados de la Isorana</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilados_de_la_Isorana" />
+                              <hto:text>Acantilados de la Isorana</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -4556,18 +4311,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -4586,7 +4341,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/acantilados la isorana.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4657,16 +4412,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -4753,20 +4498,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -4776,7 +4514,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4787,13 +4525,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Montana_de_Tejina" />
+                              <hto:text>Montaña de Tejina</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Montana_de_Tejina" />
+                              <hto:text>Montaña de Tejina</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -4868,18 +4606,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -4898,7 +4636,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/montaña tejina.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4969,16 +4707,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -5065,20 +4793,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -5088,7 +4809,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5099,13 +4820,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Paisaje_protegido_Barranco_de_Erques" />
+                              <hto:text>Paisaje protegido Barranco de Erques</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Paisaje_protegido_Barranco_de_Erques" />
+                              <hto:text>Paisaje protegido Barranco de Erques</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -5180,18 +4901,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -5210,7 +4931,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/barranco erques.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5281,16 +5002,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -5377,20 +5088,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Isla Baja" />
+                        <hto:fieldValue>Isla Baja</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -5400,7 +5104,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Isla Baja" />
+                        <hto:domainValue>Isla Baja</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5411,13 +5115,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Mirador_de_la_Cruz_de_Hilda" />
+                              <hto:text>Mirador de la Cruz de Hilda</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Mirador_de_la_Cruz_de_Hilda" />
+                              <hto:text>Mirador de la Cruz de Hilda</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -5492,18 +5196,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -5522,7 +5226,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/imagen 455.JPG" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5593,16 +5297,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -5689,20 +5383,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Norte" />
+                        <hto:fieldValue>Norte</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -5712,7 +5399,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Norte" />
+                        <hto:domainValue>Norte</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5723,13 +5410,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilados,_ladera_y_cuevas_de_Martianez" />
+                              <hto:text>Acantilados, ladera y cuevas de Martiánez</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Acantilados,_ladera_y_cuevas_de_Martianez" />
+                              <hto:text>Acantilados, ladera y cuevas de Martiánez</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -5804,18 +5491,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/" />
+                                          <hto:text>http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/" />
+                                          <hto:text>http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -5834,7 +5521,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/acantilados_martianez.jpg" />
+                              <hto:domainValue>http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5905,16 +5592,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -6001,20 +5678,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Norte" />
+                        <hto:fieldValue>Norte</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -6024,7 +5694,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Norte" />
+                        <hto:domainValue>Norte</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6035,13 +5705,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Camino_Los_Laureles" />
+                              <hto:text>Camino Los Laureles</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Camino_Los_Laureles" />
+                              <hto:text>Camino Los Laureles</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -6116,18 +5786,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@tegueste.es" />
+                              <hto:email>turismo@tegueste.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tegueste.es" />
+                                          <hto:text>http://www.tegueste.es</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tegueste.es" />
+                                          <hto:text>http://www.tegueste.es</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -6146,7 +5816,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.tegueste.es</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6217,16 +5887,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -6313,20 +5973,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Norte" />
+                        <hto:fieldValue>Norte</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -6336,7 +5989,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Norte" />
+                        <hto:domainValue>Norte</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6347,13 +6000,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Casa_de_los_Zamorano" />
+                              <hto:text>Casa de los Zamorano</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Casa_de_los_Zamorano" />
+                              <hto:text>Casa de los Zamorano</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -6428,18 +6081,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: turismo@tegueste.es" />
+                              <hto:email>turismo@tegueste.es</hto:email>
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tegueste.es" />
+                                          <hto:text>http://www.tegueste.es</hto:text>
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="http://www.tegueste.es" />
+                                          <hto:text>http://www.tegueste.es</hto:text>
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -6458,7 +6111,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue>http://www.tegueste.es</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6529,16 +6182,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -6625,20 +6268,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -6648,7 +6284,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6659,13 +6295,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Paisaje_Protegido_de_las_Siete_Lomas" />
+                              <hto:text>Paisaje Protegido de las Siete Lomas</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Paisaje_Protegido_de_las_Siete_Lomas" />
+                              <hto:text>Paisaje Protegido de las Siete Lomas</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -6740,18 +6376,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -6770,7 +6406,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6841,16 +6477,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -6937,20 +6563,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Sur" />
+                        <hto:fieldValue>Sur</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -6960,7 +6579,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Sur" />
+                        <hto:domainValue>Sur</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6971,13 +6590,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Barranco_de_Anavingo" />
+                              <hto:text>Barranco de Añavingo</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Barranco_de_Anavingo" />
+                              <hto:text>Barranco de Añavingo</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -7052,18 +6671,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -7082,7 +6701,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -7153,16 +6772,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
@@ -7249,20 +6858,13 @@
                   </hto:longDescription>
                </hto:Description>
             </hto:description>
-            <hto:award>
-               <hto:Award>
-                  <hto:awardingBody rdf:parseType="Literal">Gobierno de Canarias</hto:awardingBody>
-                  <hto:awardRange rdf:parseType="Literal">5</hto:awardRange>
-                  <hto:awardAchieved rdf:parseType="Literal">1</hto:awardAchieved>
-               </hto:Award>
-            </hto:award>
             <hto:profile>
                <hto:Profile>
                   <hto:profileField>
                      <hto:ProfileField>
                         <hto:domainName>tdt</hto:domainName>
                         <hto:fieldName>Zona</hto:fieldName>
-                        <hto:fieldValue rdfs:resource="Isla Baja" />
+                        <hto:fieldValue>Isla Baja</hto:fieldValue>
                      </hto:ProfileField>
                   </hto:profileField>
                </hto:Profile>
@@ -7272,7 +6874,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue rdfs:resource="Isla Baja" />
+                        <hto:domainValue>Isla Baja</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -7283,13 +6885,13 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Roque_(El)" />
+                              <hto:text>Roque (El)</hto:text>
                               <hto:language rdf:parseType="Literal">es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text rdfs:resource="Roque_(El)" />
+                              <hto:text>Roque (El)</hto:text>
                               <hto:language rdf:parseType="Literal">en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -7364,18 +6966,18 @@
                                     <hto:number />
                                  </hto:TelecomNumber>
                               </hto:fax>
-                              <hto:email rdfs:resource="mailto: " />
+                              <hto:email />
                               <hto:url>
                                  <hto:MultiLanguageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">es</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
                                     <hto:languageText>
                                        <hto:LanguageText>
-                                          <hto:text rdfs:resource="" />
+                                          <hto:text />
                                           <hto:language rdf:parseType="Literal">en</hto:language>
                                        </hto:LanguageText>
                                     </hto:languageText>
@@ -7394,7 +6996,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName rdf:parseType="Literal">hto</hto:domainName>
-                              <hto:domainValue rdfs:resource="../PublishingImages/ampliada_natural_el_roque_7.jpg" />
+                              <hto:domainValue />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -7465,16 +7067,6 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
-            <tdt:zone>
-               <hto:ListValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName rdf:parseType="Literal">tdt</hto:domainName>
-                        <hto:domainValue />
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-               </hto:ListValue>
-            </tdt:zone>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
