@@ -71,8 +71,14 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 					resource.setPostalCode(sol.getLiteral("?PostCode").toString());
 				else
 					resource.setPostalCode("-----");
-				resource.setLatitude(sol.getLiteral("?lat").getFloat());
-				resource.setLongitude(sol.getLiteral("?long").getFloat());
+				if (sol.getLiteral("?lat") != null && !sol.getLiteral("?lat").toString().isEmpty())
+					resource.setLatitude(sol.getLiteral("?lat").getFloat());
+				else
+					resource.setLatitude(Float.parseFloat("0"));
+				if (sol.getLiteral("?long") != null  && !sol.getLiteral("?long").toString().isEmpty())
+					resource.setLongitude(sol.getLiteral("?long").getFloat());
+				else
+					resource.setLongitude(Float.parseFloat("0"));
 				resources.add(resource);
 			}
 		} finally {

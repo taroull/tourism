@@ -75,10 +75,16 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 					htoResource.setPostalCode(sol.getLiteral("?PostCode").toString());
 				else
 					htoResource.setPostalCode("-----");
-				htoResource.setLatitude(sol.getLiteral("?lat").getFloat());
-				htoResource.setLongitude(sol.getLiteral("?long").getFloat());
-				resources.add(htoResource);
+				if (!sol.getLiteral("?lat").toString().isEmpty())
+					htoResource.setLatitude(sol.getLiteral("?lat").getFloat());
+				else
+					htoResource.setLatitude(Float.parseFloat("0"));
+				if (!sol.getLiteral("?long").toString().isEmpty())
+					htoResource.setLongitude(sol.getLiteral("?long").getFloat());
+				else
+					htoResource.setLongitude(Float.parseFloat("0"));
 				
+				resources.add(htoResource);
 			}
 		} finally {
 			qe.close();
