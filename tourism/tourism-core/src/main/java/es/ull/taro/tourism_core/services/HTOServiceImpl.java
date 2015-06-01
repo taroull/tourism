@@ -33,7 +33,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 
 		StringBuilder sparqlQuery = new StringBuilder();
 		sparqlQuery.append("PREFIX hto: <").append(HTO.VOCABULARY).append(">");
-		sparqlQuery.append("SELECT DISTINCT ?resource ?text ?lat ?long ?PostCode");
+		sparqlQuery.append("SELECT DISTINCT ?resource (SAMPLE(?text) AS ?text2) (SAMPLE(?lat) AS ?lat2) (SAMPLE(?long) AS ?long2) ?PostCode");
 		sparqlQuery.append("{ ");
 		sparqlQuery.append("?resource a ").append(getResourceType()).append(".");
 		sparqlQuery.append("?resource hto:name ?multilanguageText. ");
@@ -56,10 +56,11 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?B3_Organisation hto:coordinates ?B3_Coordinates . "
 				+ "?B3_Coordinates hto:address ?B3_Address . "
 				+ "?B3_Address hto:postcode ?PostCode . }");
-
 		
+	
 		sparqlQuery.append("FILTER regex(?text, \"").append(query).append("\", \"i\"). ");
 		sparqlQuery.append("}");
+		sparqlQuery.append("GROUP BY ?resource ?PostCode");
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 
@@ -70,20 +71,13 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
 				HTOResource htoResource = new HTOResource(sol.getResource("?resource").getURI().toString());
-				htoResource.setName(sol.getLiteral("?text").toString());
+				htoResource.setName(sol.getLiteral("?text2").toString());
 				if(sol.getLiteral("?PostCode") != null)
 					htoResource.setPostalCode(sol.getLiteral("?PostCode").toString());
-				else
-					htoResource.setPostalCode("-----");
-				if (!sol.getLiteral("?lat").toString().isEmpty())
-					htoResource.setLatitude(sol.getLiteral("?lat").getFloat());
-				else
-					htoResource.setLatitude(Float.parseFloat("0"));
-				if (!sol.getLiteral("?long").toString().isEmpty())
-					htoResource.setLongitude(sol.getLiteral("?long").getFloat());
-				else
-					htoResource.setLongitude(Float.parseFloat("0"));
-				
+				if (!sol.getLiteral("?lat2").toString().isEmpty())
+					htoResource.setLatitude(sol.getLiteral("?lat2").getFloat());
+				if (!sol.getLiteral("?long2").toString().isEmpty())
+					htoResource.setLongitude(sol.getLiteral("?long2").getFloat());
 				resources.add(htoResource);
 			}
 		} finally {
@@ -157,7 +151,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		sparqlQuery2.append("PREFIX tdt: <http://turismo-de-tenerife.org/def/turismo#>");
 		
 		sparqlQuery2.append(""
-				+ "SELECT ?Name ?AccommodationType ?AttractionType ?Imagen ?Description ?PostCode ?City ?StreetName "
+				+ "SELECT DISTINCT ?Name ?AccommodationType ?AttractionType ?Imagen ?Description ?PostCode ?City ?StreetName "
 				+ "?CountryCode ?TelNumber ?FaxNumber ?Email ?Url ?GastroType ?Timeline ?ProfileName ?ProfileValue "
 				+ "?FacilityValue ?HowToGet ?resource");
 		sparqlQuery2.append("{ "
@@ -327,10 +321,8 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 			float latitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral().getFloat();
 			float longitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral().getFloat();
 		
-			if(postalCode != null)
-		htoResource.setPostalCode(postalCode);
-			else
-				htoResource.setPostalCode("38202");
+		if(postalCode != null)
+			htoResource.setPostalCode(postalCode);
 		htoResource.setLatitude(latitude);
 		htoResource.setLongitude(longitude);
 
