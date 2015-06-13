@@ -233,9 +233,12 @@ public class PlacesServiceImpl implements PlacesService {
 		float latitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#lat")).getLiteral().getFloat();
 		float longitude = ows_Georeferencia.getProperty(m.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#long")).getLiteral().getFloat();
 		String postalCode = resource.getProperty(m.createProperty("http://turismo-de-tenerife.org/def/turismo#ows_CodigoPostal")).getLiteral().getString();
-
+		
+		if(postalCode != null)
 		beachResource.setPostalCode(postalCode);
+		if(latitude != 0.0)
 		beachResource.setLatitude(latitude);
+		if(longitude != 0.0)
 		beachResource.setLongitude(longitude);
 
 		return beachResource;

@@ -318,14 +318,22 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		Statement address = coordinates.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#address"));
 		String postalCode = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#postcode")).getLiteral().getString();
 		Statement xy = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#xy"));
-			float latitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral().getFloat();
-			float longitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral().getFloat();
+		
+	//		;
 		
 		if(postalCode != null)
 			htoResource.setPostalCode(postalCode);
-		htoResource.setLatitude(latitude);
-		htoResource.setLongitude(longitude);
-
+		if(xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral() != null && 
+				!xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral().getLexicalForm().isEmpty()) {
+			float latitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral().getFloat();
+			htoResource.setLatitude(latitude);
+		}
+		if (xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral() != null && 
+				!xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral().getLexicalForm().isEmpty()) { 
+			float longitude = xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#longitude")).getLiteral().getFloat();
+			htoResource.setLongitude(longitude);
+		}
+				
 		return htoResource;
 	}
 
