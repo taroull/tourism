@@ -24,13 +24,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -211,7 +205,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.tacoronte.es</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -220,61 +214,25 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/Bosque de Agua García.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-06-12 09:15:21</tdt:lastUpdate>
+            <tdt:observationsSituation>Bosque de Agua García en Tacoronte.</tdt:observationsSituation>
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -282,12 +240,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text>Linea  de TITSA 054</hto:text>
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -319,13 +302,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -506,7 +483,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -519,57 +496,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-09 12:46:45</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -577,12 +518,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -614,13 +580,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -801,7 +761,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -810,54 +770,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/rasca.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-10 18:21:32</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -872,12 +796,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -909,13 +858,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1096,7 +1039,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1105,54 +1048,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/jama.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-10 18:24:26</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -1167,12 +1074,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -1204,13 +1136,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1391,7 +1317,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1400,54 +1326,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/guaza.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-10 18:25:19</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -1462,12 +1352,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -1499,13 +1414,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1686,7 +1595,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1699,57 +1608,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-14 10:19:37</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -1757,12 +1630,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -1794,13 +1692,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -1981,7 +1873,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1990,61 +1882,25 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/Los gigantes.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-09-21 10:18:12</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2052,12 +1908,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -2089,13 +1970,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2276,7 +2151,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.santiagodelteide.org</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2289,57 +2164,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Naturaleza</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-06-17 11:54:47</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -2347,12 +2186,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -2384,13 +2248,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2571,7 +2429,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2584,50 +2442,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Deportes</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-09-19 13:38:49</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -2642,12 +2464,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -2679,13 +2526,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -2866,7 +2707,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2879,50 +2720,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2011-09-17 10:13:37</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -2937,12 +2742,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -2974,13 +2804,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3161,7 +2985,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3174,50 +2998,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2012-02-23 15:56:03</tdt:lastUpdate>
+            <tdt:observationsSituation>Pequeño jardín de 3.000 m2 de superficie, dependiente del Jardín de Aclimatación. Ocupa  los antiguos  huertos de un convento clariso, actual edificio del Excmo. Ayuntamiento de la Villa de La Orotava, en pleno casco Historico Artistico de la Villa. Destacables  son los trabajos de forja de sus enverjados y puerta principal de entrada.  En él se cultivan especies de clima subtropical y templado sobre los que destaca un magnífico ejemplar de Drago (Dracaena draco ssp. Draco)</tdt:observationsSituation>
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -3232,12 +3020,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -3269,13 +3082,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3456,7 +3263,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3469,50 +3276,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2012-02-23 15:55:14</tdt:lastUpdate>
+            <tdt:observationsSituation>Jardín Masónico, único en Canarias, construido en el siglo XIX en estilo ecléctico. Edificado según el proyecto del arquitecto francés Adolph Coquet y propiedad originaria de los marqueses de La Quinta Roja de la familia Ponte.Pretendía albergar el cuerpo difunto del VIII Marqués de la Quinta Roja tras la negativa eclesiástica de darle una sepultura cristiana, debido a sus prácticas masónicas.</tdt:observationsSituation>
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -3527,12 +3298,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -3564,13 +3360,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -3751,7 +3541,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.pueblochico.com</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3764,57 +3554,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2012-02-23 16:07:41</tdt:lastUpdate>
+            <tdt:observationsSituation>Parque temático sobre Canarias, con miniaturas de sus edificios más emblemáticos.Un paseo único, a través de nuestra magnífica arquitectura,  nuestra espléndida naturaleza y nuestro impresionante pasado.  HORARIO DE VISITA: de 09:00h. a 19:00h</tdt:observationsSituation>
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -3822,12 +3576,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -3859,13 +3638,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4046,7 +3819,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4059,50 +3832,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-04-07 16:04:57</tdt:lastUpdate>
+            <tdt:observationsSituation>Este espacio comprende buena parte de la estructura cónica que corona la isla, con la excepción de la caldera de las Cañadas y el edificio Teide - Pico Viejo. Entre sus grandes unidades geomorfológicas destacan enormes barrancos y gigantescas estructuras como el valle de La Orotava y el de Güímar.  Todo el parque está ocupado por una de las mejores masas forestales de Canarias, donde predomina el pinar y buenas muestras de fayal - brezal. Toda esa masa forestal ofrece un paisaje de bosques de pino canario, con algunas poblaciones muy antiguas y de gran valor. Un espacio que cuenta con lugares de interés como el campamento Madre del Agua, el de Arenas Negras...</tdt:observationsSituation>
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -4117,12 +3854,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -4154,13 +3916,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4341,7 +4097,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4350,54 +4106,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/acantilados la isorana.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-02-14 11:37:56</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -4412,12 +4132,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -4449,13 +4194,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4636,7 +4375,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4645,54 +4384,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/montaña tejina.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-02-14 11:29:16</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -4707,12 +4410,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -4744,13 +4472,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -4931,7 +4653,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -4940,54 +4662,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/barranco erques.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-02-14 11:30:13</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -5002,12 +4688,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -5039,13 +4750,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5226,7 +4931,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5235,54 +4940,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/imagen 455.JPG</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-04-16 12:18:09</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -5297,12 +4966,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text>Desde la Carretera de Masca TF-436 a la altura del punto kilométrico 14,500 se encuentra la señalización del lugar.</hto:text>
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -5334,13 +5028,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5521,7 +5209,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://citpuerto.com/es/puerto-de-la-cruz/lugares-de-interes/acantilados-ladera-y-cuevas-de-martianez/</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5530,54 +5218,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/acantilados_martianez.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-07-10 16:17:39</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -5592,12 +5244,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -5629,13 +5306,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -5816,7 +5487,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.tegueste.es</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -5829,50 +5500,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-07-15 10:19:19</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -5887,12 +5522,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -5924,13 +5584,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6111,7 +5765,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue>http://www.tegueste.es</hto:domainValue>
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6124,50 +5778,14 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-07-15 10:17:34</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -6182,12 +5800,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -6219,13 +5862,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6406,7 +6043,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6419,57 +6056,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-07-17 19:24:29</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -6477,12 +6078,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -6514,13 +6140,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6701,7 +6321,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -6714,57 +6334,21 @@
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-07-17 19:29:49</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>Abierto</hto:text>
                               <hto:language>es</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
@@ -6772,12 +6356,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>
@@ -6809,13 +6418,7 @@
                   <hto:referencedValue>
                      <hto:ReferencedValue>
                         <hto:domainName>tdt</hto:domainName>
-                        <hto:domainValue>Monumento Natural</hto:domainValue>
-                     </hto:ReferencedValue>
-                  </hto:referencedValue>
-                  <hto:referencedValue>
-                     <hto:ReferencedValue>
-                        <hto:domainName>hto</hto:domainName>
-                        <hto:domainValue>monumento natural</hto:domainValue>
+                        <hto:domainValue>Monumento natural</hto:domainValue>
                      </hto:ReferencedValue>
                   </hto:referencedValue>
                </hto:ListValue>
@@ -6996,7 +6599,7 @@
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>hto</hto:domainName>
-                              <hto:domainValue />
+                              <hto:domainValue>image</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -7005,54 +6608,18 @@
                      <hto:MultiLanguageText>
                         <hto:languageText>
                            <hto:LanguageText>
-                              <hto:text />
+                              <hto:text>../PublishingImages/ampliada_natural_el_roque_7.jpg</hto:text>
                               <hto:language>es</hto:language>
-                           </hto:LanguageText>
-                        </hto:languageText>
-                        <hto:languageText>
-                           <hto:LanguageText>
-                              <hto:text />
-                              <hto:language>en</hto:language>
                            </hto:LanguageText>
                         </hto:languageText>
                      </hto:MultiLanguageText>
                   </hto:url>
                </hto:MultiMediaItem>
             </hto:documentation>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue />
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
-            <hto:facility>
-               <hto:Facility>
-                  <hto:facilityName>
-                     <hto:ListValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                        <hto:referencedValue>
-                           <hto:ReferencedValue>
-                              <hto:domainName>tdt</hto:domainName>
-                              <hto:domainValue>Bajo</hto:domainValue>
-                           </hto:ReferencedValue>
-                        </hto:referencedValue>
-                     </hto:ListValue>
-                  </hto:facilityName>
-               </hto:Facility>
-            </hto:facility>
+            <tdt:difficulty>Bajo</tdt:difficulty>
+            <tdt:dangerousness>Bajo</tdt:dangerousness>
+            <tdt:lastUpdate>2014-08-12 10:19:31</tdt:lastUpdate>
+            <tdt:observationsSituation />
             <hto:schedule>
                <hto:Timeline>
                   <tdt:timeText>
@@ -7067,12 +6634,37 @@
                   </tdt:timeText>
                </hto:Timeline>
             </hto:schedule>
+            <OTN:Service>Naturaleza y Monumentos</OTN:Service>
             <tdt:howArriveText>
                <hto:MultiLanguageText>
                   <hto:languageText>
                      <hto:LanguageText>
                         <hto:text />
                         <hto:language>es</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>en</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>de</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>fr</hto:language>
+                     </hto:LanguageText>
+                  </hto:languageText>
+                  <hto:languageText>
+                     <hto:LanguageText>
+                        <hto:text />
+                        <hto:language>it</hto:language>
                      </hto:LanguageText>
                   </hto:languageText>
                </hto:MultiLanguageText>

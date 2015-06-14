@@ -161,6 +161,13 @@ public class TourismAPI {
 	public List<TDTResource> findBeachByName(@QueryParam(value = "name") String name) throws Exception {
 		return placesService.find(name);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("beachAround")
+	public List<String> retrieveBeachesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveBeachesAround(uri, radius);
+	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
