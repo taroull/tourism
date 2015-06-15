@@ -152,7 +152,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		
 		sparqlQuery2.append(""
 				+ "SELECT DISTINCT ?Name ?AccommodationType ?AttractionType ?Imagen ?Description ?PostCode ?City ?StreetName "
-				+ "?CountryCode ?TelNumber ?FaxNumber ?Email ?Url ?GastroType ?Timeline ?ProfileName ?ProfileValue "
+				+ "?CountryCode ?TelNumber ?FaxNumber ?Subtipo ?Tipo ?Email ?Url ?GastroType ?Timeline ?ProfileName ?ProfileValue "
 				+ "?FacilityValue ?HowToGet ?resource");
 		sparqlQuery2.append("{ "
 				+ "?resource hto:name ?B1_MultiLanguageText . "
@@ -165,23 +165,28 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?B2_MultiLanguageText hto:languageText ?B2_LanguageText . "
 				+ "?B2_LanguageText hto:text ?Description .}");
 		sparqlQuery2.append(""
+				+ "OPTIONAL {"
 				+ "?resource hto:organiser ?B3_Organisation . "
 				+ "?B3_Organisation hto:coordinates ?B3_Coordinates . "
 				+ "?B3_Coordinates hto:address ?B3_Address . "
-				+ "?B3_Address hto:postcode ?PostCode . ");
+				+ "?B3_Address hto:postcode ?PostCode . } ");
 		sparqlQuery2.append(""
+				+ "OPTIONAL {"
 				+ "?B3_Address hto:city ?B4_MultiLanguageText . "
 				+ "?B4_MultiLanguageText hto:languageText ?B4_LanguageText . "
-				+ "?B4_LanguageText hto:text ?City . ");
+				+ "?B4_LanguageText hto:text ?City . } ");
 		sparqlQuery2.append(""
+				+ "OPTIONAL {"
 				+ "?B3_Address hto:streetAddress ?B5_StreetAddress . "
-				+ "?B5_StreetAddress hto:streetName ?StreetName . ");
+				+ "?B5_StreetAddress hto:streetName ?StreetName . } ");
 		sparqlQuery2.append(""
+				+ "OPTIONAL {"
 				+ "?B3_Coordinates hto:telecoms ?B6_Telecoms . "
 				+ "?B6_Telecoms hto:telephone ?B6_TelecomNumber . "
-				+ "?B6_TelecomNumber hto:countryCode ?CountryCode . ");
+				+ "?B6_TelecomNumber hto:countryCode ?CountryCode . } ");
 		sparqlQuery2.append(""
-				+ "?B6_TelecomNumber hto:number ?TelNumber . ");
+				+ "OPTIONAL {"
+				+ "?B6_TelecomNumber hto:number ?TelNumber . } ");
 		sparqlQuery2.append(" "
 				+ "OPTIONAL {"
 				+ "?B6_Telecoms hto:fax ?B7_TelecomNumber . "
@@ -207,16 +212,17 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?B10_MultiLanguageText hto:languageText ?B10_LanguageText . "
 				+ "?B10_LanguageText hto:text ?Timeline . } ");
 		sparqlQuery2.append(""
+				+ "OPTIONAL {"
 				+ "?resource hto:profile ?B9_Profile . "
 				+ "?B9_Profile hto:profileField ?B9_ProfileField . "
 				+ "?B9_ProfileField hto:domainName \"tdt\" . "
 				+ "?B9_ProfileField hto:fieldName ?ProfileName . "
-				+ "?B9_ProfileField hto:fieldValue ?ProfileValue .");
+				+ "?B9_ProfileField hto:fieldValue ?ProfileValue . } ");
 		sparqlQuery2.append(" "
 				+ "OPTIONAL {"
 				+ "?resource hto:facility ?B10_Facility . "
 				+ "?B10_Facility hto:facilityName ?B10_ListValue . "
-				+ "?B10__ListValue hto:referencedValue ?B10_ReferencedValue . "
+				+ "?B10_ListValue hto:referencedValue ?B10_ReferencedValue . "
 				+ "?B10_ReferencedValue hto:domainName \"tdt\" . "
 				+ "?B10_ReferencedValue hto:domainValue ?FacilityValue . }");
 		sparqlQuery2.append(" "
@@ -237,6 +243,20 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?B14_ListValue hto:referencedValue ?B14_ReferencedValue . "
 				+ "?B14_ReferencedValue hto:domainName \"hto\" . "
 				+ "?B14_ReferencedValue hto:domainValue ?Imagen  . }");
+		sparqlQuery2.append(" "
+				+ "OPTIONAL {"
+				+ "?resource hto:location ?B15_Location . "
+				+ "?B15_Location hto:enviroment ?B15_ListValue . "
+				+ "?B15_ListValue hto:referencedValue ?B15_ReferencedValue . "
+				+ "?B15_ReferencedValue hto:domainName \"ull\" . "
+				+ "?B15_ReferencedValue hto:domainValue ?Subtipo . }");
+		sparqlQuery2.append(" "
+				+ "OPTIONAL {"
+				+ "?resource hto:location ?B16_Location . "
+				+ "?B16_Location hto:enviroment ?B16_ListValue . "
+				+ "?B16_ListValue hto:referencedValue ?B16_ReferencedValue . "
+				+ "?B16_ReferencedValue hto:domainName \"ull\" . "
+				+ "?B16_ReferencedValue hto:domainValue ?Tipo . }");
 		sparqlQuery2.append(" "
 				+ "OPTIONAL {"
 				+ "?resource tdt:howArriveText ?B12_MultiLanguageText . "
@@ -262,41 +282,54 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				if (soln.getLiteral("?AttractionType") != null)
 					results.put("Tipo de Atracción Turística", soln.getLiteral("?AttractionType").toString());
 				
-				results.put("Código Postal", soln.getLiteral("?PostCode").toString());
+				if (soln.getLiteral("?PostalCode") != null && !soln.getLiteral("?PostalCode").toString().isEmpty()) 
+					results.put("Código Postal", soln.getLiteral("?PostCode").toString());
 				
+				if (soln.getLiteral("?City") != null && !soln.getLiteral("?City").toString().isEmpty()) 
 				results.put("Ciudad", soln.getLiteral("?City").toString());
 				
-				results.put("Calle", soln.getLiteral("?StreetName").toString());
+				if (soln.getLiteral("?StreetName") != null && !soln.getLiteral("?StreetName").toString().isEmpty()) 
+					results.put("Calle", soln.getLiteral("?StreetName").toString());
 				
-				results.put("Código del país", soln.getLiteral("?CountryCode").toString());
+				if (soln.getLiteral("?CountryCode") != null && !soln.getLiteral("?CountryCode").toString().isEmpty()) 
+					results.put("Código del país", soln.getLiteral("?CountryCode").toString());
 				
-				results.put("Teléfono", soln.getLiteral("?TelNumber").toString());
+				if (soln.getLiteral("?Telefono") != null && !soln.getLiteral("?Telefono").toString().isEmpty()) 
+					results.put("Teléfono", soln.getLiteral("?TelNumber").toString());
 				
-				if (soln.getLiteral("?FaxNumber") != null && !soln.getLiteral("?FaxNumber").toString().isEmpty()) {
+				if (soln.getLiteral("?FaxNumber") != null && !soln.getLiteral("?FaxNumber").toString().isEmpty()) 
 					results.put("Fax", soln.getLiteral("?FaxNumber").toString());
-				}
-				if (soln.getLiteral("?Email") != null && !soln.getLiteral("?Email").toString().isEmpty()) {
+				
+				if (soln.getLiteral("?Email") != null && !soln.getLiteral("?Email").toString().isEmpty()) 
 					results.put("Correo", soln.getLiteral("?Email").toString());
-				}
-				if (soln.getLiteral("?Url") != null && !soln.getLiteral("?Url").toString().isEmpty()) {
+				
+				if (soln.getLiteral("?Url") != null && !soln.getLiteral("?Url").toString().isEmpty()) 
 					results.put("URL", soln.getLiteral("?Url").toString());
-				}
-				if (soln.getLiteral("?GastroType") != null) {
+				
+				if (soln.getLiteral("?GastroType") != null) 
 					results.put("Tipo de actividad", soln.getLiteral("?GastroType").toString());
-				}
-				if (soln.getLiteral("?Timeline") != null) {
-					results.put("Horario", soln.getLiteral("?Timeline").toString());
-				}
+				
+				if (soln.getLiteral("?Timeline") != null) 
+					results.put("Horario o Situación", soln.getLiteral("?Timeline").toString());
+				
+				if (soln.getLiteral("?ProfileName") != null) 
 				results.put(soln.getLiteral("?ProfileName").toString(), soln.getLiteral("?ProfileValue").toString());
-				if (soln.getLiteral("?FacilityValue") != null) {
+				
+				if (soln.getLiteral("?FacilityValue") != null) 
 					results.put("facility-" + soln.getLiteral("?FacilityValue").toString(), soln.getLiteral("?FacilityValue").toString());
-				}
-				if (soln.getLiteral("?Imagen") != null) {
+				
+				if (soln.getLiteral("?Subtipo") != null) 
+					results.put("subtipo-" + soln.getLiteral("?Subtipo").toString(), soln.getLiteral("?Subtipo").toString());
+				
+				if (soln.getLiteral("?Tipo") != null) 
+					results.put("tipo-" + soln.getLiteral("?Tipo").toString(), soln.getLiteral("?Tipo").toString());
+				
+				if (soln.getLiteral("?Imagen") != null) 
 					results.put("Imagen", soln.getLiteral("?Imagen").toString());
-			    }
-				if (soln.getLiteral("?HowToGet") != null) {
+			    
+				if (soln.getLiteral("?HowToGet") != null) 
 					results.put("Cómo llegar", soln.getLiteral("?HowToGet").toString());
-				}
+				
 			}
 
 		} finally {
@@ -317,10 +350,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		Statement coordinates = organiser.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#coordinates"));
 		Statement address = coordinates.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#address"));
 		String postalCode = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#postcode")).getLiteral().getString();
-		Statement xy = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#xy"));
-		
-	//		;
-		
+		Statement xy = address.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#xy"));		
 		if(postalCode != null)
 			htoResource.setPostalCode(postalCode);
 		if(xy.getProperty(m.createProperty("http://protege.stanford.edu/rdf/HTOv4002#latitude")).getLiteral() != null && 

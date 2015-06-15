@@ -25,6 +25,7 @@ import es.ull.taro.tourism_core.services.HistoricalMonumentsService;
 import es.ull.taro.tourism_core.services.NaturalMonumentsService;
 import es.ull.taro.tourism_core.services.PlacesService;
 import es.ull.taro.tourism_core.services.TourismOfficesService;
+import es.ull.taro.tourism_core.services.VolcanicsResourcesService;
 
 @Component
 @Path("/")
@@ -53,6 +54,9 @@ public class TourismAPI {
 	
 	@Autowired
 	protected HistoricalMonumentsService historicalMonumentsService;
+	
+	@Autowired
+	protected VolcanicsResourcesService volcanicsResourcesService;
 
 	@Autowired
 	protected AemetService aemetService;
@@ -136,6 +140,13 @@ public class TourismAPI {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
+	@Path("volcanicsResourcesAround")
+	public List<String> retrieveVolcanicsResourcesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveVolcanicsResourcesAround(uri, radius);
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
 	@Path("gastroAround")
 	public List<String> retrieveGastroAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveGastroAround(uri, radius);
@@ -189,6 +200,14 @@ public class TourismAPI {
 	public List<HTOResource> findHistoricalMonumentsByName(@QueryParam(value = "name") String name) throws Exception {
 		return historicalMonumentsService.find(name);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("volcanicsResourcesResource")
+	public List<HTOResource> findVolcanicsResourcesByName(@QueryParam(value = "name") String name) throws Exception {
+		return volcanicsResourcesService.find(name);
+	}
+
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

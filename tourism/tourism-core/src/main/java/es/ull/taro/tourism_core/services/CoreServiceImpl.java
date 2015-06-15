@@ -11,7 +11,6 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +24,6 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.FileManager;
 
-import es.ull.taro.tourism_core.domain.HTOResource;
 import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.domain.TDTResourceType;
 import es.ull.taro.tourism_core.utils.Utils;
@@ -54,6 +52,9 @@ public class CoreServiceImpl implements CoreService {
 	
 	@Autowired
 	private NaturalMonumentsService naturalMonumentsService;
+	
+	@Autowired
+	private VolcanicsResourcesService volcanicsResourcesService;
 	
 	@Autowired
 	private HistoricalMonumentsService historicalMonumentsService;
@@ -90,6 +91,8 @@ public class CoreServiceImpl implements CoreService {
 			return placesService.describeUri(uri);
 		case NATURAL:
 			return naturalMonumentsService.describeUri(uri);
+		case VOLCANIC:
+			return volcanicsResourcesService.describeUri(uri);
 		case HISTORICAL:
 			return historicalMonumentsService.describeUri(uri);
 		default:
@@ -147,6 +150,12 @@ public class CoreServiceImpl implements CoreService {
 	}
 	
 	@Override
+	public List<String> retrieveVolcanicsResourcesAround(String htoResourceUri, int radius) {
+		TDTResource tdtResource = buildTDTResource(htoResourceUri);
+		return volcanicsResourcesService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
+	
+	@Override
 	public List<String> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return historicalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
@@ -182,6 +191,8 @@ public class CoreServiceImpl implements CoreService {
 			return naturalMonumentsService.createHtoResource(tdtResourceUri);
 		} else if (TDTResourceType.HISTORICAL.equals(type)) {
 			return historicalMonumentsService.createHtoResource(tdtResourceUri);
+		} else if (TDTResourceType.VOLCANIC.equals(type)) {
+			return volcanicsResourcesService.createHtoResource(tdtResourceUri);	
 		} else if (TDTResourceType.OFFICE.equals(type)) {
 			return tourismOfficesService.createOfficeResource(tdtResourceUri);
 		}
@@ -202,6 +213,7 @@ public class CoreServiceImpl implements CoreService {
 		InputStream inOff = FileManager.get().open("oficinasdeturismo.rdf");
 		InputStream inBeach = FileManager.get().open("playas.rdf");
 		InputStream inNatural = FileManager.get().open("monumentosNaturales.rdf");
+		InputStream inVolcanic = FileManager.get().open("recursosVolcanicos.rdf");
 		InputStream inHistorical = FileManager.get().open("monumentosHistoricos.RDF");
 
 		model.read(inAcc, EMPTY);
@@ -209,6 +221,7 @@ public class CoreServiceImpl implements CoreService {
 		model.read(inOff, EMPTY);
 		model.read(inBeach, EMPTY);
 		model.read(inNatural, EMPTY);
+		model.read(inVolcanic, EMPTY);
 		model.read(inHistorical, EMPTY);
 		String placesDBP = "http://es.dbpedia.org/sparql?default-graph-uri=&query=%0D%0Aselect+%3Furi+%3Fname+%3Flatitude+%3Flongitude+%7B+%0D%0A++++%3Furi+rdfs%3Alabel+%3Fname+.%0D%0A++++%3Furi+geo%3Alat+%3Flatitude+.%0D%0A++++%3Furi+geo%3Along+%3Flongitude+.%0D%0A++++%3Furi+dcterms%3Asubject+%3Fprovince+.%0D%0A++++FILTER+regex%28%3Fprovince%2C+%22tenerife%22%2C+%22i%22%29.+%0D%0A+++%0D%0A%7D&format=text%2Fturtle&timeout=0&debug=on";
 //		String placesGeoLinkedData = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0A"

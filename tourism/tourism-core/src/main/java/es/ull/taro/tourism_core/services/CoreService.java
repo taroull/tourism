@@ -28,6 +28,8 @@ public interface CoreService {
 	
 	public List<String> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius);
 	
+	public List<String> retrieveVolcanicsResourcesAround(String htoResourceUri, int radius);
+	
 	public List<String> retrieveGastroAround(String htoResourceUri, int radius);
 	
 	public List<String> retrieveAccommodationAround(String htoResourceUri, int radius);

@@ -9,4 +9,7 @@ public class TurismoDeTenerife {
 	public static final String BEACH_BASE_URI = TDT_BASE_URI + "playas/";
 	public static final String NATURAL_BASE_URI = TDT_BASE_URI + "monumentosNaturales/";
 	public static final String HISTORICAL_BASE_URI = TDT_BASE_URI + "monumentosHistoricos/";
+	
+	public static final String ULL_BASE_URI = "http://www.ull.es/resource/";
+	public static final String VOLCANIC_BASE_URI = ULL_BASE_URI + "recursosVolcanicos/";
 }
