@@ -39,6 +39,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
 		dbpediaQuery.append("  ?city rdfs:label ?label .");
 		dbpediaQuery.append("  ?city dbpedia-owl:country ?country . ");
+		dbpediaQuery.append("  ?city dbpedia-owl:abstract ?info. ");
 		dbpediaQuery.append("  ?country dbpprop:commonName  \"Spain\"@en. ");
 		dbpediaQuery.append("  ?city  dbpedia-owl:postalCode \"").append(postalCode).append("\"@en . ");
 		dbpediaQuery.append("}");
@@ -47,9 +48,11 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", dbpediaQuery.toString());
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				QuerySolution sol = (QuerySolution) rs.next();
+				if (sol.get("?info") != null)
+					uris.add(sol.get("?info").toString());
 				Resource resource = sol.getResource("?city");
 				uris.add(resource.getURI());
 			}
@@ -58,6 +61,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		}
 
 		return uris;
+		
 	}
 
 	@Override
@@ -71,9 +75,10 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		StringBuilder dbpediaQuery = new StringBuilder();
 		dbpediaQuery.append("PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> ");
 		dbpediaQuery.append("prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ");
-		dbpediaQuery.append("SELECT DISTINCT ?city ");
+		dbpediaQuery.append("SELECT DISTINCT ?city ?info ");
 		dbpediaQuery.append("WHERE {");
 		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
+		dbpediaQuery.append("  ?city dbpedia-owl:abstract ?info. ");
 		dbpediaQuery.append("  { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/Spain> }").append(
 				" UNION { ?city dbpedia-owl:country <http://es.dbpedia.org/resource/España> } . ");
 		// for (int i = 0; i < postalCodes.size(); i++) {
@@ -88,11 +93,14 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 
 		List<String> uris = new ArrayList<String>();
 
+	//	QueryExecution qe2 = QueryExecutionFactory.create(sparqlQuery.toString(), resultModel);
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://es.dbpedia.org/sparql", dbpediaQuery.toString());
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				QuerySolution sol = (QuerySolution) rs.next();
+				if (sol.get("?info") != null)
+					uris.add(sol.get("?info").toString());
 				Resource resource = sol.getResource("?city");
 				uris.add(resource.getURI());
 			}
