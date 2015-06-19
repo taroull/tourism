@@ -18,4 +18,7 @@ public interface DBpediaService extends BaseService {
 	public List<GeoResource> find(String query) throws JsonLdError;
 
 	public Map<String, String> describeUri(String uri);
+
+	public List<String> retrievePlacesAround(float latitude, float longitude, int radius);
+	
 }

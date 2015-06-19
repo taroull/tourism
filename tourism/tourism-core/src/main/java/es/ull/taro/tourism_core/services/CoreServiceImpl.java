@@ -12,6 +12,7 @@ import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.jena.riot.RDFDataMgr;
+import org.openjena.riot.Lang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.FileManager;
 
+import es.ull.taro.tourism_core.domain.BeachResource;
 import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.domain.TDTResourceType;
 import es.ull.taro.tourism_core.utils.Utils;
@@ -129,6 +131,22 @@ public class CoreServiceImpl implements CoreService {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return geoLinkedDataService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
+	
+	@Override
+	public List<String> findPlacesNear(String uri, int radius) throws IOException {
+		TDTResource tdtResource = buildTDTResource(uri);
+		List<String> result = new ArrayList<String>();
+		result.addAll(geoLinkedDataService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(dBpediaService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(tourismOfficesService.findTourismOfficesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(naturalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(historicalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(volcanicsResourcesService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(gastroService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(accommodationService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		result.addAll(placesService.findBeachesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
+		return result;
+	}
 
 	private List<String> retrieveMunicipalityInfoFromTDTResource(TDTResource tdtResource) throws JsonLdError {
 		List<String> result = new ArrayList<String>();
@@ -199,13 +217,9 @@ public class CoreServiceImpl implements CoreService {
 		return null;
 	}
 
-	@Override
-	public List<es.ull.taro.tourism_core.domain.Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException {
-		TDTResource tdtResource = buildTDTResource(uri);
-		return tdtResource != null ? spatialSearch(tdtResource.getLatitude(), tdtResource.getLongitude(), radiusInMeters) : null;
-	}
+	
 
-	private List<es.ull.taro.tourism_core.domain.Resource> spatialSearch(float latitude, float longitude, int radiusInMeters) throws IOException {
+/*	private List<es.ull.taro.tourism_core.domain.Resource> spatialSearch(float latitude, float longitude, int radiusInMeters) throws IOException {
 
 		Model model = ModelFactory.createDefaultModel();
 		InputStream inAcc = FileManager.get().open("tdtalojamientos.rdf");
@@ -229,18 +243,17 @@ public class CoreServiceImpl implements CoreService {
 //				+ "xsd%3Adouble%28%27" + latitude + "%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+" + radiusInMeters + "%0D%0A++%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27" + longitude + "%27%29+%3C%3D+" + radiusInMeters +"%0D%0A++%26%26+xsd%3Adouble%28%27" + longitude + "%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+" + radiusInMeters + "+%29.+%0D%0A%7D&format=text%2Fplain&debug=on&timeout=";
 //		RDFDataMgr.read (model, placesGeoLinkedData, Lang.NTRIPLES);
 		RDFDataMgr.read(model, placesDBP);
-	//	String uri = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0ASELECT++DISTINCT+%3Fsubject+%0D%0AWHERE+%7B+%0D%0A++%3Fsubject+geo%3Ageometry+%3Fg.++%0D%0A++%3Fg+geo%3Alat+%3Flat.+%0D%0A++%3Fg+geo%3Along+%3Flong.+%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%2728.4091309%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%2728.4091309%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27-16.5440964%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%27-16.5440964%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+1000+%29.+%0D%0A%7D&format=text%2Fplain&debug=on&timeout=";
+		String uri = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E+%0D%0APREFIX+geo%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F01%2Fgeo%2Fwgs84_pos%23%3E%0D%0ASELECT++DISTINCT+%3Fsubject+%0D%0AWHERE+%7B+%0D%0A++%3Fsubject+geo%3Ageometry+%3Fg.++%0D%0A++%3Fg+geo%3Alat+%3Flat.+%0D%0A++%3Fg+geo%3Along+%3Flong.+%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%2728.4091309%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%2728.4091309%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27-16.5440964%27%29+%3C%3D+1000%0D%0A++%26%26+xsd%3Adouble%28%27-16.5440964%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+1000+%29.+%0D%0A%7D&format=text%2Fplain&debug=on&timeout=";
 	//	String uri = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=SELECT++DISTINCT+%3Fsubject%0D%0AWHERE+%7B+%0D%0A%3Fsubject+geo%3Ageometry+%3Fg.%0D%0A%3Fg+geo%3Alat+%3Flat.+%0D%0A%3Fg+geo%3Along+%3Flong.+%0D%0A%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%2728.4091309%27%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%2728.4091309%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27-16.5440964%27%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%27-16.5440964%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+%2810000%29%29.+%7D&format=application%2Fsparql-results%2Bjson&debug=on&timeout=";
 	//	String uri = "http://geo.linkeddata.es/sparql?default-graph-uri=&query=prefix+rdf%3A%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT++DISTINCT+%3Fsubject%0D%0AWHERE+%7B+%0D%0A%3Fsubject+geo%3Ageometry+%3Fg.%0D%0A%3Fg+geo%3Alat+%3Flat.+%0D%0A%3Fg+geo%3Along+%3Flong.+%0D%0A%0D%0AFILTER%28xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%2728.4091309%27%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%2728.4091309%27%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%27-16.5440964%27%29+%3C%3D+%2810000%29+%26%26+xsd%3Adouble%28%27-16.5440964%27%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+%2810000%29%29.+%7D&format=text%2Fplain&debug=on&timeout=";
-	//	RDFDataMgr.read(model, uri, Lang.NT);
+		RDFDataMgr.read(model, uri, org.apache.jena.riot.Lang.NTRIPLES);
 
 		return queryData(model, latitude, longitude, radiusInMeters);
-	}
+	}*/
 
 	public List<es.ull.taro.tourism_core.domain.Resource> queryData(Model model, float latitude, float longitude, int radiusInMeters) {
 
 		double convertedRadius = Double.valueOf(radiusInMeters) / 100000;
-
 		StringBuilder query = new StringBuilder();
 		query.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>");
 		query.append("PREFIX res: <http://www.w3.org/2005/sparql-results#>");

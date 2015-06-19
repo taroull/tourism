@@ -34,7 +34,7 @@ public interface CoreService {
 	
 	public List<String> retrieveAccommodationAround(String htoResourceUri, int radius);
 
-	public List<Resource> findPlacesNear(String uri, int radiusInMeters) throws IOException;
+	public List<String> findPlacesNear(String uri, int radiusInMeters) throws IOException;
 
 	public List<String> retrieveBeachesAround(String htoResourceUri, int radius);
 

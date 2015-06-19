@@ -162,7 +162,7 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("placesNear")
-	public List<Resource> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<String> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.findPlacesNear(uri, radius);
 	}
 

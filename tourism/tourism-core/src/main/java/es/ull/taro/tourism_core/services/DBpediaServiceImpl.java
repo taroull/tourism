@@ -215,6 +215,54 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 
 		return results;
 	}
+	
+	@Override
+	public List<String> retrievePlacesAround(float latitude, float longitude, int radius) {
+
+		// radius is especified in meters, but to make the query, we have to
+		// divide the radius by 100.000
+		double convertedRadius = Double.valueOf(radius) / 100000;
+
+		StringBuilder sparqlQuery = new StringBuilder();
+		sparqlQuery.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ");
+		sparqlQuery.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ");
+		sparqlQuery.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ");
+		sparqlQuery.append("prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ");
+		sparqlQuery.append("PREFIX dbpprop: <http://dbpedia.org/property/> ");
+		sparqlQuery.append("PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> ");
+		sparqlQuery.append("PREFIX prop-es: <http://es.dbpedia.org/property/> ");
+		sparqlQuery.append("PREFIX dcterms:  <http://purl.org/dc/terms/>");
+		sparqlQuery.append("SELECT  DISTINCT ?uri ?name ?latitude ?longitude ?province ");
+		sparqlQuery.append("WHERE { ");
+		sparqlQuery.append("  ?uri rdfs:label ?name .  ");
+		sparqlQuery.append("  ?uri geo:lat ?latitude . ");
+		sparqlQuery.append("  ?uri geo:long ?longitude . ");
+		sparqlQuery.append("  ?uri geo:long ?longitude . ");
+		sparqlQuery.append("  ?uri dcterms:subject ?province . ");
+		sparqlQuery.append("FILTER regex (?province, \"tenerife\", \"i\")  ");
+		sparqlQuery.append("FILTER(xsd:double(?latitude) - xsd:double('").append(latitude).append("') <= ").append(convertedRadius);
+		sparqlQuery.append("  && xsd:double('").append(latitude).append("') - xsd:double(?latitude) <= ").append(convertedRadius);
+		sparqlQuery.append("  && xsd:double(?longitude) - xsd:double('").append(longitude).append("') <= ").append(convertedRadius);
+		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?longitude) <= ").append(convertedRadius)
+				.append(" ). ");
+		sparqlQuery.append("}");
+
+		List<String> uris = new ArrayList<String>();
+
+		QueryExecution qe = QueryExecutionFactory.sparqlService("http://es.dbpedia.org/sparql", sparqlQuery.toString());
+		try {
+			ResultSet results = qe.execSelect();
+			for (; results.hasNext();) {
+				QuerySolution sol = (QuerySolution) results.next();
+				Resource resource = sol.getResource("?uri");
+				uris.add(resource.getURI());
+			}
+		} finally {
+			qe.close();
+		}
+
+		return uris;
+	}
 
 	@Override
 	public String getVocabulary() {
