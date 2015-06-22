@@ -163,7 +163,8 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?resource hto:description ?B2_Description . "
 				+ "?B2_Description hto:longDescription ?B2_MultiLanguageText . "
 				+ "?B2_MultiLanguageText hto:languageText ?B2_LanguageText . "
-				+ "?B2_LanguageText hto:text ?Description .}");
+				+ "?B2_LanguageText hto:text ?Description ."
+				+ "?B2_LanguageText hto:language \"es\" . } ");
 		sparqlQuery2.append(""
 				+ "OPTIONAL {"
 				+ "?resource hto:organiser ?B3_Organisation . "
