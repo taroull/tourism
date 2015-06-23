@@ -242,7 +242,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		sparqlQuery.append("PREFIX dcterms:  <http://purl.org/dc/terms/>");
 		sparqlQuery.append("SELECT  DISTINCT ?uri ?name ?latitude ?longitude ?province ");
 		sparqlQuery.append("WHERE { ");
-		sparqlQuery.append("  ?uri rdfs:label ?name .  ");
+		sparqlQuery.append("  ?uri rdfs:label ?name . FILTER (lang(?name) = \"es\")  ");
 		sparqlQuery.append("  ?uri geo:lat ?latitude . ");
 		sparqlQuery.append("  ?uri geo:long ?longitude . ");
 		sparqlQuery.append("  ?uri geo:long ?longitude . ");
@@ -262,6 +262,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
+				uris.add(sol.get("?name").toString());
 				Resource resource = sol.getResource("?uri");
 				uris.add(resource.getURI());
 			}

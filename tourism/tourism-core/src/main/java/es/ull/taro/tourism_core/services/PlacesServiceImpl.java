@@ -84,13 +84,14 @@ public class PlacesServiceImpl implements PlacesService {
 		sparqlQuery.append("PREFIX places: <http://purl.org/ontology/places#> ");
 		sparqlQuery.append("PREFIX tdt: <http://turismo-de-tenerife.org/def/turismo#> ");
 
-		sparqlQuery.append("SELECT ?beach ");
+		sparqlQuery.append("SELECT ?beach ?title ");
 		sparqlQuery.append("WHERE { ");
 		sparqlQuery.append("  ?beach a places:Beach. ");
 		sparqlQuery.append("  ?beach tdt:ows_Georeferencia ?geoPoint. ");
 		sparqlQuery.append("  ?geoPoint a geo:Point. ");
 		sparqlQuery.append("  ?geoPoint geo:lat ?lat. ");
 		sparqlQuery.append("  ?geoPoint geo:long ?long. ");
+		sparqlQuery.append("  ?beach tdt:ows_LinkTitle ?title. ");
 		sparqlQuery.append("FILTER(xsd:double(?lat) - xsd:double('").append(latitude).append("') <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double('").append(latitude).append("') - xsd:double(?lat) <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double(?long) - xsd:double('").append(longitude).append("') <= ").append(convertedRadius);
@@ -104,6 +105,7 @@ public class PlacesServiceImpl implements PlacesService {
 			ResultSet results = qe.execSelect();
 			for (; results.hasNext();) {
 				QuerySolution sol = (QuerySolution) results.next();
+				uris.add(sol.get("?title").toString());
 				Resource resource = sol.getResource("?beach");
 				uris.add(resource.getURI());
 			}

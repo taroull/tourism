@@ -97,29 +97,37 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		sparqlQuery.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ");
 		sparqlQuery.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ");
 		sparqlQuery.append("PREFIX hto: <").append(HTO.VOCABULARY).append(">");
-		sparqlQuery.append("SELECT DISTINCT ?resource ?lat ?long");
+		sparqlQuery.append("SELECT DISTINCT ?resource ?text ?lat ?long");
 		sparqlQuery.append("WHERE { ");
+		sparqlQuery.append("?resource a ").append(getResourceType()).append(".");
 		sparqlQuery.append("?resource hto:organiser ?Organisation .");
 		sparqlQuery.append("?Organisation hto:coordinates ?Coordinates . ");
 		sparqlQuery.append("?Coordinates hto:address ?Address .");
 		sparqlQuery.append("?Address hto:xy ?XY. ");
 		sparqlQuery.append("?XY hto:latitude ?lat. ");
 		sparqlQuery.append("?XY hto:longitude ?long.");
+		
+		sparqlQuery.append("?resource hto:name ?multilanguageText. ");
+		sparqlQuery.append("?multilanguageText a hto:MultiLanguageText. ");
+		sparqlQuery.append("?multilanguageText hto:languageText ?languageText. ");
+		sparqlQuery.append("?languageText a hto:LanguageText. ");
+		sparqlQuery.append("?languageText hto:text ?text. ");
+		
 		sparqlQuery.append("FILTER(xsd:double(?lat) - xsd:double('" + latitude + "') <= " + convertedRadius);
 		sparqlQuery.append("  && xsd:double('" + latitude + "') - xsd:double(?lat) <= " + convertedRadius);
 		sparqlQuery.append("  && xsd:double(?long) - xsd:double('" + longitude + "') <= " + convertedRadius);
 		sparqlQuery.append("  && xsd:double('" + longitude + "') - xsd:double(?long) <= " + convertedRadius + " )} ");
+		
 				
 		List<String> uris = new ArrayList<String>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
-				
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				QuerySolution sol = (QuerySolution) rs.next();
+				uris.add(sol.get("?text").toString());
 				Resource resource = sol.getResource("?resource");
-				
 				uris.add(resource.getURI());
 			}
 		} finally {

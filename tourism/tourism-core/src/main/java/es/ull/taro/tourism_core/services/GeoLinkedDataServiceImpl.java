@@ -28,25 +28,29 @@ public class GeoLinkedDataServiceImpl implements GeoLinkedDataService {
 		StringBuilder sparqlQuery = new StringBuilder();
 		sparqlQuery.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ");
 		sparqlQuery.append("PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> ");
-		sparqlQuery.append("SELECT  DISTINCT ?subject ");
+		sparqlQuery.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ");
+		sparqlQuery.append("SELECT  DISTINCT ?subject ?label ?lat ?long");
 		sparqlQuery.append("WHERE { ");
 		sparqlQuery.append("  ?subject geo:geometry ?g.  ");
 		sparqlQuery.append("  ?g geo:lat ?lat. ");
 		sparqlQuery.append("  ?g geo:long ?long. ");
+		sparqlQuery.append("  ?subject rdfs:label ?label.");
 		sparqlQuery.append("FILTER(xsd:double(?lat) - xsd:double('").append(latitude).append("') <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double('").append(latitude).append("') - xsd:double(?lat) <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double(?long) - xsd:double('").append(longitude).append("') <= ").append(convertedRadius);
 		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius)
-				.append(" ). ");
+				.append(" &&	lang(?label) = \"es\" ). ");
 		sparqlQuery.append("}");
 
 		List<String> uris = new ArrayList<String>();
 
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://geo.linkeddata.es/sparql", sparqlQuery.toString());
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				QuerySolution sol = (QuerySolution) rs.next();
+				if (sol.get("?label") != null)
+					uris.add(sol.get("?label").toString());
 				Resource resource = sol.getResource("?subject");
 				uris.add(resource.getURI());
 			}
