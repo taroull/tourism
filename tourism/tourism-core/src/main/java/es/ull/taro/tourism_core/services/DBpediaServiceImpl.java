@@ -27,14 +27,14 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 	private CoreService coreService;
 
 	@Override
-	public List<String> retrieveMunicipalityInfo(String postalCode) throws JsonLdError {
+	public List<HashMap<String, String>> retrieveMunicipalityInfo(String postalCode) throws JsonLdError {
 
 		StringBuilder dbpediaQuery = new StringBuilder();
 		dbpediaQuery.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ");
 		dbpediaQuery.append("prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ");
 		dbpediaQuery.append("PREFIX dbpprop: <http://dbpedia.org/property/> ");
 		dbpediaQuery.append("PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> ");
-		dbpediaQuery.append("SELECT DISTINCT ?city ");
+		dbpediaQuery.append("SELECT DISTINCT ?city ?info");
 		dbpediaQuery.append("WHERE {");
 		dbpediaQuery.append("  ?city rdf:type dbpedia-owl:PopulatedPlace . ");
 		dbpediaQuery.append("  ?city rdfs:label ?label .");
@@ -44,17 +44,22 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		dbpediaQuery.append("  ?city  dbpedia-owl:postalCode \"").append(postalCode).append("\"@en . ");
 		dbpediaQuery.append("}");
 
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", dbpediaQuery.toString());
 		try {
 			ResultSet rs = qe.execSelect();
 			for (; rs.hasNext();) {
 				QuerySolution sol = (QuerySolution) rs.next();
+				HashMap<String, String> hash = new HashMap<String, String>();
+				
+				
 				if (sol.get("?info") != null)
-					uris.add(sol.get("?info").toString());
+					hash.put("description", sol.get("?info").toString());
+				
 				Resource resource = sol.getResource("?city");
-				uris.add(resource.getURI());
+				hash.put("uri", resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();
@@ -65,7 +70,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 	}
 
 	@Override
-	public List<String> retrieveMunicipalityInfoES(String postalCode) throws JsonLdError {
+	public List<HashMap<String, String>> retrieveMunicipalityInfoES(String postalCode) throws JsonLdError {
 
 		// String municipalityCode =
 		// PostalCodesMapping.getInstance().getMunicipalityCode(postalCode);
@@ -91,7 +96,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 		dbpediaQuery.append("  ?city dbpedia-owl:postalCode \"").append(postalCode).append("\" . ");
 		dbpediaQuery.append("}");
 
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 	//	QueryExecution qe2 = QueryExecutionFactory.create(sparqlQuery.toString(), resultModel);
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://es.dbpedia.org/sparql", dbpediaQuery.toString());
@@ -99,10 +104,15 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 			ResultSet rs = qe.execSelect();
 			for (; rs.hasNext();) {
 				QuerySolution sol = (QuerySolution) rs.next();
+				HashMap<String, String> hash = new HashMap<String, String>();
+				
+				
 				if (sol.get("?info") != null)
-					uris.add(sol.get("?info").toString());
+					hash.put("description", sol.get("?info").toString());
+				
 				Resource resource = sol.getResource("?city");
-				uris.add(resource.getURI());
+				hash.put("uri", resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();
@@ -225,7 +235,7 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 	}
 	
 	@Override
-	public List<String> retrievePlacesAround(float latitude, float longitude, int radius) {
+	public List<HashMap<String, String>> retrievePlacesAround(float latitude, float longitude, int radius) {
 
 		// radius is especified in meters, but to make the query, we have to
 		// divide the radius by 100.000
@@ -255,16 +265,18 @@ public class DBpediaServiceImpl extends BaseServiceImpl implements DBpediaServic
 				.append(" ). ");
 		sparqlQuery.append("}");
 
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://es.dbpedia.org/sparql", sparqlQuery.toString());
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
-				uris.add(sol.get("?name").toString());
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				HashMap<String, String> hash = new HashMap<String, String>();
+				QuerySolution sol = (QuerySolution) rs.next();
+				hash.put("name", sol.get("?name").toString());
 				Resource resource = sol.getResource("?uri");
-				uris.add(resource.getURI());
+				hash.put("uri",resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();

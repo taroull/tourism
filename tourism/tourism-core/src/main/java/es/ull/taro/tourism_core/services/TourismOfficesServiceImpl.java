@@ -83,7 +83,7 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 	}
 
 	@Override
-	public List<String> findTourismOfficesAround(float latitude, float longitude, int radiusInMeters) {
+	public List<HashMap<String, String>> findTourismOfficesAround(float latitude, float longitude, int radiusInMeters) {
 
 		Model model = loadRDFFile();
 
@@ -116,16 +116,18 @@ public class TourismOfficesServiceImpl implements TourismOfficesService {
 		sparqlQuery.append("  && xsd:double('").append(longitude).append("') - xsd:double(?long) <= ").append(convertedRadius).append(" ). ");
 		sparqlQuery.append("}");
 
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
-			ResultSet results = qe.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution sol = (QuerySolution) results.next();
-				uris.add(sol.get("?name").toString());
+			ResultSet rs = qe.execSelect();
+			for (; rs.hasNext();) {
+				QuerySolution sol = (QuerySolution) rs.next();
+				HashMap<String, String> hash = new HashMap<String, String>();
+				hash.put("name", sol.get("?name").toString());
 				Resource resource = sol.getResource("?office");
-				uris.add(resource.getURI());
+				hash.put("uri", resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();

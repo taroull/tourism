@@ -1,18 +1,14 @@
 package es.ull.taro.tourism_core.services;
 
-import static org.apache.commons.lang.StringUtils.EMPTY;
-
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.jena.riot.RDFDataMgr;
-import org.openjena.riot.Lang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +17,8 @@ import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.util.FileManager;
 
-import es.ull.taro.tourism_core.domain.BeachResource;
 import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.domain.TDTResourceType;
 import es.ull.taro.tourism_core.utils.Utils;
@@ -103,7 +96,7 @@ public class CoreServiceImpl implements CoreService {
 	}
 
 	@Override
-	public List<String> retrieveMunicipalityInfo(String tdtResourceUri) throws JsonLdError {
+	public List<HashMap<String, String>> retrieveMunicipalityInfo(String tdtResourceUri) throws JsonLdError {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return tdtResource != null ? retrieveMunicipalityInfoFromTDTResource(tdtResource) : null;
 	}
@@ -111,10 +104,10 @@ public class CoreServiceImpl implements CoreService {
 	@Override
 	public List<String> retrieveMunicipalityPhotos(String htoResourceUri) throws JsonLdError {
 		List<String> photosUrls = new ArrayList<String>();
-		List<String> municipalityUris = retrieveMunicipalityInfo(htoResourceUri);
-		for (String uri : municipalityUris) {
-			if (StringUtils.startsWith(uri, DBpedia.RESOURCE)) {
-				photosUrls.addAll(flickrService.findPhotos(Utils.getNameFromDbpediaURI(uri)));
+		List<HashMap<String, String>> municipalityUris = retrieveMunicipalityInfo(htoResourceUri);
+		for (HashMap<String, String> uri : municipalityUris) {
+			if (StringUtils.startsWith(uri.get("uri"), DBpedia.RESOURCE)) {
+				photosUrls.addAll(flickrService.findPhotos(Utils.getNameFromDbpediaURI(uri.get("uri"))));
 			}
 		}
 		return photosUrls;
@@ -127,15 +120,15 @@ public class CoreServiceImpl implements CoreService {
 	}
 
 	@Override
-	public List<String> retrievePlacesAround(String tdtResourceUri, int radius) {
+	public List<HashMap<String, String>> retrievePlacesAround(String tdtResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return geoLinkedDataService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> findPlacesNear(String uri, int radius) throws IOException {
+	public List<HashMap<String, String>> findPlacesNear(String uri, int radius) throws IOException {
 		TDTResource tdtResource = buildTDTResource(uri);
-		List<String> result = new ArrayList<String>();
+		List<HashMap<String, String>> result = new ArrayList<HashMap<String, String>>();
 		result.addAll(geoLinkedDataService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
 		result.addAll(dBpediaService.retrievePlacesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
 		result.addAll(tourismOfficesService.findTourismOfficesAround(tdtResource.getLatitude(), tdtResource.getLongitude(),radius));
@@ -148,51 +141,51 @@ public class CoreServiceImpl implements CoreService {
 		return result;
 	}
 
-	private List<String> retrieveMunicipalityInfoFromTDTResource(TDTResource tdtResource) throws JsonLdError {
-		List<String> result = new ArrayList<String>();
+	private List<HashMap<String, String>> retrieveMunicipalityInfoFromTDTResource(TDTResource tdtResource) throws JsonLdError {
+		List<HashMap<String, String>> result = new ArrayList<HashMap<String, String>>();
 		result.addAll(dBpediaService.retrieveMunicipalityInfo(tdtResource.getPostalCode()));
 		result.addAll(dBpediaService.retrieveMunicipalityInfoES(tdtResource.getPostalCode()));
 		return result;
 	}
 
 	@Override
-	public List<String> retrieveTourismOfficesAround(String tdtResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveTourismOfficesAround(String tdtResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return tourismOfficesService.findTourismOfficesAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> retrieveNaturalMonumentsAround(String htoResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveNaturalMonumentsAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return naturalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> retrieveVolcanicsResourcesAround(String htoResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveVolcanicsResourcesAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return volcanicsResourcesService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveHistoricalMonumentsAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return historicalMonumentsService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> retrieveGastroAround(String htoResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveGastroAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return gastroService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 	
 	@Override
-	public List<String> retrieveAccommodationAround(String htoResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveAccommodationAround(String htoResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(htoResourceUri);
 		return accommodationService.findAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 
 	@Override
-	public List<String> retrieveBeachesAround(String tdtResourceUri, int radius) {
+	public List<HashMap<String, String>> retrieveBeachesAround(String tdtResourceUri, int radius) {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return placesService.findBeachesAround(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}

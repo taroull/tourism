@@ -1,5 +1,6 @@
 package es.ull.taro.tourism_rest;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,6 @@ import org.springframework.stereotype.Component;
 
 import es.ull.taro.tourism_core.domain.GeoResource;
 import es.ull.taro.tourism_core.domain.HTOResource;
-import es.ull.taro.tourism_core.domain.Resource;
 import es.ull.taro.tourism_core.domain.TDTResource;
 import es.ull.taro.tourism_core.services.AccommodationService;
 import es.ull.taro.tourism_core.services.AemetService;
@@ -92,7 +92,7 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("municipalityInfo")
-	public List<String> retrieveMunicipalityInfo(@QueryParam(value = "uri") String uri) throws Exception {
+	public List<HashMap<String, String>> retrieveMunicipalityInfo(@QueryParam(value = "uri") String uri) throws Exception {
 		return coreService.retrieveMunicipalityInfo(uri);
 	}
 
@@ -113,56 +113,56 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("placesAround")
-	public List<String> retrievePlacesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrievePlacesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrievePlacesAround(uri, radius);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("tourismOfficesAround")
-	public List<String> retrieveTourismOfficesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveTourismOfficesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveTourismOfficesAround(uri, radius);
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("naturalMonumentsAround")
-	public List<String> retrieveNaturalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveNaturalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveNaturalMonumentsAround(uri, radius);
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("historicalMonumentsAround")
-	public List<String> retrieveHistoricalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveHistoricalMonumentsAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveHistoricalMonumentsAround(uri, radius);
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("volcanicsResourcesAround")
-	public List<String> retrieveVolcanicsResourcesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveVolcanicsResourcesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveVolcanicsResourcesAround(uri, radius);
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("gastroAround")
-	public List<String> retrieveGastroAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveGastroAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveGastroAround(uri, radius);
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("accommodationAround")
-	public List<String> retrieveAccommodationAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveAccommodationAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveAccommodationAround(uri, radius);
 	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("placesNear")
-	public List<String> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> findPlacesNear(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.findPlacesNear(uri, radius);
 	}
 
@@ -176,7 +176,7 @@ public class TourismAPI {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("beachAround")
-	public List<String> retrieveBeachesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+	public List<HashMap<String, String>> retrieveBeachesAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrieveBeachesAround(uri, radius);
 	}
 

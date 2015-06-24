@@ -87,7 +87,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 	}
 	
 	@Override
-	public List<String> findAround(float latitude, float longitude, int radiusInMeters) {
+	public List<HashMap<String, String>> findAround(float latitude, float longitude, int radiusInMeters) {
 		Model model = loadRDFFile();
 		
 		double convertedRadius = Double.valueOf(radiusInMeters) / 100000;
@@ -119,16 +119,18 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 		sparqlQuery.append("  && xsd:double('" + longitude + "') - xsd:double(?long) <= " + convertedRadius + " )} ");
 		
 				
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 		QueryExecution qe = QueryExecutionFactory.create(sparqlQuery.toString(), model);
 		try {
 			ResultSet rs = qe.execSelect();
 			for (; rs.hasNext();) {
 				QuerySolution sol = (QuerySolution) rs.next();
-				uris.add(sol.get("?text").toString());
+				HashMap<String, String> hash = new HashMap<String, String>();
+				hash.put("name", sol.get("?text").toString());
 				Resource resource = sol.getResource("?resource");
-				uris.add(resource.getURI());
+				hash.put("uri", resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();

@@ -1,6 +1,7 @@
 package es.ull.taro.tourism_core.services;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class GeoLinkedDataServiceImpl implements GeoLinkedDataService {
 	private CoreService coreService;
 
 	@Override
-	public List<String> retrievePlacesAround(float latitude, float longitude, int radius) {
+	public List<HashMap<String, String>> retrievePlacesAround(float latitude, float longitude, int radius) {
 
 		// radius is especified in meters, but to make the query, we have to
 		// divide the radius by 100.000
@@ -42,17 +43,19 @@ public class GeoLinkedDataServiceImpl implements GeoLinkedDataService {
 				.append(" &&	lang(?label) = \"es\" ). ");
 		sparqlQuery.append("}");
 
-		List<String> uris = new ArrayList<String>();
+		List<HashMap<String, String>> uris = new ArrayList<HashMap<String, String>>();
 
 		QueryExecution qe = QueryExecutionFactory.sparqlService("http://geo.linkeddata.es/sparql", sparqlQuery.toString());
 		try {
 			ResultSet rs = qe.execSelect();
 			for (; rs.hasNext();) {
+				HashMap<String, String> hash = new HashMap<String, String>();
 				QuerySolution sol = (QuerySolution) rs.next();
 				if (sol.get("?label") != null)
-					uris.add(sol.get("?label").toString());
+					hash.put("name",sol.get("?label").toString());
 				Resource resource = sol.getResource("?subject");
-				uris.add(resource.getURI());
+				hash.put("uri",resource.getURI());
+				uris.add(hash);
 			}
 		} finally {
 			qe.close();

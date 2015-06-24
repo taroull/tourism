@@ -3,6 +3,7 @@ package es.ull.taro.tourism_core.services;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
@@ -60,7 +61,7 @@ public class HTOServiceTest {
 	@Test
 	public void testRetrieveMunicipalityInfo() throws JsonLdError {
 		String uri = "http://turismo-de-tenerife.org/resource/restauracion/LOS_ASADORES";
-		List<String> uris = coreService.retrieveMunicipalityInfo(uri);
+		List<HashMap<String, String>> uris = coreService.retrieveMunicipalityInfo(uri);
 		assertNotNull(uris);
 	}
 }

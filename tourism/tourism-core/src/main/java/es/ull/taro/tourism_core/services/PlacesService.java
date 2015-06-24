@@ -1,5 +1,6 @@
 package es.ull.taro.tourism_core.services;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ public interface PlacesService {
 
 	public List<es.ull.taro.tourism_core.domain.TDTResource> find(String name);
 
-	public List<String> findBeachesAround(float latitude, float longitude, int radiusInMeters);
+	public List<HashMap<String, String>> findBeachesAround(float latitude, float longitude, int radiusInMeters);
 
 	public Map<String, String> describeUri(String uri);
 

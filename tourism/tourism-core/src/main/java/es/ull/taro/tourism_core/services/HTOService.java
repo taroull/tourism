@@ -1,5 +1,6 @@
 package es.ull.taro.tourism_core.services;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ public abstract interface HTOService extends TDTService {
 
 	public abstract List<HTOResource> find(String query);
 	
-	public abstract List<String> findAround(float latitude, float longitude, int radiousInMeters);
+	public abstract List<HashMap<String, String>> findAround(float latitude, float longitude, int radiousInMeters);
 
 	public abstract HTOResource createHtoResource(String uri);
 }
