@@ -109,6 +109,13 @@ public class TourismAPI {
 	public List<String> retrievePhotosAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
 		return coreService.retrievePhotosAround(uri, radius);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("twittersAround")
+	public List<HashMap<String, String>> retrieveTwitterAround(@QueryParam(value = "uri") String uri, @QueryParam(value = "radius") int radius) throws Exception {
+		return coreService.retrieveTwittersAround(uri, radius);
+	}
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

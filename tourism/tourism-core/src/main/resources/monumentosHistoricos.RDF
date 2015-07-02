@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:OTN="http://rewerse.net/A1/otn/OTN.owl" xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:hto="http://protege.stanford.edu/rdf/HTOv4002#" xmlns:org="http://www.w3.org/TR/vocab-org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:tdt="http://turismo-de-tenerife.org/def/turismo#" xmlns:vCard="http://www.w3.org/TR/vcard-rdf/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:OTN="http://rewerse.net/A1/otn/OTN.owl" xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:hto="http://protege.stanford.edu/rdf/HTOv4002#" xmlns:org="http://www.w3.org/TR/vocab-org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:tdt="http://turismo-de-tenerife.org/def/turismo#" xmlns:vCard="http://www.w3.org/TR/vcard-rdf/">
    <OTN:Historical_Monument>
       <hto:attraction>
          <hto:Attraction rdf:about="http://turismo-de-tenerife.org/resource/monumentosHistoricos/Parroquia_de_Santo_Domingo_de_Guzman_">
@@ -11098,7 +11098,20 @@
    </OTN:Historical_Monument>
    <OTN:Historical_Monument>
       <hto:attraction>
-         <hto:Attraction rdf:about="http://turismo-de-tenerife.org/resource/monumentosHistoricos/Iglesia_Catedral_Na_Sra_de_los_Remedios">
+      
+         <hto:Attraction rdf:about=
+         "http://turismo-de-tenerife.org/resource/monumentosHistoricos/Iglesia_Catedral_Na_Sra_de_los_Remedios">
+         
+         <owl:sameAs rdf:resource=
+         "http://geo.linkeddata.es/SIGNA/resource/Catedral/Catedral%20%20de%20la%20Laguna"/>
+         
+         <owl:sameAs rdf:resource=
+         "http://geo.linkeddata.es/SIGNA/resource/Templo/Templo%20Catedral%20San%20Cristobal%20%20de%20La%20Laguna"/>
+         
+         <owl:sameAs rdf:resource=
+         "http://es.dbpedia.org/resource/Catedral_de_San_CristÃ³bal_de_La_Laguna"/>
+         
+         
             <hto:id>
                <hto:ReferencedValue>
                   <hto:domainName>http://turismo-de-tenerife.org/resource/monumentosHistoricos/</hto:domainName>

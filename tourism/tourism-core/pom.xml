@@ -17,7 +17,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<commons-lang.version>2.6</commons-lang.version>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>glassfish-repository</id>
+			<name>Java.net Repository for Glassfish</name>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+	</repositories>
 	<dependencies>
 
 		<dependency>
@@ -55,6 +61,21 @@
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-client</artifactId>
 			<version>${jersey-client.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>${jersey-json.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.oauth</groupId>
+			<artifactId>oauth-signature</artifactId>
+			<version>1.1.2-ea-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.oauth</groupId>
+			<artifactId>oauth-client</artifactId>
+			<version>1.1.2-ea-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>

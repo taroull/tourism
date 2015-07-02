@@ -259,7 +259,7 @@ public abstract class HTOServiceImpl extends TDTServiceImpl implements HTOServic
 				+ "?resource hto:location ?B15_Location . "
 				+ "?B15_Location hto:enviroment ?B15_ListValue . "
 				+ "?B15_ListValue hto:referencedValue ?B15_ReferencedValue . "
-				+ "?B15_ReferencedValue hto:domainName \"ull\" . "
+				+ "?B15_ReferencedValue hto:domainName \"ull-subtipo\" . "
 				+ "?B15_ReferencedValue hto:domainValue ?Subtipo . }");
 		sparqlQuery2.append(" "
 				+ "OPTIONAL {"

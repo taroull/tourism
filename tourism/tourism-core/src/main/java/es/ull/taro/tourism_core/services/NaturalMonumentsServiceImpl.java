@@ -14,7 +14,6 @@ public class NaturalMonumentsServiceImpl extends HTOServiceImpl implements Natur
 
 	@Override
 	protected String getResourceType() {
-		// TODO Auto-generated method stub
 		return HTO.ATTRACTION;
 	}
 

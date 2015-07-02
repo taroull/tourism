@@ -161,14 +161,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -339,14 +339,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -517,14 +517,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Playas</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Beach</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -695,14 +695,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -873,14 +873,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Tubo volcánico</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Crater</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1051,14 +1051,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Tubo volcánico</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Crater</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1229,14 +1229,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Acantilado</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Cliffs</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1407,14 +1407,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Playas y acantilados</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1585,14 +1585,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1763,14 +1763,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -1941,14 +1941,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2119,14 +2119,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2297,14 +2297,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2475,14 +2475,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2653,14 +2653,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Barranco</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Wadi</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -2831,14 +2831,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Barranco</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Wadi</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3009,14 +3009,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Playas y acantilados</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3187,14 +3187,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3365,14 +3365,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Estratovolcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion />
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>
@@ -3543,14 +3543,14 @@
                      <hto:ListValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
-                              <hto:domainName>ull</hto:domainName>
+                              <hto:domainName>ull-subtipo</hto:domainName>
                               <hto:domainValue>Volcán</hto:domainValue>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                         <hto:referencedValue>
                            <hto:ReferencedValue>
                               <hto:domainName>pext</hto:domainName>
-                              <hto:domainValue />
+                              <pext:LandRegion>Volcano</pext:LandRegion>
                            </hto:ReferencedValue>
                         </hto:referencedValue>
                      </hto:ListValue>

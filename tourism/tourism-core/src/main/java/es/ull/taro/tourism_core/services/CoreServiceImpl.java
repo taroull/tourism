@@ -38,6 +38,9 @@ public class CoreServiceImpl implements CoreService {
 
 	@Autowired
 	private FlickrService flickrService;
+	
+	@Autowired
+	private Twitter twitterService;
 
 	@Autowired
 	private GeoLinkedDataService geoLinkedDataService;
@@ -117,6 +120,12 @@ public class CoreServiceImpl implements CoreService {
 	public List<String> retrievePhotosAround(String tdtResourceUri, int radius) throws JsonLdError {
 		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
 		return flickrService.findPhotosNear(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
+	}
+	
+	@Override
+	public List<HashMap<String, String>> retrieveTwittersAround(String tdtResourceUri, int radius) throws JsonLdError {
+		TDTResource tdtResource = buildTDTResource(tdtResourceUri);
+		return twitterService.findTwittersNear(tdtResource.getLatitude(), tdtResource.getLongitude(), radius);
 	}
 
 	@Override

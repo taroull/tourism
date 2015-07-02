@@ -18,6 +18,8 @@ public interface CoreService {
 	public List<String> retrieveMunicipalityPhotos(String htoResourceUri) throws JsonLdError;
 
 	public List<String> retrievePhotosAround(String htoResourceUri, int radius) throws JsonLdError;
+	
+	public List<HashMap<String, String>> retrieveTwittersAround(String htoResourceUri, int radius) throws JsonLdError;
 
 	public List<HashMap<String, String>> retrievePlacesAround(String htoResourceUri, int radius);
 
