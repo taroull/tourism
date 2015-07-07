@@ -54,9 +54,12 @@ public class TwitterImpl implements Twitter {
 						String screenName = statuses.getJSONObject(i).getJSONObject("user").getString("screen_name");
 						String name = statuses.getJSONObject(i).getJSONObject("user").getString("name");
 						String fecha = statuses.getJSONObject(i).getString("created_at");
-						String perfil = statuses.getJSONObject(i).getString("profile_image_url");
-						String url = statuses.getJSONObject(i).getString("url");
-						
+						String perfil = statuses.getJSONObject(i).getJSONObject("user").getString("profile_image_url");
+						String url = null;
+						if(statuses.getJSONObject(i).getJSONObject("user").get("url") != null) {
+							url = statuses.getJSONObject(i).getJSONObject("user").get("url").toString();
+						//	url = (String)statuses.getJSONObject(i).getJSONObject("user").get("url");
+						}
 						HashMap<String, String> hash = new HashMap<String, String>();
 						
 						hash.put("name", name);
