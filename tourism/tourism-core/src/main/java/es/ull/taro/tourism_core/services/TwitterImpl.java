@@ -51,11 +51,21 @@ public class TwitterImpl implements Twitter {
 				if (statuses != null) {
 					for(int i = 0; i < statuses.length(); i++) {
 						String objeto = statuses.getJSONObject(i).getString("text");
-						String name = statuses.getJSONObject(i).getJSONObject("user").getString("screen_name");
+						String screenName = statuses.getJSONObject(i).getJSONObject("user").getString("screen_name");
+						String name = statuses.getJSONObject(i).getJSONObject("user").getString("name");
+						String fecha = statuses.getJSONObject(i).getString("created_at");
+						String perfil = statuses.getJSONObject(i).getString("profile_image_url");
+						String url = statuses.getJSONObject(i).getString("url");
 						
 						HashMap<String, String> hash = new HashMap<String, String>();
 						
-						hash.put(name, objeto);
+						hash.put("name", name);
+						hash.put("text", objeto);
+						hash.put("screen_name", screenName);
+						hash.put("date", fecha);
+						hash.put("image", perfil);
+						hash.put("entity", url);
+						
 						tweets.add(hash);
 					}
 					
