@@ -30,10 +30,13 @@ public class TwitterImpl implements Twitter {
 	@Override
 	public List<HashMap<String, String>> findTwittersNear(float latitude, float longitude, int radius) {
 		Client client = Client.create();
-		OAuthParameters params = new OAuthParameters().signatureMethod("HMAC-SHA1").consumerKey(PROPERTY_CONSUMER_KEY).token(PROPERTY_TOKEN).version();
-		OAuthSecrets secrets = new OAuthSecrets().consumerSecret(PROPERTY_CONSUMER_SECRET).tokenSecret(PROPERTY_TOKEN_SECRET);
+		OAuthParameters params = new OAuthParameters().signatureMethod("HMAC-SHA1").
+				consumerKey(PROPERTY_CONSUMER_KEY).token(PROPERTY_TOKEN).version();
+		OAuthSecrets secrets = new OAuthSecrets().consumerSecret(PROPERTY_CONSUMER_SECRET).
+				tokenSecret(PROPERTY_TOKEN_SECRET);
 		OAuthClientFilter filter = new OAuthClientFilter(client.getProviders(), params, secrets);
-		WebResource res = client.resource(URL_BASE + "?result_type=lasted&geocode="+latitude+"%2C"+longitude+"%2C" + radius+"km");
+		WebResource res = 
+				client.resource(URL_BASE + "?result_type=lasted&geocode="+latitude+"%2C"+longitude+"%2C" + radius+"km");
 		res.addFilter(filter);
 		return getTwitterURLs(res);
 	}
@@ -55,10 +58,10 @@ public class TwitterImpl implements Twitter {
 						String name = statuses.getJSONObject(i).getJSONObject("user").getString("name");
 						String fecha = statuses.getJSONObject(i).getString("created_at");
 						String perfil = statuses.getJSONObject(i).getJSONObject("user").getString("profile_image_url");
+						String idStr = statuses.getJSONObject(i).getString("id_str");
 						String url = null;
 						if(statuses.getJSONObject(i).getJSONObject("user").get("url") != null) {
 							url = statuses.getJSONObject(i).getJSONObject("user").get("url").toString();
-						//	url = (String)statuses.getJSONObject(i).getJSONObject("user").get("url");
 						}
 						HashMap<String, String> hash = new HashMap<String, String>();
 						
@@ -68,7 +71,7 @@ public class TwitterImpl implements Twitter {
 						hash.put("date", fecha);
 						hash.put("image", perfil);
 						hash.put("entity", url);
-						
+						hash.put("id_str", idStr);
 						tweets.add(hash);
 					}
 					
